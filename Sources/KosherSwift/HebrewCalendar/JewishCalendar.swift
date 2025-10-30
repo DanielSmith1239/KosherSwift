@@ -114,7 +114,7 @@ public class JewishCalendar: JewishDate {
             return .none
         }
         
-        let rhDow = (jewishCalendarElapsedDays + 1) & 7
+        let rhDow = jewishCalendarElapsedDays % 7
         let day = rhDow + daysSinceStartOfJewishYear
         
         return Parsha.parshalist[yearType][Int(day / 7)]

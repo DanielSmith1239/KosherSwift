@@ -23,8 +23,14 @@ public struct GeoLocation {
         self.name = name
     }
     
+    /// The time zone's standard (non-DST) offset in milliseconds, equivalent to Java's `TimeZone.getRawOffset()`.
+    var rawOffsetMillis: Double {
+        Double(timezone.secondsFromGMT() - Int(timezone.daylightSavingTimeOffset())) * 1000
+    }
+    
+    /// The offset in milliseconds of local mean time at this longitude from standard time in the time zone.
     var localMeanTimeOffset: Double {
-        lng * 4 * GeoLocation.minuteMillis - Double(timezone.secondsFromGMT())
+        lng * 4 * GeoLocation.minuteMillis - rawOffsetMillis
     }
     
     var localMeanTimeOffsetWithMillis: Double {

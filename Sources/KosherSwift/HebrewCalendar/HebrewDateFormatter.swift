@@ -360,7 +360,12 @@ public struct HebrewDateFormatter {
         .shkalim: "שקלים",
         .zachor: "זכור",
         .para: "פרה",
-        .hachodesh: "החדש"
+        .hachodesh: "החדש",
+        .shuva: "שובה",
+        .shira: "שירה",
+        .hagadol: "הגדול",
+        .chazon: "חזון",
+        .nachamu: "נחמו"
     ]
     
     static let transliteratedParshaMap: [Parsha: String] = [
@@ -430,6 +435,11 @@ public struct HebrewDateFormatter {
         .zachor: "Zachor",
         .para: "Parah",
         .hachodesh: "Hachodesh",
+        .shuva: "Shuva",
+        .shira: "Shira",
+        .hagadol: "Hagadol",
+        .chazon: "Chazon",
+        .nachamu: "Nachamu",
     ]
     
     /// Formats the Yom Tov (holiday) in Hebrew or transliterated Latin characters.
@@ -544,7 +554,7 @@ public struct HebrewDateFormatter {
             } else if jewishDate.isJewishLeapYear && month == JewishMonth.adar2 {
                 return HebrewDateFormatter.hebrewMonths[12] + (useGershGershayim ? HebrewDateFormatter._GERESH : "")
             } else {
-                return HebrewDateFormatter.hebrewMonths[month.rawValue]
+                return HebrewDateFormatter.hebrewMonths[month.rawValue - 1]
             }
         } else {
             if jewishDate.isJewishLeapYear && month == JewishMonth.adar {

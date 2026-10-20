@@ -105,6 +105,11 @@ extension JewishDate {
       }
     
     static func absDateToDate(absDate: Int) -> Date {
+        let (year, month, day) = absDateToGregorian(absDate: absDate)
+        return Date(year: year, month: month, day: day)
+    }
+    
+    static func absDateToGregorian(absDate: Int) -> (year: Int, month: Int, day: Int) {
         var year = absDate ~/ 366 // Search forward year by year from approximate year
         while absDate >= gregorianDateToAbsDate(year: year + 1, month: 1, day: 1) {
           year += 1
@@ -118,7 +123,7 @@ extension JewishDate {
 //        let dayOfMonth = absDate - gregorianDateToAbsDate(date: Calendar.current.date(from: DateComponents(year: year, month: month, day: 1))!) + 1
         let toSub = gregorianDateToAbsDate(year: year, month: month, day: 1)
         let day = absDate - toSub + 1
-        return Date(year: year, month: month, day: day)
+        return (year, month, day)
       }
     
     static func isJewishLeapYear(_ year: Int) -> Bool {

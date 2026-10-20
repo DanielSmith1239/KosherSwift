@@ -81,7 +81,7 @@ public class TefilaRules {
     }
     
     public func isTachanunRecitedMincha() -> Bool {
-        let tomorrow = JewishCalendar(date: cal.gregDate.withAdded(days: 1)!)
+        let tomorrow = JewishCalendar(date: cal.gregDate.withAdded(days: 1)!, isInIsrael: cal.isInIsrael)
         
         let notRecited = !tachanunRecitedMinchaAllYear
         || cal.dow == .friday
@@ -96,7 +96,7 @@ public class TefilaRules {
         if cal.isInIsrael {
             return cal.month == .cheshvan && cal.day == 7
         } else {
-            if cal.dow == .friday {
+            if cal.dow == .saturday { // not started on Friday night, so Shabbos can't be the start date
                 return false
             }
             
@@ -152,11 +152,11 @@ public class TefilaRules {
     
     public func isHallelRecited() -> Bool {
         cal.isRoshChodesh || cal.isChanukah
-        || (cal.month == .nissan && (cal.day >= 16 && ((cal.isInIsrael && cal.day <= 21) || (!cal.isInIsrael && cal.day <= 22))))
+        || (cal.month == .nissan && (cal.day >= 15 && ((cal.isInIsrael && cal.day <= 21) || (!cal.isInIsrael && cal.day <= 22))))
         || cal.isYomHaatzmaut
         || cal.isYomYerushalaim
         || (cal.month == .sivan && (cal.day == 6 || (!cal.isInIsrael && cal.day == 7)))
-        || (cal.month == .tishrei && (cal.day >= 15 && (cal.day <= 22 || (cal.isInIsrael && cal.day <= 23))))
+        || (cal.month == .tishrei && (cal.day >= 15 && (cal.day <= 22 || (!cal.isInIsrael && cal.day <= 23))))
     }
     
     public func isHallelShalemRecited() -> Bool {

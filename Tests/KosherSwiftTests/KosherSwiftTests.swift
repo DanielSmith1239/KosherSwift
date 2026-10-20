@@ -93,9 +93,9 @@ final class KosherSwiftTests: XCTestCase {
         XCTAssertEqual(jewishCalendar.moladDate?.molad.minutes, 1)
         XCTAssertEqual(jewishCalendar.moladDate?.molad.chalakim, 3)
         
-        let moladFromKosherJava = Date(timeIntervalSince1970: 1702402813.0) //had to go up or down a few intervals to make it work
-        let g = jewishCalendar.moladDate?.gregDate
-        XCTAssertEqual(g!.withAdded(hours: !Calendar.current.timeZone.isDaylightSavingTime(for: g!) ? -1 : 0)!, moladFromKosherJava)
+        // KosherJava getMoladAsDate() == 1702402813504; gregDate keeps whole seconds
+        let moladFromKosherJava = Date(timeIntervalSince1970: 1702402813.0)
+        XCTAssertEqual(jewishCalendar.moladDate?.gregDate, moladFromKosherJava)
     }
     
     

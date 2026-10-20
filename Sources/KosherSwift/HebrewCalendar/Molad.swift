@@ -40,17 +40,14 @@ public class MoladDate: JewishDate {
         let m = getChalakimSinceMoladTohu(year: jewishDate.year, month: jewishDate.month)
         
         let absM = moladToAbsDate(chalakim: m)
-        let gdate = absDateToDate(absDate: absM)
         
         let temp = moladFromChalakim(chalakim: m)
+        // Molad hours are counted from 6 PM of the previous evening; convert to clock hours and move to the next civil day if needed
         let hours = (temp.hours + 18) % 24
         let retMolad = Molad(hours: hours, minutes: temp.minutes, chalakim: temp.chalakim)
+        let civilDate = absDateToGregorian(absDate: temp.hours >= 6 ? absM + 1 : absM)
         
-        guard var dt = getMoladAsDate(retMolad, gdate) else { return nil }
-        
-        if temp.hours >= 6 {
-            dt = dt.withAdded(days: 1)!
-        }
+        guard let dt = getMoladAsDate(retMolad, year: civilDate.year, month: civilDate.month, day: civilDate.day) else { return nil }
         
         return MoladDate(date: dt, molad: retMolad)
     }
@@ -68,16 +65,19 @@ public class MoladDate: JewishDate {
     }
     
     
-    static func getMoladAsDate(_ molad: Molad, _ mdate: Date) -> Date? {
-        let moladHours = (molad.hours + 18) % 24
-        let moladMinutes = molad.minutes - 20
-        let moladSeconds = (Double(molad.chalakim) * 10 / 3 ) - 56.496
+    /// Converts a molad (already in clock hours) on a civil date to a point in time.
+    ///
+    /// The molad is in Jerusalem local mean time. As in KosherJava, the date is built in Jerusalem *standard* time
+    /// (GMT+2, never DST) and then shifted by the local mean time offset of Har Habayis (35.2354°E), 20 minutes and 56.496 seconds.
+    static func getMoladAsDate(_ molad: Molad, year: Int, month: Int, day: Int) -> Date? {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 2 * 3600)!
+        let moladSeconds = Double(molad.chalakim) * 10 / 3
+        let moladDay = DateComponents(year: year, month: month, day: day, hour: molad.hours, minute: molad.minutes, second: Int(moladSeconds), nanosecond: Int((moladSeconds - Double(Int(moladSeconds))) * 1_000_000_000))
+        guard let localMeanTime = calendar.date(from: moladDay) else { return nil }
         
-        var calendar = Calendar.init(identifier: .gregorian)
-        calendar.timeZone = Calendar.current.timeZone
-        let moladDay = DateComponents(calendar: calendar, year: mdate.year, month: mdate.month, day: mdate.day, hour: moladHours, minute: moladMinutes, second: Int(moladSeconds) - 1)
-        
-        return calendar.date(from: moladDay)
+        let localMeanTimeOffset = 35.2354 * 4 * 60 - 2 * 3600 // seconds
+        return localMeanTime.addingTimeInterval(-localMeanTimeOffset)
     }
 }
 

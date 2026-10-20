@@ -224,7 +224,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
     public func shiftTime() -> Int {
         var shiftTime = -25
         for loc in ComplexZmanimCalendar.shiftTimeByLocationName {
-            if location.name.lowercased().contains(loc.key) {
+            if location.name.lowercased().contains(loc.key.lowercased()) {
                 shiftTime = loc.value
             }
         }
@@ -238,51 +238,53 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
     }
 
     public func getShabbosStartTime() -> Date? {
-        let weekday = (date.weekday + 7) % 7 + 1
-        let delta = 6 - weekday % 7
-        let tempCal = copy(withDate: date.withAdded(days: delta)!)
+        // days until Friday (weekday 6); 0 on Friday itself
+        let delta = (DayOfWeek.friday.rawValue - dayOfWeek.rawValue + 7) % 7
+        let tempCal = copy(withDate: date(addingDays: delta))
         let ret = tempCal.sunset
         return ret?.withAdded(minutes: shiftTime())
     }
     
     public func getShabbosExitTime() -> Date? {
-        let delta = 7 - date.weekday % 7
-        let tempCal = copy(withDate: date.withAdded(days: delta)!)
+        // days until Shabbos (weekday 7); 0 on Shabbos itself
+        let delta = (DayOfWeek.saturday.rawValue - dayOfWeek.rawValue + 7) % 7
+        let tempCal = copy(withDate: date(addingDays: delta))
         let ret = tempCal.beinHashmashosRT13Point5MinutesBefore7Point083Degrees()
         return ret?.withAdded(minutes: 22)
     }
     
     public func getYomTovStartTime() -> Date? {
-        var jewishCalendar = JewishCalendar(date: date)
+        var jewishCalendar = JewishCalendar(date: deviceDate)
         while !jewishCalendar.isErevYomTov {
             jewishCalendar = JewishCalendar(date: jewishCalendar.gregDate.withAdded(days: 1)!)
         }
         
-        let tempCal = copy(withDate: jewishCalendar.gregDate)
+        let tempCal = copy(withDate: locationDate(fromDeviceDate: jewishCalendar.gregDate))
         let ret = tempCal.sunset
         return ret?.withAdded(minutes: shiftTime())
     }
     
     public func getYomTovExitTime() -> Date? {
-        var jewishCalendar = JewishCalendar(date: date)
+        var jewishCalendar = JewishCalendar(date: deviceDate)
         while !jewishCalendar.isYomTov {
             jewishCalendar = JewishCalendar(date: jewishCalendar.gregDate.withAdded(days: 1)!)
         }
         
-        let tempCal = copy(withDate: jewishCalendar.gregDate)
+        let tempCal = copy(withDate: locationDate(fromDeviceDate: jewishCalendar.gregDate))
         let ret = tempCal.sunset
         return ret?.withAdded(minutes: 22)
     }
     
     public func getTaanisStartTime(isInIsrael: Bool = false, isAshkenaz: Bool = false) -> Date? {
-        var jewishCalendar = JewishCalendar(date: date, isInIsrael: isInIsrael)
+        var jewishCalendar = JewishCalendar(date: deviceDate, isInIsrael: isInIsrael)
         while !jewishCalendar.isTaanis {
             jewishCalendar = JewishCalendar(date: jewishCalendar.gregDate.withAdded(days: 1)!)
         }
-        let tempCal = copy(withDate: jewishCalendar.gregDate)
+        let tempCal = copy(withDate: locationDate(fromDeviceDate: jewishCalendar.gregDate))
         
-        if (jewishCalendar.isTishaBeav) {
-            return tempCal.sunset
+        if jewishCalendar.isTishaBeav || jewishCalendar.isYomKippur {
+            // these fasts start at sunset the evening before
+            return copy(withDate: locationDate(fromDeviceDate: jewishCalendar.gregDate.withAdded(days: -1)!)).sunset
         } else {
             return isAshkenaz
             ? tempCal.alosHashachar()
@@ -291,12 +293,12 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
     }
     
     public func getTaanisExitTime(isInIsrael: Bool = false, isAshkenaz: Bool = false) -> Date? {
-        var jewishCalendar = JewishCalendar(date: date, isInIsrael: isInIsrael)
+        var jewishCalendar = JewishCalendar(date: deviceDate, isInIsrael: isInIsrael)
         while !jewishCalendar.isTaanis {
             jewishCalendar = JewishCalendar(date: jewishCalendar.gregDate.withAdded(days: 1)!)
         }
         
-        let tempCal = copy(withDate: jewishCalendar.gregDate)
+        let tempCal = copy(withDate: locationDate(fromDeviceDate: jewishCalendar.gregDate))
         
         return tempCal.beinHashmashosRT13Point5MinutesBefore7Point083Degrees()?.withAdded(minutes: isAshkenaz ? 20 : 0)
     }
@@ -311,7 +313,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
     }
     
     public func getSolarMidnight() -> Date? {
-        let tempCal = copy(withDate: date.withAdded(days: 1)!)
+        let tempCal = copy(withDate: date(addingDays: 1))
       let sunset = seaLevelSunset
       let sunrise = tempCal.seaLevelSunrise
         guard let temporal = getTemporalHour(dayStart: sunset, dayEnd: sunrise) else { return nil }
@@ -345,6 +347,6 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
     }
 	
 	private var isErevPesach: Bool {
-		JewishCalendar(date: date).isErevPesach
+		JewishCalendar(date: deviceDate).isErevPesach
 	}
 }

@@ -87,7 +87,9 @@ public class AstronomicalCalendar {
             return date
         }
         
-        return Calendar.current.date(byAdding: .day, value: 1, to: date)
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = location.timezone
+        return calendar.date(byAdding: .day, value: offset, to: date)
     }
     
     func getUtcSunrise(zenith: Double) -> Double? {
@@ -255,11 +257,46 @@ public class AstronomicalCalendar {
     }
     
     public func getLocalMeanTime(hours: Double) -> Date? {
-		AstronomicalCalendar.getTimeOffset(time: getDateFromTime(time: hours - Double(location.timezone.secondsFromGMT()) / AstronomicalCalendar.hourMillis, solarEvent: .sunrise), offset: -location.localMeanTimeOffset)
+		AstronomicalCalendar.getTimeOffset(time: getDateFromTime(time: hours - location.rawOffsetMillis / AstronomicalCalendar.hourMillis, solarEvent: .sunrise), offset: -location.localMeanTimeOffset)
     }
 }
 
 extension AstronomicalCalendar {
+    /// The calendar day of ``date`` at this location, as midnight in the device time zone.
+    ///
+    /// Zmanim read ``date`` in the location's time zone, but `JewishCalendar(date:)` reads its date in the device time zone.
+    /// Pass this to `JewishCalendar(date:)` so both agree on the day when the two time zones differ.
+    var deviceDate: Date {
+        AstronomicalCalendar.sameDay(as: date, from: location.timezone, to: Calendar.current.timeZone)
+    }
+    
+    /// The inverse of ``deviceDate``: a device-time-zone date (such as `JewishCalendar.gregDate`) as midnight of the same day at this location.
+    func locationDate(fromDeviceDate deviceDate: Date) -> Date {
+        AstronomicalCalendar.sameDay(as: deviceDate, from: Calendar.current.timeZone, to: location.timezone)
+    }
+    
+    /// ``date`` moved by whole calendar days at this location.
+    func date(addingDays days: Int) -> Date {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = location.timezone
+        return calendar.date(byAdding: .day, value: days, to: date)!
+    }
+    
+    /// The day of the week of ``date`` at this location.
+    var dayOfWeek: DayOfWeek {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = location.timezone
+        return DayOfWeek(rawValue: calendar.component(.weekday, from: date))!
+    }
+    
+    private static func sameDay(as date: Date, from source: TimeZone, to destination: TimeZone) -> Date {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = source
+        let components = calendar.dateComponents([.year, .month, .day], from: date)
+        calendar.timeZone = destination
+        return calendar.date(from: components)!
+    }
+    
     // Constants
     static let minuteMillis = 60 * 1000.0
     static let hourMillis = minuteMillis * 60

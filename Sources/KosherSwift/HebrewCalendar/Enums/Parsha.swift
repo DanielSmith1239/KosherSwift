@@ -72,6 +72,11 @@ public enum Parsha {
     case zachor
     case para
     case hachodesh
+    case shuva
+    case shira
+    case hagadol
+    case chazon
+    case nachamu
     
     static let parshalist: [[Parsha]] = [
         [

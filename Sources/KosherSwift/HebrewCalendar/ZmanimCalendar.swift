@@ -32,13 +32,13 @@ public class ZmanimCalendar: AstronomicalCalendar {
     public func tzeis72() -> Date? { AstronomicalCalendar.getTimeOffset(time: elevationAdjustedSunset, offset: 72 * AstronomicalCalendar.minuteMillis) }
     
     public func candleLighting() -> Date? {
-        let todayCal = JewishCalendar(date: date)
-        let yesterdayCal = JewishCalendar(date: date.withAdded(days: -1)!)
+        let todayCal = JewishCalendar(date: deviceDate)
+        let yesterdayCal = JewishCalendar(date: deviceDate.withAdded(days: -1)!)
         if (todayCal.dow == .saturday && todayCal.isErevYomTov)
             || (todayCal.isRoshHashana && yesterdayCal.isErevYomTov)
             || (todayCal.isChanukah && todayCal.dow != .friday) {
             let offsetDate = getSunsetOffsetByDegrees(offsetZenith: .z7_083)
-            return AstronomicalCalendar.getTimeOffset(time: offsetDate, offset: -13.5 * AstronomicalCalendar.hourMillis)
+            return AstronomicalCalendar.getTimeOffset(time: offsetDate, offset: -13.5 * AstronomicalCalendar.minuteMillis)
         } else if todayCal.dow == .friday || todayCal.isErevYomTov {
             return AstronomicalCalendar.getTimeOffset(time: seaLevelSunset, offset: -candleLightingOffset * AstronomicalCalendar.minuteMillis)
         }
@@ -64,35 +64,28 @@ public class ZmanimCalendar: AstronomicalCalendar {
         return shaahZmanisBasedZman(dayStart, dayEnd, 3)
     }
     
+    // A nil start or end of day (e.g. an alos that doesn't occur at high latitudes) returns nil, as in KosherJava.
+    // Call the overloads without arguments for the GRA (elevation-adjusted sunrise to sunset) zman.
     public func calculateMinchaKetana(_ dayStart: Date?, _ dayEnd: Date?) -> Date? {
-        guard let dayStart = dayStart, let dayEnd = dayEnd else {
-            if seaLevelSunrise == nil || seaLevelSunset == nil {
-                return nil
-            }
-            return calculateMinchaKetana(seaLevelSunrise, seaLevelSunset)
-        }
+        guard let dayStart = dayStart, let dayEnd = dayEnd else { return nil }
         return shaahZmanisBasedZman(dayStart, dayEnd, 9.5)
     }
     
+    public func calculateMinchaKetana() -> Date? { calculateMinchaKetana(elevationAdjustedSunrise, elevationAdjustedSunset) }
+    
     public func calculatePlagHamincha(_ dayStart: Date?, _ dayEnd: Date?) -> Date? {
-        guard let dayStart = dayStart, let dayEnd = dayEnd else {
-            if seaLevelSunrise == nil || seaLevelSunset == nil {
-                return nil
-            }
-            return calculatePlagHamincha(seaLevelSunrise, seaLevelSunset)
-        }
+        guard let dayStart = dayStart, let dayEnd = dayEnd else { return nil }
         return shaahZmanisBasedZman(dayStart, dayEnd, 10.75)
     }
     
-    public func calculateMinchaGedolah(_ dayStart: Date? = nil, _ dayEnd: Date? = nil) -> Date? {
-        guard let dayStart = dayStart, let dayEnd = dayEnd else {
-            if seaLevelSunrise == nil || seaLevelSunset == nil {
-                return nil
-            }
-            return calculateMinchaGedolah(seaLevelSunrise, seaLevelSunset)
-        }
+    public func calculatePlagHamincha() -> Date? { calculatePlagHamincha(elevationAdjustedSunrise, elevationAdjustedSunset) }
+    
+    public func calculateMinchaGedolah(_ dayStart: Date?, _ dayEnd: Date?) -> Date? {
+        guard let dayStart = dayStart, let dayEnd = dayEnd else { return nil }
         return shaahZmanisBasedZman(dayStart, dayEnd, 6.5)
     }
+    
+    public func calculateMinchaGedolah() -> Date? { calculateMinchaGedolah(elevationAdjustedSunrise, elevationAdjustedSunset) }
     
     public func shaahZmanisBasedZman(_ startOfDay: Date, _ endOfDay: Date, _ hours: Double) -> Date? {
         guard let shaahZmanis = getTemporalHour(dayStart: startOfDay, dayEnd: endOfDay) else {

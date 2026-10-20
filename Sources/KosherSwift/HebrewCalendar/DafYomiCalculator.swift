@@ -97,7 +97,8 @@ public class DafYomiCalculator {
         }
         
         // Get the number of days from cycle start until request.
-        let dafNo = Int((cal.gregDate - prevCycle) / 86400)
+        // Count calendar days, not 86400-second blocks, so a DST change in between doesn't lose a day
+        let dafNo = Calendar.current.dateComponents([.day], from: prevCycle, to: cal.gregDate).day!
                 
         // Get the number of special day to subtract
         let specialDays = getNumSpecialDays(start: prevCycle, end: cal.gregDate)
@@ -122,12 +123,16 @@ public class DafYomiCalculator {
         var ret = 0
         while curYear <= endYear {
             // Yom Kippur
-            if JewishDate(withJewishYear: curYear, andMonth: .tishrei, andDay: 10).gregDate.isBetween(start: start, end: end) {
+            if isAfter(start, onOrBefore: end, JewishDate(withJewishYear: curYear, andMonth: .tishrei, andDay: 10).gregDate) {
                 ret += 1
             }
             
-            // TishaBeav
-            if JewishDate(withJewishYear: curYear, andMonth: .av, andDay: 9).gregDate.isBetween(start: start, end: end) {
+            // Tisha B'Av, pushed to Sunday when 9 Av is Shabbos
+            var tishaBeav = JewishDate(withJewishYear: curYear, andMonth: .av, andDay: 9)
+            if tishaBeav.dow == .saturday {
+                tishaBeav = JewishDate(withJewishYear: curYear, andMonth: .av, andDay: 10)
+            }
+            if isAfter(start, onOrBefore: end, tishaBeav.gregDate) {
                 ret += 1
             }
             
@@ -135,5 +140,9 @@ public class DafYomiCalculator {
         }
         
         return ret
+    }
+    
+    private static func isAfter(_ start: Date, onOrBefore end: Date, _ date: Date) -> Bool {
+        start < date && date <= end
     }
 }

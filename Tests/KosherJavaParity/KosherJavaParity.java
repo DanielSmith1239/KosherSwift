@@ -181,8 +181,9 @@ public class KosherJavaParity {
 		check("RH second night candle lighting after sunset",
 				roshHashana.getBainHashmashosRT13Point5MinutesBefore7Point083Degrees().after(roshHashana.getSeaLevelSunset()), true);
 
-		// 29 Teves 5785 (Tue 28 Jan 2025) is Erev Rosh Chodesh on a weekday: no candle lighting
-		check("Erev Rosh Chodesh hasCandleLighting", gregorian(2025, 1, 28).hasCandleLighting(), false);
+		// 29 Teves 5785 (Wed 29 Jan 2025) is Erev Rosh Chodesh on a weekday: no candle lighting
+		check("29 Teves 5785 date", jc(5785, JewishDate.TEVES, 29).getGregorianDayOfMonth(), 29);
+		check("Erev Rosh Chodesh hasCandleLighting", gregorian(2025, 1, 29).hasCandleLighting(), false);
 
 		// Swift getTaanisStartTime() for Tisha B'Av 5785 == sunset on Shabbos 2 Aug 2025
 		checkInstant("Tisha B'Av start", zmanim(NEW_YORK, 2025, 8, 2).getSeaLevelSunset(), 1754179798622L);

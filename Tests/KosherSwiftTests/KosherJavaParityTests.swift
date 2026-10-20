@@ -210,8 +210,9 @@ final class KosherJavaParityTests: XCTestCase {
 
     /// Weekday Erev Rosh Chodesh has no candle lighting (KosherJava hasCandleLighting() == false).
     func testNoCandleLightingOnErevRoshChodesh() {
-        // 29 Cheshvan 5785 = Sat 30 Nov 2024 is Shabbos; use 29 Teves 5785 = Tue 28 Jan 2025
-        let cal = ZmanimCalendar(location: newYork, date: date(2025, 1, 28, in: newYork))
+        // 29 Cheshvan 5785 = Sat 30 Nov 2024 is Shabbos; use 29 Teves 5785 = Wed 29 Jan 2025
+        XCTAssertTrue(JewishCalendar(withJewishYear: 5785, andMonth: .teves, andDay: 29).isErevRoshChodesh)
+        let cal = ZmanimCalendar(location: newYork, date: date(2025, 1, 29, in: newYork))
         XCTAssertNil(cal.candleLighting())
     }
 

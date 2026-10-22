@@ -93,7 +93,7 @@ public struct HebrewDateFormatter {
         "שלישי",
         "רביעי",
         "חמישי",
-        "שישי",
+        "ששי",
         "שבת"
     ]
     
@@ -120,12 +120,12 @@ public struct HebrewDateFormatter {
     static let hebrewMonths = [
         "ניסן",
         "אייר",
-        "סיוון",
+        "סיון",
         "תמוז",
         "אב",
         "אלול",
         "תשרי",
-        "חשוון",
+        "חשון",
         "כסלו",
         "טבת",
         "שבט",
@@ -362,7 +362,7 @@ public struct HebrewDateFormatter {
         .shoftim: "שופטים",
         .ki_seitzei: "כי תצא",
         .ki_savo: "כי תבוא",
-        .nitzavim: "ניצבים",
+        .nitzavim: "נצבים",
         .vayeilech: "וילך",
         .haazinu: "האזינו",
         .vzos_haberacha: "וזאת הברכה",
@@ -372,7 +372,7 @@ public struct HebrewDateFormatter {
         .behar_bechukosai: "בהר בחקתי",
         .chukas_balak: "חוקת בלק",
         .matos_masei: "מטות מסעי",
-        .nitzavim_vayeilech: "ניצבים וילך",
+        .nitzavim_vayeilech: "נצבים וילך",
         .shkalim: "שקלים",
         .zachor: "זכור",
         .para: "פרה",

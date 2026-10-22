@@ -461,10 +461,10 @@ public struct HebrewDateFormatter {
     /// Formats the Yom Tov (holiday) in Hebrew or transliterated Latin characters.
     ///
     /// - Parameter cal: the JewishCalendar
-    /// - Returns: the formatted holiday or an empty String if the day is not a holiday.
+    /// - Returns: the formatted holiday or nil if the day is not a holiday.
     public func formatYomTov(_ cal: JewishCalendar) throws -> String? {
-        let chag = cal.getCurrentChag()
-        guard let chag = chag else {
+        // Rosh Chodesh, Erev Rosh Chodesh and Erev Chanukah aren't Yom Tov indexes in KosherJava; see formatRoshChodesh
+        guard let chag = cal.getCurrentChag(), ![.roshChodesh, .erevRoshChodesh, .erevChanukah].contains(chag) else {
             return nil
         }
         
@@ -483,11 +483,11 @@ public struct HebrewDateFormatter {
     }
     
     /// Formats a day as Rosh Chodesh in the format of in the format of ראש חודש שבט or Rosh Chodesh Shevat. If it is
-    /// not Rosh Chodesh, an empty `String` will be returned.
+    /// not Rosh Chodesh, nil is returned.
     ///
     /// - Parameter cal: the JewishCalendar
-    /// - Returns: The formatted `String` in the format of ראש חודש שבט or Rosh Chodesh Shevat. If it is not Rosh
-    ///   Chodesh, an empty `String` will be returned.
+    /// - Returns: The formatted `String` in the format of ראש חודש שבט or Rosh Chodesh Shevat. If it is not Erev
+    ///   Rosh Chodesh, nil is returned.
     public func formatRoshChodesh(_ cal: JewishCalendar) -> String? {
         let jewishCalendar = cal
         if !jewishCalendar.isRoshChodesh {
@@ -517,14 +517,14 @@ public struct HebrewDateFormatter {
     }
     
     /// Formats a day as Erev Rosh Chodesh in the format of in the format of ערב ראש חודש שבט or Rosh Chodesh Shevat. If
-    /// it is not Erev Rosh Chodesh, an empty `String` will be returned.
+    /// it is not Erev Rosh Chodesh, nil is returned.
     ///
     /// - Parameter cal: the JewishCalendar
-    /// - Returns: The formatted `String` in the format of ערב ראש חודש שבט or Rosh Chodesh Shevat. If it is not Rosh
-    ///   Chodesh, an empty `String` will be returned.
+    /// - Returns: The formatted `String` in the format of ערב ראש חודש שבט or Rosh Chodesh Shevat. If it is not Erev
+    ///   Rosh Chodesh, nil is returned.
     public func formatErevRoshChodesh(_ cal: JewishCalendar) -> String? {
         if !cal.isErevRoshChodesh {
-            return ""
+            return nil
         }
         
         var month = cal.month
@@ -604,12 +604,65 @@ public struct HebrewDateFormatter {
         
         return ret
     }
+    /// Formats the Jewish date. If the formatter is set to Hebrew, it will format in the form, "day Month year" for
+    /// example כ״א שבט תשכ״ט, and the format "21 Shevat, 5729" if not.
+    ///
+    /// - Parameter jewishDate: the JewishDate to be formatted
+    /// - Returns: the formatted date. If the formatter is set to Hebrew, it will format in the form, "day Month year"
+    ///   for example כ״א שבט תשכ״ט, and the format "21 Shevat, 5729" if not.
+    public func format(_ jewishDate: JewishDate) throws -> String {
+        if hebrewFormat {
+            return try formatHebrewNumber(jewishDate.day) + " " + formatMonth(jewishDate) + " " + formatHebrewNumber(jewishDate.year)
+        }
+        return "\(jewishDate.day) \(formatMonth(jewishDate)), \(jewishDate.year)"
+    }
+
+    /// Formats the day of week. If Hebrew formatting is set, it will display in the format ראשון etc. If Hebrew
+    /// formatting is not in use it will return it in the format of Sunday etc. There are various formatting options
+    /// that will affect the output.
+    ///
+    /// - Parameter jewishDate: the JewishDate Object
+    /// - Returns: the formatted day of week
+    /// - SeeAlso: `hebrewFormat`, `longWeekFormat`
+    public func formatDayOfWeek(_ jewishDate: JewishDate) throws -> String {
+        let dayOfWeek = jewishDate.dow.rawValue
+        if hebrewFormat {
+            if longWeekFormat {
+                return HebrewDateFormatter._hebrewDaysOfWeek[dayOfWeek - 1]
+            }
+            return try formatHebrewNumber(dayOfWeek == 7 ? 300 : dayOfWeek)
+        }
+        if dayOfWeek == 7 {
+            return longWeekFormat ? transliteratedShabbosDayOfWeek : String(transliteratedShabbosDayOfWeek.prefix(3))
+        }
+        let names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        return longWeekFormat ? names[dayOfWeek - 1] : String(names[dayOfWeek - 1].prefix(3))
+    }
+
+    /// Returns the kviah in the traditional 3 letter Hebrew format where the first letter represents the day of week of
+    /// Rosh Hashana, the second letter represents the lengths of Cheshvan and Kislev (*Shelaimim*, *Kesidran* or
+    /// *Chaserim*) and the 3rd letter represents the day of week of Pesach. For example 5729 (1969) would return בשה
+    /// (Rosh Hashana on Monday, Shelaimim, and Pesach on Thursday), while 5771 (2011) would return השג (Rosh Hashana
+    /// on Thursday, Shelaimim, and Pesach on Tuesday).
+    ///
+    /// - Parameter jewishYear: the Jewish year
+    /// - Returns: the Hebrew String such as בשה for 5729 (1969) and השג for 5771 (2011).
+    public func getFormattedKviah(_ jewishYear: Int) throws -> String {
+        let roshHashana = JewishDate(withJewishYear: jewishYear, andMonth: .tishrei, andDay: 1)
+        let pesach = JewishDate(withJewishYear: jewishYear, andMonth: .nissan, andDay: 15)
+        let kviah = !roshHashana.isCheshvanLong && roshHashana.isKislevShort ? "ח" // chaserim
+            : roshHashana.isCheshvanLong && !roshHashana.isKislevShort ? "ש" // shelaimim
+            : "כ" // kesidran
+        let ret = try formatHebrewNumber(roshHashana.dow.rawValue) + kviah + formatHebrewNumber(pesach.dow.rawValue)
+        return ret.replacingOccurrences(of: HebrewDateFormatter._GERESH, with: "") // geresh is never used in the kviah format
+    }
+
     
     /// Returns a String of the Omer day in the form ל״ג בעומר if Hebrew Format is set, or "Omer X" or "Lag BaOmer" if
-    /// not. An empty string if there is no Omer this day.
+    /// not. nil if there is no Omer this day.
     ///
     /// - Parameter jewishCalendar: the JewishCalendar to be formatted
-    /// - Returns: a String of the Omer day in the form or an empty string if there is no Omer this day. The default
+    /// - Returns: a String of the Omer day in the form or nil if there is no Omer this day. The default
     ///   formatting has a ב׳ prefix that would output בעומר, but this can be set via KosherJava's
     ///   `hebrewOmerPrefix` to use a ל and output ל״ג לעומר.
     public func formatOmer(jewishCalendar: JewishCalendar) throws -> String? {

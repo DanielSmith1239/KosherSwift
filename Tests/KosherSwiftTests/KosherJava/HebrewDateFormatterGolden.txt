@@ -1,0 +1,1402 @@
+number	0	false	false	false	אפס
+number	0	true	false	false	אפס
+number	0	false	true	false	אפס
+number	0	true	true	false	אפס
+number	0	false	false	true	אפס
+number	0	true	false	true	אפס
+number	0	false	true	true	אפס
+number	0	true	true	true	אפס
+number	1	false	false	false	א
+number	1	true	false	false	א׳
+number	1	false	true	false	א
+number	1	true	true	false	א׳
+number	1	false	false	true	א
+number	1	true	false	true	א׳
+number	1	false	true	true	א
+number	1	true	true	true	א׳
+number	3	false	false	false	ג
+number	3	true	false	false	ג׳
+number	3	false	true	false	ג
+number	3	true	true	false	ג׳
+number	3	false	false	true	ג
+number	3	true	false	true	ג׳
+number	3	false	true	true	ג
+number	3	true	true	true	ג׳
+number	9	false	false	false	ט
+number	9	true	false	false	ט׳
+number	9	false	true	false	ט
+number	9	true	true	false	ט׳
+number	9	false	false	true	ט
+number	9	true	false	true	ט׳
+number	9	false	true	true	ט
+number	9	true	true	true	ט׳
+number	10	false	false	false	י
+number	10	true	false	false	י׳
+number	10	false	true	false	י
+number	10	true	true	false	י׳
+number	10	false	false	true	י
+number	10	true	false	true	י׳
+number	10	false	true	true	י
+number	10	true	true	true	י׳
+number	11	false	false	false	יא
+number	11	true	false	false	י״א
+number	11	false	true	false	יא
+number	11	true	true	false	י״א
+number	11	false	false	true	יא
+number	11	true	false	true	י״א
+number	11	false	true	true	יא
+number	11	true	true	true	י״א
+number	14	false	false	false	יד
+number	14	true	false	false	י״ד
+number	14	false	true	false	יד
+number	14	true	true	false	י״ד
+number	14	false	false	true	יד
+number	14	true	false	true	י״ד
+number	14	false	true	true	יד
+number	14	true	true	true	י״ד
+number	15	false	false	false	טו
+number	15	true	false	false	ט״ו
+number	15	false	true	false	טו
+number	15	true	true	false	ט״ו
+number	15	false	false	true	טו
+number	15	true	false	true	ט״ו
+number	15	false	true	true	טו
+number	15	true	true	true	ט״ו
+number	16	false	false	false	טז
+number	16	true	false	false	ט״ז
+number	16	false	true	false	טז
+number	16	true	true	false	ט״ז
+number	16	false	false	true	טז
+number	16	true	false	true	ט״ז
+number	16	false	true	true	טז
+number	16	true	true	true	ט״ז
+number	17	false	false	false	יז
+number	17	true	false	false	י״ז
+number	17	false	true	false	יז
+number	17	true	true	false	י״ז
+number	17	false	false	true	יז
+number	17	true	false	true	י״ז
+number	17	false	true	true	יז
+number	17	true	true	true	י״ז
+number	19	false	false	false	יט
+number	19	true	false	false	י״ט
+number	19	false	true	false	יט
+number	19	true	true	false	י״ט
+number	19	false	false	true	יט
+number	19	true	false	true	י״ט
+number	19	false	true	true	יט
+number	19	true	true	true	י״ט
+number	20	false	false	false	כ
+number	20	true	false	false	כ׳
+number	20	false	true	false	כ
+number	20	true	true	false	כ׳
+number	20	false	false	true	כ
+number	20	true	false	true	כ׳
+number	20	false	true	true	כ
+number	20	true	true	true	כ׳
+number	21	false	false	false	כא
+number	21	true	false	false	כ״א
+number	21	false	true	false	כא
+number	21	true	true	false	כ״א
+number	21	false	false	true	כא
+number	21	true	false	true	כ״א
+number	21	false	true	true	כא
+number	21	true	true	true	כ״א
+number	30	false	false	false	ל
+number	30	true	false	false	ל׳
+number	30	false	true	false	ל
+number	30	true	true	false	ל׳
+number	30	false	false	true	ל
+number	30	true	false	true	ל׳
+number	30	false	true	true	ל
+number	30	true	true	true	ל׳
+number	40	false	false	false	מ
+number	40	true	false	false	מ׳
+number	40	false	true	false	מ
+number	40	true	true	false	מ׳
+number	40	false	false	true	מ
+number	40	true	false	true	מ׳
+number	40	false	true	true	מ
+number	40	true	true	true	מ׳
+number	50	false	false	false	נ
+number	50	true	false	false	נ׳
+number	50	false	true	false	נ
+number	50	true	true	false	נ׳
+number	50	false	false	true	נ
+number	50	true	false	true	נ׳
+number	50	false	true	true	נ
+number	50	true	true	true	נ׳
+number	80	false	false	false	פ
+number	80	true	false	false	פ׳
+number	80	false	true	false	פ
+number	80	true	true	false	פ׳
+number	80	false	false	true	פ
+number	80	true	false	true	פ׳
+number	80	false	true	true	פ
+number	80	true	true	true	פ׳
+number	90	false	false	false	צ
+number	90	true	false	false	צ׳
+number	90	false	true	false	צ
+number	90	true	true	false	צ׳
+number	90	false	false	true	צ
+number	90	true	false	true	צ׳
+number	90	false	true	true	צ
+number	90	true	true	true	צ׳
+number	99	false	false	false	צט
+number	99	true	false	false	צ״ט
+number	99	false	true	false	צט
+number	99	true	true	false	צ״ט
+number	99	false	false	true	צט
+number	99	true	false	true	צ״ט
+number	99	false	true	true	צט
+number	99	true	true	true	צ״ט
+number	100	false	false	false	ק
+number	100	true	false	false	ק׳
+number	100	false	true	false	ק
+number	100	true	true	false	ק׳
+number	100	false	false	true	ק
+number	100	true	false	true	ק׳
+number	100	false	true	true	ק
+number	100	true	true	true	ק׳
+number	101	false	false	false	קא
+number	101	true	false	false	ק״א
+number	101	false	true	false	קא
+number	101	true	true	false	ק״א
+number	101	false	false	true	קא
+number	101	true	false	true	ק״א
+number	101	false	true	true	קא
+number	101	true	true	true	ק״א
+number	115	false	false	false	קטו
+number	115	true	false	false	קט״ו
+number	115	false	true	false	קטו
+number	115	true	true	false	קט״ו
+number	115	false	false	true	קטו
+number	115	true	false	true	קט״ו
+number	115	false	true	true	קטו
+number	115	true	true	true	קט״ו
+number	116	false	false	false	קטז
+number	116	true	false	false	קט״ז
+number	116	false	true	false	קטז
+number	116	true	true	false	קט״ז
+number	116	false	false	true	קטז
+number	116	true	false	true	קט״ז
+number	116	false	true	true	קטז
+number	116	true	true	true	קט״ז
+number	200	false	false	false	ר
+number	200	true	false	false	ר׳
+number	200	false	true	false	ר
+number	200	true	true	false	ר׳
+number	200	false	false	true	ר
+number	200	true	false	true	ר׳
+number	200	false	true	true	ר
+number	200	true	true	true	ר׳
+number	300	false	false	false	ש
+number	300	true	false	false	ש׳
+number	300	false	true	false	ש
+number	300	true	true	false	ש׳
+number	300	false	false	true	ש
+number	300	true	false	true	ש׳
+number	300	false	true	true	ש
+number	300	true	true	true	ש׳
+number	400	false	false	false	ת
+number	400	true	false	false	ת׳
+number	400	false	true	false	ת
+number	400	true	true	false	ת׳
+number	400	false	false	true	ת
+number	400	true	false	true	ת׳
+number	400	false	true	true	ת
+number	400	true	true	true	ת׳
+number	410	false	false	false	תי
+number	410	true	false	false	ת״י
+number	410	false	true	false	תי
+number	410	true	true	false	ת״י
+number	410	false	false	true	תי
+number	410	true	false	true	ת״י
+number	410	false	true	true	תי
+number	410	true	true	true	ת״י
+number	500	false	false	false	תק
+number	500	true	false	false	ת״ק
+number	500	false	true	false	תק
+number	500	true	true	false	ת״ק
+number	500	false	false	true	תק
+number	500	true	false	true	ת״ק
+number	500	false	true	true	תק
+number	500	true	true	true	ת״ק
+number	600	false	false	false	תר
+number	600	true	false	false	ת״ר
+number	600	false	true	false	תר
+number	600	true	true	false	ת״ר
+number	600	false	false	true	תר
+number	600	true	false	true	ת״ר
+number	600	false	true	true	תר
+number	600	true	true	true	ת״ר
+number	700	false	false	false	תש
+number	700	true	false	false	ת״ש
+number	700	false	true	false	תש
+number	700	true	true	false	ת״ש
+number	700	false	false	true	תש
+number	700	true	false	true	ת״ש
+number	700	false	true	true	תש
+number	700	true	true	true	ת״ש
+number	769	false	false	false	תשסט
+number	769	true	false	false	תשס״ט
+number	769	false	true	false	תשסט
+number	769	true	true	false	תשס״ט
+number	769	false	false	true	תשסט
+number	769	true	false	true	תשס״ט
+number	769	false	true	true	תשסט
+number	769	true	true	true	תשס״ט
+number	800	false	false	false	תת
+number	800	true	false	false	ת״ת
+number	800	false	true	false	תת
+number	800	true	true	false	ת״ת
+number	800	false	false	true	תת
+number	800	true	false	true	ת״ת
+number	800	false	true	true	תת
+number	800	true	true	true	ת״ת
+number	900	false	false	false	תתק
+number	900	true	false	false	תת״ק
+number	900	false	true	false	תתק
+number	900	true	true	false	תת״ק
+number	900	false	false	true	תתק
+number	900	true	false	true	תת״ק
+number	900	false	true	true	תתק
+number	900	true	true	true	תת״ק
+number	999	false	false	false	תתקצט
+number	999	true	false	false	תתקצ״ט
+number	999	false	true	false	תתקצט
+number	999	true	true	false	תתקצ״ט
+number	999	false	false	true	תתקצט
+number	999	true	false	true	תתקצ״ט
+number	999	false	true	true	תתקצט
+number	999	true	true	true	תתקצ״ט
+number	1000	false	false	false	א אלפים
+number	1000	true	false	false	א׳ אלפים
+number	1000	false	true	false	א אלפים
+number	1000	true	true	false	א׳ אלפים
+number	1000	false	false	true	א אלפים
+number	1000	true	false	true	א׳ אלפים
+number	1000	false	true	true	א אלפים
+number	1000	true	true	true	א׳ אלפים
+number	1001	false	false	false	א
+number	1001	true	false	false	א׳
+number	1001	false	true	false	א א
+number	1001	true	true	false	א׳ א׳
+number	1001	false	false	true	א
+number	1001	true	false	true	א׳
+number	1001	false	true	true	א א
+number	1001	true	true	true	א׳ א׳
+number	1015	false	false	false	טו
+number	1015	true	false	false	ט״ו
+number	1015	false	true	false	א טו
+number	1015	true	true	false	א׳ ט״ו
+number	1015	false	false	true	טו
+number	1015	true	false	true	ט״ו
+number	1015	false	true	true	א טו
+number	1015	true	true	true	א׳ ט״ו
+number	2000	false	false	false	ב אלפים
+number	2000	true	false	false	ב׳ אלפים
+number	2000	false	true	false	ב אלפים
+number	2000	true	true	false	ב׳ אלפים
+number	2000	false	false	true	ב אלפים
+number	2000	true	false	true	ב׳ אלפים
+number	2000	false	true	true	ב אלפים
+number	2000	true	true	true	ב׳ אלפים
+number	5000	false	false	false	ה אלפים
+number	5000	true	false	false	ה׳ אלפים
+number	5000	false	true	false	ה אלפים
+number	5000	true	true	false	ה׳ אלפים
+number	5000	false	false	true	ה אלפים
+number	5000	true	false	true	ה׳ אלפים
+number	5000	false	true	true	ה אלפים
+number	5000	true	true	true	ה׳ אלפים
+number	5015	false	false	false	טו
+number	5015	true	false	false	ט״ו
+number	5015	false	true	false	ה טו
+number	5015	true	true	false	ה׳ ט״ו
+number	5015	false	false	true	טו
+number	5015	true	false	true	ט״ו
+number	5015	false	true	true	ה טו
+number	5015	true	true	true	ה׳ ט״ו
+number	5016	false	false	false	טז
+number	5016	true	false	false	ט״ז
+number	5016	false	true	false	ה טז
+number	5016	true	true	false	ה׳ ט״ז
+number	5016	false	false	true	טז
+number	5016	true	false	true	ט״ז
+number	5016	false	true	true	ה טז
+number	5016	true	true	true	ה׳ ט״ז
+number	5050	false	false	false	נ
+number	5050	true	false	false	נ׳
+number	5050	false	true	false	ה נ
+number	5050	true	true	false	ה׳ נ׳
+number	5050	false	false	true	נ
+number	5050	true	false	true	נ׳
+number	5050	false	true	true	ה נ
+number	5050	true	true	true	ה׳ נ׳
+number	5100	false	false	false	ק
+number	5100	true	false	false	ק׳
+number	5100	false	true	false	ה ק
+number	5100	true	true	false	ה׳ ק׳
+number	5100	false	false	true	ק
+number	5100	true	false	true	ק׳
+number	5100	false	true	true	ה ק
+number	5100	true	true	true	ה׳ ק׳
+number	5729	false	false	false	תשכט
+number	5729	true	false	false	תשכ״ט
+number	5729	false	true	false	ה תשכט
+number	5729	true	true	false	ה׳ תשכ״ט
+number	5729	false	false	true	תשכט
+number	5729	true	false	true	תשכ״ט
+number	5729	false	true	true	ה תשכט
+number	5729	true	true	true	ה׳ תשכ״ט
+number	5760	false	false	false	תשס
+number	5760	true	false	false	תש״ס
+number	5760	false	true	false	ה תשס
+number	5760	true	true	false	ה׳ תש״ס
+number	5760	false	false	true	תשס
+number	5760	true	false	true	תש״ס
+number	5760	false	true	true	ה תשס
+number	5760	true	true	true	ה׳ תש״ס
+number	5770	false	false	false	תשע
+number	5770	true	false	false	תש״ע
+number	5770	false	true	false	ה תשע
+number	5770	true	true	false	ה׳ תש״ע
+number	5770	false	false	true	תשע
+number	5770	true	false	true	תש״ע
+number	5770	false	true	true	ה תשע
+number	5770	true	true	true	ה׳ תש״ע
+number	5780	false	false	false	תשפ
+number	5780	true	false	false	תש״פ
+number	5780	false	true	false	ה תשפ
+number	5780	true	true	false	ה׳ תש״פ
+number	5780	false	false	true	תשף
+number	5780	true	false	true	תש״ף
+number	5780	false	true	true	ה תשף
+number	5780	true	true	true	ה׳ תש״ף
+number	5784	false	false	false	תשפד
+number	5784	true	false	false	תשפ״ד
+number	5784	false	true	false	ה תשפד
+number	5784	true	true	false	ה׳ תשפ״ד
+number	5784	false	false	true	תשפד
+number	5784	true	false	true	תשפ״ד
+number	5784	false	true	true	ה תשפד
+number	5784	true	true	true	ה׳ תשפ״ד
+number	5790	false	false	false	תשצ
+number	5790	true	false	false	תש״צ
+number	5790	false	true	false	ה תשצ
+number	5790	true	true	false	ה׳ תש״צ
+number	5790	false	false	true	תשץ
+number	5790	true	false	true	תש״ץ
+number	5790	false	true	true	ה תשץ
+number	5790	true	true	true	ה׳ תש״ץ
+number	5800	false	false	false	תת
+number	5800	true	false	false	ת״ת
+number	5800	false	true	false	ה תת
+number	5800	true	true	false	ה׳ ת״ת
+number	5800	false	false	true	תת
+number	5800	true	false	true	ת״ת
+number	5800	false	true	true	ה תת
+number	5800	true	true	true	ה׳ ת״ת
+number	6000	false	false	false	ו אלפים
+number	6000	true	false	false	ו׳ אלפים
+number	6000	false	true	false	ו אלפים
+number	6000	true	true	false	ו׳ אלפים
+number	6000	false	false	true	ו אלפים
+number	6000	true	false	true	ו׳ אלפים
+number	6000	false	true	true	ו אלפים
+number	6000	true	true	true	ו׳ אלפים
+number	9999	false	false	false	תתקצט
+number	9999	true	false	false	תתקצ״ט
+number	9999	false	true	false	ט תתקצט
+number	9999	true	true	false	ט׳ תתקצ״ט
+number	9999	false	false	true	תתקצט
+number	9999	true	false	true	תתקצ״ט
+number	9999	false	true	true	ט תתקצט
+number	9999	true	true	true	ט׳ תתקצ״ט
+kviah	5780	בשה
+kviah	5781	זחא
+kviah	5782	גכז
+kviah	5783	בשה
+kviah	5784	זחג
+kviah	5785	השא
+kviah	5786	גכה
+kviah	5787	זשה
+kviah	5788	זשג
+kviah	5789	הכז
+kviah	5790	בחה
+daf	0	2	ברכות ב׳	Berachos 2
+dafYerushalmi	0	2	ברכות ב׳	Berachos 2
+daf	0	15	ברכות ט״ו	Berachos 15
+dafYerushalmi	0	15	ברכות ט״ו	Berachos 15
+daf	0	21	ברכות כ״א	Berachos 21
+dafYerushalmi	0	21	ברכות כ״א	Berachos 21
+daf	1	2	שבת ב׳	Shabbos 2
+dafYerushalmi	1	2	פיאה ב׳	Pe'ah 2
+daf	1	15	שבת ט״ו	Shabbos 15
+dafYerushalmi	1	15	פיאה ט״ו	Pe'ah 15
+daf	1	21	שבת כ״א	Shabbos 21
+dafYerushalmi	1	21	פיאה כ״א	Pe'ah 21
+daf	2	2	עירובין ב׳	Eruvin 2
+dafYerushalmi	2	2	דמאי ב׳	Demai 2
+daf	2	15	עירובין ט״ו	Eruvin 15
+dafYerushalmi	2	15	דמאי ט״ו	Demai 15
+daf	2	21	עירובין כ״א	Eruvin 21
+dafYerushalmi	2	21	דמאי כ״א	Demai 21
+daf	3	2	פסחים ב׳	Pesachim 2
+dafYerushalmi	3	2	כלאים ב׳	Kilayim 2
+daf	3	15	פסחים ט״ו	Pesachim 15
+dafYerushalmi	3	15	כלאים ט״ו	Kilayim 15
+daf	3	21	פסחים כ״א	Pesachim 21
+dafYerushalmi	3	21	כלאים כ״א	Kilayim 21
+daf	4	2	שקלים ב׳	Shekalim 2
+dafYerushalmi	4	2	שביעית ב׳	Shevi'is 2
+daf	4	15	שקלים ט״ו	Shekalim 15
+dafYerushalmi	4	15	שביעית ט״ו	Shevi'is 15
+daf	4	21	שקלים כ״א	Shekalim 21
+dafYerushalmi	4	21	שביעית כ״א	Shevi'is 21
+daf	5	2	יומא ב׳	Yoma 2
+dafYerushalmi	5	2	תרומות ב׳	Terumos 2
+daf	5	15	יומא ט״ו	Yoma 15
+dafYerushalmi	5	15	תרומות ט״ו	Terumos 15
+daf	5	21	יומא כ״א	Yoma 21
+dafYerushalmi	5	21	תרומות כ״א	Terumos 21
+daf	6	2	סוכה ב׳	Sukkah 2
+dafYerushalmi	6	2	מעשרות ב׳	Ma'asros 2
+daf	6	15	סוכה ט״ו	Sukkah 15
+dafYerushalmi	6	15	מעשרות ט״ו	Ma'asros 15
+daf	6	21	סוכה כ״א	Sukkah 21
+dafYerushalmi	6	21	מעשרות כ״א	Ma'asros 21
+daf	7	2	ביצה ב׳	Beitzah 2
+dafYerushalmi	7	2	מעשר שני ב׳	Ma'aser Sheni 2
+daf	7	15	ביצה ט״ו	Beitzah 15
+dafYerushalmi	7	15	מעשר שני ט״ו	Ma'aser Sheni 15
+daf	7	21	ביצה כ״א	Beitzah 21
+dafYerushalmi	7	21	מעשר שני כ״א	Ma'aser Sheni 21
+daf	8	2	ראש השנה ב׳	Rosh Hashana 2
+dafYerushalmi	8	2	חלה ב׳	Chalah 2
+daf	8	15	ראש השנה ט״ו	Rosh Hashana 15
+dafYerushalmi	8	15	חלה ט״ו	Chalah 15
+daf	8	21	ראש השנה כ״א	Rosh Hashana 21
+dafYerushalmi	8	21	חלה כ״א	Chalah 21
+daf	9	2	תענית ב׳	Taanis 2
+dafYerushalmi	9	2	עורלה ב׳	Orlah 2
+daf	9	15	תענית ט״ו	Taanis 15
+dafYerushalmi	9	15	עורלה ט״ו	Orlah 15
+daf	9	21	תענית כ״א	Taanis 21
+dafYerushalmi	9	21	עורלה כ״א	Orlah 21
+daf	10	2	מגילה ב׳	Megillah 2
+dafYerushalmi	10	2	ביכורים ב׳	Bikurim 2
+daf	10	15	מגילה ט״ו	Megillah 15
+dafYerushalmi	10	15	ביכורים ט״ו	Bikurim 15
+daf	10	21	מגילה כ״א	Megillah 21
+dafYerushalmi	10	21	ביכורים כ״א	Bikurim 21
+daf	11	2	מועד קטן ב׳	Moed Katan 2
+dafYerushalmi	11	2	שבת ב׳	Shabbos 2
+daf	11	15	מועד קטן ט״ו	Moed Katan 15
+dafYerushalmi	11	15	שבת ט״ו	Shabbos 15
+daf	11	21	מועד קטן כ״א	Moed Katan 21
+dafYerushalmi	11	21	שבת כ״א	Shabbos 21
+daf	12	2	חגיגה ב׳	Chagigah 2
+dafYerushalmi	12	2	עירובין ב׳	Eruvin 2
+daf	12	15	חגיגה ט״ו	Chagigah 15
+dafYerushalmi	12	15	עירובין ט״ו	Eruvin 15
+daf	12	21	חגיגה כ״א	Chagigah 21
+dafYerushalmi	12	21	עירובין כ״א	Eruvin 21
+daf	13	2	יבמות ב׳	Yevamos 2
+dafYerushalmi	13	2	פסחים ב׳	Pesachim 2
+daf	13	15	יבמות ט״ו	Yevamos 15
+dafYerushalmi	13	15	פסחים ט״ו	Pesachim 15
+daf	13	21	יבמות כ״א	Yevamos 21
+dafYerushalmi	13	21	פסחים כ״א	Pesachim 21
+daf	14	2	כתובות ב׳	Kesubos 2
+dafYerushalmi	14	2	ביצה ב׳	Beitzah 2
+daf	14	15	כתובות ט״ו	Kesubos 15
+dafYerushalmi	14	15	ביצה ט״ו	Beitzah 15
+daf	14	21	כתובות כ״א	Kesubos 21
+dafYerushalmi	14	21	ביצה כ״א	Beitzah 21
+daf	15	2	נדרים ב׳	Nedarim 2
+dafYerushalmi	15	2	ראש השנה ב׳	Rosh Hashanah 2
+daf	15	15	נדרים ט״ו	Nedarim 15
+dafYerushalmi	15	15	ראש השנה ט״ו	Rosh Hashanah 15
+daf	15	21	נדרים כ״א	Nedarim 21
+dafYerushalmi	15	21	ראש השנה כ״א	Rosh Hashanah 21
+daf	16	2	נזיר ב׳	Nazir 2
+dafYerushalmi	16	2	יומא ב׳	Yoma 2
+daf	16	15	נזיר ט״ו	Nazir 15
+dafYerushalmi	16	15	יומא ט״ו	Yoma 15
+daf	16	21	נזיר כ״א	Nazir 21
+dafYerushalmi	16	21	יומא כ״א	Yoma 21
+daf	17	2	סוטה ב׳	Sotah 2
+dafYerushalmi	17	2	סוכה ב׳	Sukah 2
+daf	17	15	סוטה ט״ו	Sotah 15
+dafYerushalmi	17	15	סוכה ט״ו	Sukah 15
+daf	17	21	סוטה כ״א	Sotah 21
+dafYerushalmi	17	21	סוכה כ״א	Sukah 21
+daf	18	2	גיטין ב׳	Gitin 2
+dafYerushalmi	18	2	תענית ב׳	Ta'anis 2
+daf	18	15	גיטין ט״ו	Gitin 15
+dafYerushalmi	18	15	תענית ט״ו	Ta'anis 15
+daf	18	21	גיטין כ״א	Gitin 21
+dafYerushalmi	18	21	תענית כ״א	Ta'anis 21
+daf	19	2	קידושין ב׳	Kiddushin 2
+dafYerushalmi	19	2	שקלים ב׳	Shekalim 2
+daf	19	15	קידושין ט״ו	Kiddushin 15
+dafYerushalmi	19	15	שקלים ט״ו	Shekalim 15
+daf	19	21	קידושין כ״א	Kiddushin 21
+dafYerushalmi	19	21	שקלים כ״א	Shekalim 21
+daf	20	2	בבא קמא ב׳	Bava Kamma 2
+dafYerushalmi	20	2	מגילה ב׳	Megilah 2
+daf	20	15	בבא קמא ט״ו	Bava Kamma 15
+dafYerushalmi	20	15	מגילה ט״ו	Megilah 15
+daf	20	21	בבא קמא כ״א	Bava Kamma 21
+dafYerushalmi	20	21	מגילה כ״א	Megilah 21
+daf	21	2	בבא מציעא ב׳	Bava Metzia 2
+dafYerushalmi	21	2	חגיגה ב׳	Chagigah 2
+daf	21	15	בבא מציעא ט״ו	Bava Metzia 15
+dafYerushalmi	21	15	חגיגה ט״ו	Chagigah 15
+daf	21	21	בבא מציעא כ״א	Bava Metzia 21
+dafYerushalmi	21	21	חגיגה כ״א	Chagigah 21
+daf	22	2	בבא בתרא ב׳	Bava Basra 2
+dafYerushalmi	22	2	מועד קטן ב׳	Moed Katan 2
+daf	22	15	בבא בתרא ט״ו	Bava Basra 15
+dafYerushalmi	22	15	מועד קטן ט״ו	Moed Katan 15
+daf	22	21	בבא בתרא כ״א	Bava Basra 21
+dafYerushalmi	22	21	מועד קטן כ״א	Moed Katan 21
+daf	23	2	סנהדרין ב׳	Sanhedrin 2
+dafYerushalmi	23	2	יבמות ב׳	Yevamos 2
+daf	23	15	סנהדרין ט״ו	Sanhedrin 15
+dafYerushalmi	23	15	יבמות ט״ו	Yevamos 15
+daf	23	21	סנהדרין כ״א	Sanhedrin 21
+dafYerushalmi	23	21	יבמות כ״א	Yevamos 21
+daf	24	2	מכות ב׳	Makkos 2
+dafYerushalmi	24	2	כתובות ב׳	Kesuvos 2
+daf	24	15	מכות ט״ו	Makkos 15
+dafYerushalmi	24	15	כתובות ט״ו	Kesuvos 15
+daf	24	21	מכות כ״א	Makkos 21
+dafYerushalmi	24	21	כתובות כ״א	Kesuvos 21
+daf	25	2	שבועות ב׳	Shevuos 2
+dafYerushalmi	25	2	סוטה ב׳	Sotah 2
+daf	25	15	שבועות ט״ו	Shevuos 15
+dafYerushalmi	25	15	סוטה ט״ו	Sotah 15
+daf	25	21	שבועות כ״א	Shevuos 21
+dafYerushalmi	25	21	סוטה כ״א	Sotah 21
+daf	26	2	עבודה זרה ב׳	Avodah Zarah 2
+dafYerushalmi	26	2	נדרים ב׳	Nedarim 2
+daf	26	15	עבודה זרה ט״ו	Avodah Zarah 15
+dafYerushalmi	26	15	נדרים ט״ו	Nedarim 15
+daf	26	21	עבודה זרה כ״א	Avodah Zarah 21
+dafYerushalmi	26	21	נדרים כ״א	Nedarim 21
+daf	27	2	הוריות ב׳	Horiyos 2
+dafYerushalmi	27	2	נזיר ב׳	Nazir 2
+daf	27	15	הוריות ט״ו	Horiyos 15
+dafYerushalmi	27	15	נזיר ט״ו	Nazir 15
+daf	27	21	הוריות כ״א	Horiyos 21
+dafYerushalmi	27	21	נזיר כ״א	Nazir 21
+daf	28	2	זבחים ב׳	Zevachim 2
+dafYerushalmi	28	2	גיטין ב׳	Gitin 2
+daf	28	15	זבחים ט״ו	Zevachim 15
+dafYerushalmi	28	15	גיטין ט״ו	Gitin 15
+daf	28	21	זבחים כ״א	Zevachim 21
+dafYerushalmi	28	21	גיטין כ״א	Gitin 21
+daf	29	2	מנחות ב׳	Menachos 2
+dafYerushalmi	29	2	קידושין ב׳	Kidushin 2
+daf	29	15	מנחות ט״ו	Menachos 15
+dafYerushalmi	29	15	קידושין ט״ו	Kidushin 15
+daf	29	21	מנחות כ״א	Menachos 21
+dafYerushalmi	29	21	קידושין כ״א	Kidushin 21
+daf	30	2	חולין ב׳	Chullin 2
+dafYerushalmi	30	2	בבא קמא ב׳	Bava Kama 2
+daf	30	15	חולין ט״ו	Chullin 15
+dafYerushalmi	30	15	בבא קמא ט״ו	Bava Kama 15
+daf	30	21	חולין כ״א	Chullin 21
+dafYerushalmi	30	21	בבא קמא כ״א	Bava Kama 21
+daf	31	2	בכורות ב׳	Bechoros 2
+dafYerushalmi	31	2	בבא מציעא ב׳	Bava Metzia 2
+daf	31	15	בכורות ט״ו	Bechoros 15
+dafYerushalmi	31	15	בבא מציעא ט״ו	Bava Metzia 15
+daf	31	21	בכורות כ״א	Bechoros 21
+dafYerushalmi	31	21	בבא מציעא כ״א	Bava Metzia 21
+daf	32	2	ערכין ב׳	Arachin 2
+dafYerushalmi	32	2	בבא בתרא ב׳	Bava Basra 2
+daf	32	15	ערכין ט״ו	Arachin 15
+dafYerushalmi	32	15	בבא בתרא ט״ו	Bava Basra 15
+daf	32	21	ערכין כ״א	Arachin 21
+dafYerushalmi	32	21	בבא בתרא כ״א	Bava Basra 21
+daf	33	2	תמורה ב׳	Temurah 2
+dafYerushalmi	33	2	שבועות ב׳	Shevuos 2
+daf	33	15	תמורה ט״ו	Temurah 15
+dafYerushalmi	33	15	שבועות ט״ו	Shevuos 15
+daf	33	21	תמורה כ״א	Temurah 21
+dafYerushalmi	33	21	שבועות כ״א	Shevuos 21
+daf	34	2	כריתות ב׳	Kerisos 2
+dafYerushalmi	34	2	מכות ב׳	Makos 2
+daf	34	15	כריתות ט״ו	Kerisos 15
+dafYerushalmi	34	15	מכות ט״ו	Makos 15
+daf	34	21	כריתות כ״א	Kerisos 21
+dafYerushalmi	34	21	מכות כ״א	Makos 21
+daf	35	2	מעילה ב׳	Meilah 2
+dafYerushalmi	35	2	סנהדרין ב׳	Sanhedrin 2
+daf	35	15	מעילה ט״ו	Meilah 15
+dafYerushalmi	35	15	סנהדרין ט״ו	Sanhedrin 15
+daf	35	21	מעילה כ״א	Meilah 21
+dafYerushalmi	35	21	סנהדרין כ״א	Sanhedrin 21
+daf	36	2	קינים ב׳	Kinnim 2
+dafYerushalmi	36	2	עבודה זרה ב׳	Avodah Zarah 2
+daf	36	15	קינים ט״ו	Kinnim 15
+dafYerushalmi	36	15	עבודה זרה ט״ו	Avodah Zarah 15
+daf	36	21	קינים כ״א	Kinnim 21
+dafYerushalmi	36	21	עבודה זרה כ״א	Avodah Zarah 21
+daf	37	2	תמיד ב׳	Tamid 2
+dafYerushalmi	37	2	הוריות ב׳	Horayos 2
+daf	37	15	תמיד ט״ו	Tamid 15
+dafYerushalmi	37	15	הוריות ט״ו	Horayos 15
+daf	37	21	תמיד כ״א	Tamid 21
+dafYerushalmi	37	21	הוריות כ״א	Horayos 21
+daf	38	2	מידות ב׳	Midos 2
+dafYerushalmi	38	2	נידה ב׳	Nidah 2
+daf	38	15	מידות ט״ו	Midos 15
+dafYerushalmi	38	15	נידה ט״ו	Nidah 15
+daf	38	21	מידות כ״א	Midos 21
+dafYerushalmi	38	21	נידה כ״א	Nidah 21
+daf	39	2	נדה ב׳	Niddah 2
+daf	39	15	נדה ט״ו	Niddah 15
+daf	39	21	נדה כ״א	Niddah 21
+day	5784	7	1	א׳ תשרי תשפ״ד	א תשרי תשפד	1 Tishrei, 5784	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos	ראש השנה	Rosh Hashana	ראש השנה	Rosh Hashana										
+day	5784	7	2	ב׳ תשרי תשפ״ד	ב תשרי תשפד	2 Tishrei, 5784	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday	ראש השנה	Rosh Hashana	ראש השנה	Rosh Hashana										
+day	5784	7	3	ג׳ תשרי תשפ״ד	ג תשרי תשפד	3 Tishrei, 5784	תשרי	תשרי	Tishrei	שני	ב׳	Monday	צום גדליה	Fast of Gedalyah	צום גדליה	Fast of Gedalyah										
+day	5784	7	4	ד׳ תשרי תשפ״ד	ד תשרי תשפד	4 Tishrei, 5784	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday														
+day	5784	7	5	ה׳ תשרי תשפ״ד	ה תשרי תשפד	5 Tishrei, 5784	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday														
+day	5784	7	6	ו׳ תשרי תשפ״ד	ו תשרי תשפד	6 Tishrei, 5784	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday														
+day	5784	7	7	ז׳ תשרי תשפ״ד	ז תשרי תשפד	7 Tishrei, 5784	תשרי	תשרי	Tishrei	ששי	ו׳	Friday														
+day	5784	7	8	ח׳ תשרי תשפ״ד	ח תשרי תשפד	8 Tishrei, 5784	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos									האזינו	Ha'Azinu	האזינו	Ha'Azinu	שובה	Shuva
+day	5784	7	9	ט׳ תשרי תשפ״ד	ט תשרי תשפד	9 Tishrei, 5784	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday	ערב יום כיפור	Erev Yom Kippur	ערב יום כיפור	Erev Yom Kippur										
+day	5784	7	10	י׳ תשרי תשפ״ד	י תשרי תשפד	10 Tishrei, 5784	תשרי	תשרי	Tishrei	שני	ב׳	Monday	יום כיפור	Yom Kippur	יום כיפור	Yom Kippur										
+day	5784	7	11	י״א תשרי תשפ״ד	יא תשרי תשפד	11 Tishrei, 5784	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday														
+day	5784	7	12	י״ב תשרי תשפ״ד	יב תשרי תשפד	12 Tishrei, 5784	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday														
+day	5784	7	13	י״ג תשרי תשפ״ד	יג תשרי תשפד	13 Tishrei, 5784	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday														
+day	5784	7	14	י״ד תשרי תשפ״ד	יד תשרי תשפד	14 Tishrei, 5784	תשרי	תשרי	Tishrei	ששי	ו׳	Friday	ערב סוכות	Erev Succos	ערב סוכות	Erev Succos										
+day	5784	7	15	ט״ו תשרי תשפ״ד	טו תשרי תשפד	15 Tishrei, 5784	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos	סוכות	Succos	סוכות	Succos										
+day	5784	7	16	ט״ז תשרי תשפ״ד	טז תשרי תשפד	16 Tishrei, 5784	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday	סוכות	Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5784	7	17	י״ז תשרי תשפ״ד	יז תשרי תשפד	17 Tishrei, 5784	תשרי	תשרי	Tishrei	שני	ב׳	Monday	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5784	7	18	י״ח תשרי תשפ״ד	יח תשרי תשפד	18 Tishrei, 5784	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5784	7	19	י״ט תשרי תשפ״ד	יט תשרי תשפד	19 Tishrei, 5784	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5784	7	20	כ׳ תשרי תשפ״ד	כ תשרי תשפד	20 Tishrei, 5784	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5784	7	21	כ״א תשרי תשפ״ד	כא תשרי תשפד	21 Tishrei, 5784	תשרי	תשרי	Tishrei	ששי	ו׳	Friday	הושענא רבה	Hoshana Rabbah	הושענא רבה	Hoshana Rabbah										
+day	5784	7	22	כ״ב תשרי תשפ״ד	כב תשרי תשפד	22 Tishrei, 5784	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos	שמיני עצרת	Shemini Atzeres	שמיני עצרת	Shemini Atzeres										
+day	5784	7	23	כ״ג תשרי תשפ״ד	כג תשרי תשפד	23 Tishrei, 5784	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday	שמחת תורה	Simchas Torah	אסרו חג	Isru Chag										
+day	5784	7	24	כ״ד תשרי תשפ״ד	כד תשרי תשפד	24 Tishrei, 5784	תשרי	תשרי	Tishrei	שני	ב׳	Monday	אסרו חג	Isru Chag												
+day	5784	7	25	כ״ה תשרי תשפ״ד	כה תשרי תשפד	25 Tishrei, 5784	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday														
+day	5784	7	26	כ״ו תשרי תשפ״ד	כו תשרי תשפד	26 Tishrei, 5784	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday														
+day	5784	7	27	כ״ז תשרי תשפ״ד	כז תשרי תשפד	27 Tishrei, 5784	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday														
+day	5784	7	28	כ״ח תשרי תשפ״ד	כח תשרי תשפד	28 Tishrei, 5784	תשרי	תשרי	Tishrei	ששי	ו׳	Friday														
+day	5784	7	29	כ״ט תשרי תשפ״ד	כט תשרי תשפד	29 Tishrei, 5784	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos									בראשית	Bereshis	בראשית	Bereshis		
+day	5784	7	30	ל׳ תשרי תשפ״ד	ל תשרי תשפד	30 Tishrei, 5784	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday					ראש חודש חשון	Rosh Chodesh Cheshvan								
+day	5784	8	1	א׳ חשון תשפ״ד	א חשון תשפד	1 Cheshvan, 5784	חשון	חשון	Cheshvan	שני	ב׳	Monday					ראש חודש חשון	Rosh Chodesh Cheshvan								
+day	5784	8	2	ב׳ חשון תשפ״ד	ב חשון תשפד	2 Cheshvan, 5784	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5784	8	3	ג׳ חשון תשפ״ד	ג חשון תשפד	3 Cheshvan, 5784	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5784	8	4	ד׳ חשון תשפ״ד	ד חשון תשפד	4 Cheshvan, 5784	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5784	8	5	ה׳ חשון תשפ״ד	ה חשון תשפד	5 Cheshvan, 5784	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5784	8	6	ו׳ חשון תשפ״ד	ו חשון תשפד	6 Cheshvan, 5784	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									נח	Noach	נח	Noach		
+day	5784	8	7	ז׳ חשון תשפ״ד	ז חשון תשפד	7 Cheshvan, 5784	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5784	8	8	ח׳ חשון תשפ״ד	ח חשון תשפד	8 Cheshvan, 5784	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5784	8	9	ט׳ חשון תשפ״ד	ט חשון תשפד	9 Cheshvan, 5784	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5784	8	10	י׳ חשון תשפ״ד	י חשון תשפד	10 Cheshvan, 5784	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5784	8	11	י״א חשון תשפ״ד	יא חשון תשפד	11 Cheshvan, 5784	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5784	8	12	י״ב חשון תשפ״ד	יב חשון תשפד	12 Cheshvan, 5784	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5784	8	13	י״ג חשון תשפ״ד	יג חשון תשפד	13 Cheshvan, 5784	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									לך לך	Lech Lecha	לך לך	Lech Lecha		
+day	5784	8	14	י״ד חשון תשפ״ד	יד חשון תשפד	14 Cheshvan, 5784	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5784	8	15	ט״ו חשון תשפ״ד	טו חשון תשפד	15 Cheshvan, 5784	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5784	8	16	ט״ז חשון תשפ״ד	טז חשון תשפד	16 Cheshvan, 5784	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5784	8	17	י״ז חשון תשפ״ד	יז חשון תשפד	17 Cheshvan, 5784	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5784	8	18	י״ח חשון תשפ״ד	יח חשון תשפד	18 Cheshvan, 5784	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5784	8	19	י״ט חשון תשפ״ד	יט חשון תשפד	19 Cheshvan, 5784	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5784	8	20	כ׳ חשון תשפ״ד	כ חשון תשפד	20 Cheshvan, 5784	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									וירא	Vayera	וירא	Vayera		
+day	5784	8	21	כ״א חשון תשפ״ד	כא חשון תשפד	21 Cheshvan, 5784	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5784	8	22	כ״ב חשון תשפ״ד	כב חשון תשפד	22 Cheshvan, 5784	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5784	8	23	כ״ג חשון תשפ״ד	כג חשון תשפד	23 Cheshvan, 5784	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5784	8	24	כ״ד חשון תשפ״ד	כד חשון תשפד	24 Cheshvan, 5784	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5784	8	25	כ״ה חשון תשפ״ד	כה חשון תשפד	25 Cheshvan, 5784	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5784	8	26	כ״ו חשון תשפ״ד	כו חשון תשפד	26 Cheshvan, 5784	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5784	8	27	כ״ז חשון תשפ״ד	כז חשון תשפד	27 Cheshvan, 5784	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									חיי שרה	Chayei Sara	חיי שרה	Chayei Sara		
+day	5784	8	28	כ״ח חשון תשפ״ד	כח חשון תשפד	28 Cheshvan, 5784	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5784	8	29	כ״ט חשון תשפ״ד	כט חשון תשפד	29 Cheshvan, 5784	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5784	9	1	א׳ כסלו תשפ״ד	א כסלו תשפד	1 Kislev, 5784	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday					ראש חודש כסלו	Rosh Chodesh Kislev								
+day	5784	9	2	ב׳ כסלו תשפ״ד	ב כסלו תשפד	2 Kislev, 5784	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5784	9	3	ג׳ כסלו תשפ״ד	ג כסלו תשפד	3 Kislev, 5784	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday														
+day	5784	9	4	ד׳ כסלו תשפ״ד	ד כסלו תשפד	4 Kislev, 5784	כסלו	כסלו	Kislev	ששי	ו׳	Friday														
+day	5784	9	5	ה׳ כסלו תשפ״ד	ה כסלו תשפד	5 Kislev, 5784	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos									תולדות	Toldos	תולדות	Toldos		
+day	5784	9	6	ו׳ כסלו תשפ״ד	ו כסלו תשפד	6 Kislev, 5784	כסלו	כסלו	Kislev	ראשון	א׳	Sunday														
+day	5784	9	7	ז׳ כסלו תשפ״ד	ז כסלו תשפד	7 Kislev, 5784	כסלו	כסלו	Kislev	שני	ב׳	Monday														
+day	5784	9	8	ח׳ כסלו תשפ״ד	ח כסלו תשפד	8 Kislev, 5784	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday														
+day	5784	9	9	ט׳ כסלו תשפ״ד	ט כסלו תשפד	9 Kislev, 5784	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5784	9	10	י׳ כסלו תשפ״ד	י כסלו תשפד	10 Kislev, 5784	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday														
+day	5784	9	11	י״א כסלו תשפ״ד	יא כסלו תשפד	11 Kislev, 5784	כסלו	כסלו	Kislev	ששי	ו׳	Friday														
+day	5784	9	12	י״ב כסלו תשפ״ד	יב כסלו תשפד	12 Kislev, 5784	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos									ויצא	Vayetzei	ויצא	Vayetzei		
+day	5784	9	13	י״ג כסלו תשפ״ד	יג כסלו תשפד	13 Kislev, 5784	כסלו	כסלו	Kislev	ראשון	א׳	Sunday														
+day	5784	9	14	י״ד כסלו תשפ״ד	יד כסלו תשפד	14 Kislev, 5784	כסלו	כסלו	Kislev	שני	ב׳	Monday														
+day	5784	9	15	ט״ו כסלו תשפ״ד	טו כסלו תשפד	15 Kislev, 5784	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday														
+day	5784	9	16	ט״ז כסלו תשפ״ד	טז כסלו תשפד	16 Kislev, 5784	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5784	9	17	י״ז כסלו תשפ״ד	יז כסלו תשפד	17 Kislev, 5784	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday														
+day	5784	9	18	י״ח כסלו תשפ״ד	יח כסלו תשפד	18 Kislev, 5784	כסלו	כסלו	Kislev	ששי	ו׳	Friday														
+day	5784	9	19	י״ט כסלו תשפ״ד	יט כסלו תשפד	19 Kislev, 5784	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos									וישלח	Vayishlach	וישלח	Vayishlach		
+day	5784	9	20	כ׳ כסלו תשפ״ד	כ כסלו תשפד	20 Kislev, 5784	כסלו	כסלו	Kislev	ראשון	א׳	Sunday														
+day	5784	9	21	כ״א כסלו תשפ״ד	כא כסלו תשפד	21 Kislev, 5784	כסלו	כסלו	Kislev	שני	ב׳	Monday														
+day	5784	9	22	כ״ב כסלו תשפ״ד	כב כסלו תשפד	22 Kislev, 5784	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday														
+day	5784	9	23	כ״ג כסלו תשפ״ד	כג כסלו תשפד	23 Kislev, 5784	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5784	9	24	כ״ד כסלו תשפ״ד	כד כסלו תשפד	24 Kislev, 5784	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday														
+day	5784	9	25	כ״ה כסלו תשפ״ד	כה כסלו תשפד	25 Kislev, 5784	כסלו	כסלו	Kislev	ששי	ו׳	Friday	א׳ חנוכה	Chanukah 1	א׳ חנוכה	Chanukah 1										
+day	5784	9	26	כ״ו כסלו תשפ״ד	כו כסלו תשפד	26 Kislev, 5784	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos	ב׳ חנוכה	Chanukah 2	ב׳ חנוכה	Chanukah 2					וישב	Vayeshev	וישב	Vayeshev		
+day	5784	9	27	כ״ז כסלו תשפ״ד	כז כסלו תשפד	27 Kislev, 5784	כסלו	כסלו	Kislev	ראשון	א׳	Sunday	ג׳ חנוכה	Chanukah 3	ג׳ חנוכה	Chanukah 3										
+day	5784	9	28	כ״ח כסלו תשפ״ד	כח כסלו תשפד	28 Kislev, 5784	כסלו	כסלו	Kislev	שני	ב׳	Monday	ד׳ חנוכה	Chanukah 4	ד׳ חנוכה	Chanukah 4										
+day	5784	9	29	כ״ט כסלו תשפ״ד	כט כסלו תשפד	29 Kislev, 5784	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday	ה׳ חנוכה	Chanukah 5	ה׳ חנוכה	Chanukah 5										
+day	5784	10	1	א׳ טבת תשפ״ד	א טבת תשפד	1 Teves, 5784	טבת	טבת	Teves	רביעי	ד׳	Wednesday	ו׳ חנוכה	Chanukah 6	ו׳ חנוכה	Chanukah 6	ראש חודש טבת	Rosh Chodesh Teves								
+day	5784	10	2	ב׳ טבת תשפ״ד	ב טבת תשפד	2 Teves, 5784	טבת	טבת	Teves	חמישי	ה׳	Thursday	ז׳ חנוכה	Chanukah 7	ז׳ חנוכה	Chanukah 7										
+day	5784	10	3	ג׳ טבת תשפ״ד	ג טבת תשפד	3 Teves, 5784	טבת	טבת	Teves	ששי	ו׳	Friday	ח׳ חנוכה	Chanukah 8	ח׳ חנוכה	Chanukah 8										
+day	5784	10	4	ד׳ טבת תשפ״ד	ד טבת תשפד	4 Teves, 5784	טבת	טבת	Teves	שבת	ש׳	Shabbos									מקץ	Miketz	מקץ	Miketz		
+day	5784	10	5	ה׳ טבת תשפ״ד	ה טבת תשפד	5 Teves, 5784	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5784	10	6	ו׳ טבת תשפ״ד	ו טבת תשפד	6 Teves, 5784	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5784	10	7	ז׳ טבת תשפ״ד	ז טבת תשפד	7 Teves, 5784	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5784	10	8	ח׳ טבת תשפ״ד	ח טבת תשפד	8 Teves, 5784	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5784	10	9	ט׳ טבת תשפ״ד	ט טבת תשפד	9 Teves, 5784	טבת	טבת	Teves	חמישי	ה׳	Thursday														
+day	5784	10	10	י׳ טבת תשפ״ד	י טבת תשפד	10 Teves, 5784	טבת	טבת	Teves	ששי	ו׳	Friday	עשרה בטבת	Tenth of Teves	עשרה בטבת	Tenth of Teves										
+day	5784	10	11	י״א טבת תשפ״ד	יא טבת תשפד	11 Teves, 5784	טבת	טבת	Teves	שבת	ש׳	Shabbos									ויגש	Vayigash	ויגש	Vayigash		
+day	5784	10	12	י״ב טבת תשפ״ד	יב טבת תשפד	12 Teves, 5784	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5784	10	13	י״ג טבת תשפ״ד	יג טבת תשפד	13 Teves, 5784	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5784	10	14	י״ד טבת תשפ״ד	יד טבת תשפד	14 Teves, 5784	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5784	10	15	ט״ו טבת תשפ״ד	טו טבת תשפד	15 Teves, 5784	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5784	10	16	ט״ז טבת תשפ״ד	טז טבת תשפד	16 Teves, 5784	טבת	טבת	Teves	חמישי	ה׳	Thursday														
+day	5784	10	17	י״ז טבת תשפ״ד	יז טבת תשפד	17 Teves, 5784	טבת	טבת	Teves	ששי	ו׳	Friday														
+day	5784	10	18	י״ח טבת תשפ״ד	יח טבת תשפד	18 Teves, 5784	טבת	טבת	Teves	שבת	ש׳	Shabbos									ויחי	Vayechi	ויחי	Vayechi		
+day	5784	10	19	י״ט טבת תשפ״ד	יט טבת תשפד	19 Teves, 5784	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5784	10	20	כ׳ טבת תשפ״ד	כ טבת תשפד	20 Teves, 5784	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5784	10	21	כ״א טבת תשפ״ד	כא טבת תשפד	21 Teves, 5784	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5784	10	22	כ״ב טבת תשפ״ד	כב טבת תשפד	22 Teves, 5784	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5784	10	23	כ״ג טבת תשפ״ד	כג טבת תשפד	23 Teves, 5784	טבת	טבת	Teves	חמישי	ה׳	Thursday														
+day	5784	10	24	כ״ד טבת תשפ״ד	כד טבת תשפד	24 Teves, 5784	טבת	טבת	Teves	ששי	ו׳	Friday														
+day	5784	10	25	כ״ה טבת תשפ״ד	כה טבת תשפד	25 Teves, 5784	טבת	טבת	Teves	שבת	ש׳	Shabbos									שמות	Shemos	שמות	Shemos		
+day	5784	10	26	כ״ו טבת תשפ״ד	כו טבת תשפד	26 Teves, 5784	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5784	10	27	כ״ז טבת תשפ״ד	כז טבת תשפד	27 Teves, 5784	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5784	10	28	כ״ח טבת תשפ״ד	כח טבת תשפד	28 Teves, 5784	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5784	10	29	כ״ט טבת תשפ״ד	כט טבת תשפד	29 Teves, 5784	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5784	11	1	א׳ שבט תשפ״ד	א שבט תשפד	1 Shevat, 5784	שבט	שבט	Shevat	חמישי	ה׳	Thursday					ראש חודש שבט	Rosh Chodesh Shevat								
+day	5784	11	2	ב׳ שבט תשפ״ד	ב שבט תשפד	2 Shevat, 5784	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5784	11	3	ג׳ שבט תשפ״ד	ג שבט תשפד	3 Shevat, 5784	שבט	שבט	Shevat	שבת	ש׳	Shabbos									וארא	Vaera	וארא	Vaera		
+day	5784	11	4	ד׳ שבט תשפ״ד	ד שבט תשפד	4 Shevat, 5784	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5784	11	5	ה׳ שבט תשפ״ד	ה שבט תשפד	5 Shevat, 5784	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5784	11	6	ו׳ שבט תשפ״ד	ו שבט תשפד	6 Shevat, 5784	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5784	11	7	ז׳ שבט תשפ״ד	ז שבט תשפד	7 Shevat, 5784	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5784	11	8	ח׳ שבט תשפ״ד	ח שבט תשפד	8 Shevat, 5784	שבט	שבט	Shevat	חמישי	ה׳	Thursday														
+day	5784	11	9	ט׳ שבט תשפ״ד	ט שבט תשפד	9 Shevat, 5784	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5784	11	10	י׳ שבט תשפ״ד	י שבט תשפד	10 Shevat, 5784	שבט	שבט	Shevat	שבת	ש׳	Shabbos									בא	Bo	בא	Bo		
+day	5784	11	11	י״א שבט תשפ״ד	יא שבט תשפד	11 Shevat, 5784	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5784	11	12	י״ב שבט תשפ״ד	יב שבט תשפד	12 Shevat, 5784	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5784	11	13	י״ג שבט תשפ״ד	יג שבט תשפד	13 Shevat, 5784	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5784	11	14	י״ד שבט תשפ״ד	יד שבט תשפד	14 Shevat, 5784	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5784	11	15	ט״ו שבט תשפ״ד	טו שבט תשפד	15 Shevat, 5784	שבט	שבט	Shevat	חמישי	ה׳	Thursday	ט״ו בשבט	Tu B'Shvat	ט״ו בשבט	Tu B'Shvat										
+day	5784	11	16	ט״ז שבט תשפ״ד	טז שבט תשפד	16 Shevat, 5784	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5784	11	17	י״ז שבט תשפ״ד	יז שבט תשפד	17 Shevat, 5784	שבט	שבט	Shevat	שבת	ש׳	Shabbos									בשלח	Beshalach	בשלח	Beshalach	שירה	Shira
+day	5784	11	18	י״ח שבט תשפ״ד	יח שבט תשפד	18 Shevat, 5784	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5784	11	19	י״ט שבט תשפ״ד	יט שבט תשפד	19 Shevat, 5784	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5784	11	20	כ׳ שבט תשפ״ד	כ שבט תשפד	20 Shevat, 5784	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5784	11	21	כ״א שבט תשפ״ד	כא שבט תשפד	21 Shevat, 5784	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5784	11	22	כ״ב שבט תשפ״ד	כב שבט תשפד	22 Shevat, 5784	שבט	שבט	Shevat	חמישי	ה׳	Thursday														
+day	5784	11	23	כ״ג שבט תשפ״ד	כג שבט תשפד	23 Shevat, 5784	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5784	11	24	כ״ד שבט תשפ״ד	כד שבט תשפד	24 Shevat, 5784	שבט	שבט	Shevat	שבת	ש׳	Shabbos									יתרו	Yisro	יתרו	Yisro		
+day	5784	11	25	כ״ה שבט תשפ״ד	כה שבט תשפד	25 Shevat, 5784	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5784	11	26	כ״ו שבט תשפ״ד	כו שבט תשפד	26 Shevat, 5784	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5784	11	27	כ״ז שבט תשפ״ד	כז שבט תשפד	27 Shevat, 5784	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5784	11	28	כ״ח שבט תשפ״ד	כח שבט תשפד	28 Shevat, 5784	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5784	11	29	כ״ט שבט תשפ״ד	כט שבט תשפד	29 Shevat, 5784	שבט	שבט	Shevat	חמישי	ה׳	Thursday														
+day	5784	11	30	ל׳ שבט תשפ״ד	ל שבט תשפד	30 Shevat, 5784	שבט	שבט	Shevat	ששי	ו׳	Friday					ראש חודש אדר א׳	Rosh Chodesh Adar I								
+day	5784	12	1	א׳ אדר א׳ תשפ״ד	א אדר א תשפד	1 Adar I, 5784	אדר א׳	אדר א	Adar I	שבת	ש׳	Shabbos					ראש חודש אדר א׳	Rosh Chodesh Adar I			משפטים	Mishpatim	משפטים	Mishpatim		
+day	5784	12	2	ב׳ אדר א׳ תשפ״ד	ב אדר א תשפד	2 Adar I, 5784	אדר א׳	אדר א	Adar I	ראשון	א׳	Sunday														
+day	5784	12	3	ג׳ אדר א׳ תשפ״ד	ג אדר א תשפד	3 Adar I, 5784	אדר א׳	אדר א	Adar I	שני	ב׳	Monday														
+day	5784	12	4	ד׳ אדר א׳ תשפ״ד	ד אדר א תשפד	4 Adar I, 5784	אדר א׳	אדר א	Adar I	שלישי	ג׳	Tuesday														
+day	5784	12	5	ה׳ אדר א׳ תשפ״ד	ה אדר א תשפד	5 Adar I, 5784	אדר א׳	אדר א	Adar I	רביעי	ד׳	Wednesday														
+day	5784	12	6	ו׳ אדר א׳ תשפ״ד	ו אדר א תשפד	6 Adar I, 5784	אדר א׳	אדר א	Adar I	חמישי	ה׳	Thursday														
+day	5784	12	7	ז׳ אדר א׳ תשפ״ד	ז אדר א תשפד	7 Adar I, 5784	אדר א׳	אדר א	Adar I	ששי	ו׳	Friday														
+day	5784	12	8	ח׳ אדר א׳ תשפ״ד	ח אדר א תשפד	8 Adar I, 5784	אדר א׳	אדר א	Adar I	שבת	ש׳	Shabbos									תרומה	Terumah	תרומה	Terumah		
+day	5784	12	9	ט׳ אדר א׳ תשפ״ד	ט אדר א תשפד	9 Adar I, 5784	אדר א׳	אדר א	Adar I	ראשון	א׳	Sunday														
+day	5784	12	10	י׳ אדר א׳ תשפ״ד	י אדר א תשפד	10 Adar I, 5784	אדר א׳	אדר א	Adar I	שני	ב׳	Monday														
+day	5784	12	11	י״א אדר א׳ תשפ״ד	יא אדר א תשפד	11 Adar I, 5784	אדר א׳	אדר א	Adar I	שלישי	ג׳	Tuesday														
+day	5784	12	12	י״ב אדר א׳ תשפ״ד	יב אדר א תשפד	12 Adar I, 5784	אדר א׳	אדר א	Adar I	רביעי	ד׳	Wednesday														
+day	5784	12	13	י״ג אדר א׳ תשפ״ד	יג אדר א תשפד	13 Adar I, 5784	אדר א׳	אדר א	Adar I	חמישי	ה׳	Thursday														
+day	5784	12	14	י״ד אדר א׳ תשפ״ד	יד אדר א תשפד	14 Adar I, 5784	אדר א׳	אדר א	Adar I	ששי	ו׳	Friday	פורים קטן	Purim Katan	פורים קטן	Purim Katan										
+day	5784	12	15	ט״ו אדר א׳ תשפ״ד	טו אדר א תשפד	15 Adar I, 5784	אדר א׳	אדר א	Adar I	שבת	ש׳	Shabbos	פורים שושן קטן	Shushan Purim Katan	פורים שושן קטן	Shushan Purim Katan					תצוה	Tetzaveh	תצוה	Tetzaveh		
+day	5784	12	16	ט״ז אדר א׳ תשפ״ד	טז אדר א תשפד	16 Adar I, 5784	אדר א׳	אדר א	Adar I	ראשון	א׳	Sunday														
+day	5784	12	17	י״ז אדר א׳ תשפ״ד	יז אדר א תשפד	17 Adar I, 5784	אדר א׳	אדר א	Adar I	שני	ב׳	Monday														
+day	5784	12	18	י״ח אדר א׳ תשפ״ד	יח אדר א תשפד	18 Adar I, 5784	אדר א׳	אדר א	Adar I	שלישי	ג׳	Tuesday														
+day	5784	12	19	י״ט אדר א׳ תשפ״ד	יט אדר א תשפד	19 Adar I, 5784	אדר א׳	אדר א	Adar I	רביעי	ד׳	Wednesday														
+day	5784	12	20	כ׳ אדר א׳ תשפ״ד	כ אדר א תשפד	20 Adar I, 5784	אדר א׳	אדר א	Adar I	חמישי	ה׳	Thursday														
+day	5784	12	21	כ״א אדר א׳ תשפ״ד	כא אדר א תשפד	21 Adar I, 5784	אדר א׳	אדר א	Adar I	ששי	ו׳	Friday														
+day	5784	12	22	כ״ב אדר א׳ תשפ״ד	כב אדר א תשפד	22 Adar I, 5784	אדר א׳	אדר א	Adar I	שבת	ש׳	Shabbos									כי תשא	Ki Sisa	כי תשא	Ki Sisa		
+day	5784	12	23	כ״ג אדר א׳ תשפ״ד	כג אדר א תשפד	23 Adar I, 5784	אדר א׳	אדר א	Adar I	ראשון	א׳	Sunday														
+day	5784	12	24	כ״ד אדר א׳ תשפ״ד	כד אדר א תשפד	24 Adar I, 5784	אדר א׳	אדר א	Adar I	שני	ב׳	Monday														
+day	5784	12	25	כ״ה אדר א׳ תשפ״ד	כה אדר א תשפד	25 Adar I, 5784	אדר א׳	אדר א	Adar I	שלישי	ג׳	Tuesday														
+day	5784	12	26	כ״ו אדר א׳ תשפ״ד	כו אדר א תשפד	26 Adar I, 5784	אדר א׳	אדר א	Adar I	רביעי	ד׳	Wednesday														
+day	5784	12	27	כ״ז אדר א׳ תשפ״ד	כז אדר א תשפד	27 Adar I, 5784	אדר א׳	אדר א	Adar I	חמישי	ה׳	Thursday														
+day	5784	12	28	כ״ח אדר א׳ תשפ״ד	כח אדר א תשפד	28 Adar I, 5784	אדר א׳	אדר א	Adar I	ששי	ו׳	Friday														
+day	5784	12	29	כ״ט אדר א׳ תשפ״ד	כט אדר א תשפד	29 Adar I, 5784	אדר א׳	אדר א	Adar I	שבת	ש׳	Shabbos									ויקהל	Vayakhel	ויקהל	Vayakhel	שקלים	Shekalim
+day	5784	12	30	ל׳ אדר א׳ תשפ״ד	ל אדר א תשפד	30 Adar I, 5784	אדר א׳	אדר א	Adar I	ראשון	א׳	Sunday					ראש חודש אדר ב׳	Rosh Chodesh Adar II								
+day	5784	13	1	א׳ אדר ב׳ תשפ״ד	א אדר ב תשפד	1 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שני	ב׳	Monday					ראש חודש אדר ב׳	Rosh Chodesh Adar II								
+day	5784	13	2	ב׳ אדר ב׳ תשפ״ד	ב אדר ב תשפד	2 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שלישי	ג׳	Tuesday														
+day	5784	13	3	ג׳ אדר ב׳ תשפ״ד	ג אדר ב תשפד	3 Adar II, 5784	אדר ב׳	אדר ב	Adar II	רביעי	ד׳	Wednesday														
+day	5784	13	4	ד׳ אדר ב׳ תשפ״ד	ד אדר ב תשפד	4 Adar II, 5784	אדר ב׳	אדר ב	Adar II	חמישי	ה׳	Thursday														
+day	5784	13	5	ה׳ אדר ב׳ תשפ״ד	ה אדר ב תשפד	5 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ששי	ו׳	Friday														
+day	5784	13	6	ו׳ אדר ב׳ תשפ״ד	ו אדר ב תשפד	6 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שבת	ש׳	Shabbos									פקודי	Pekudei	פקודי	Pekudei		
+day	5784	13	7	ז׳ אדר ב׳ תשפ״ד	ז אדר ב תשפד	7 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ראשון	א׳	Sunday														
+day	5784	13	8	ח׳ אדר ב׳ תשפ״ד	ח אדר ב תשפד	8 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שני	ב׳	Monday														
+day	5784	13	9	ט׳ אדר ב׳ תשפ״ד	ט אדר ב תשפד	9 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שלישי	ג׳	Tuesday														
+day	5784	13	10	י׳ אדר ב׳ תשפ״ד	י אדר ב תשפד	10 Adar II, 5784	אדר ב׳	אדר ב	Adar II	רביעי	ד׳	Wednesday														
+day	5784	13	11	י״א אדר ב׳ תשפ״ד	יא אדר ב תשפד	11 Adar II, 5784	אדר ב׳	אדר ב	Adar II	חמישי	ה׳	Thursday	תענית אסתר	Fast of Esther	תענית אסתר	Fast of Esther										
+day	5784	13	12	י״ב אדר ב׳ תשפ״ד	יב אדר ב תשפד	12 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ששי	ו׳	Friday														
+day	5784	13	13	י״ג אדר ב׳ תשפ״ד	יג אדר ב תשפד	13 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שבת	ש׳	Shabbos									ויקרא	Vayikra	ויקרא	Vayikra	זכור	Zachor
+day	5784	13	14	י״ד אדר ב׳ תשפ״ד	יד אדר ב תשפד	14 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ראשון	א׳	Sunday	פורים	Purim	פורים	Purim										
+day	5784	13	15	ט״ו אדר ב׳ תשפ״ד	טו אדר ב תשפד	15 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שני	ב׳	Monday	פורים שושן	Shushan Purim	פורים שושן	Shushan Purim										
+day	5784	13	16	ט״ז אדר ב׳ תשפ״ד	טז אדר ב תשפד	16 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שלישי	ג׳	Tuesday														
+day	5784	13	17	י״ז אדר ב׳ תשפ״ד	יז אדר ב תשפד	17 Adar II, 5784	אדר ב׳	אדר ב	Adar II	רביעי	ד׳	Wednesday														
+day	5784	13	18	י״ח אדר ב׳ תשפ״ד	יח אדר ב תשפד	18 Adar II, 5784	אדר ב׳	אדר ב	Adar II	חמישי	ה׳	Thursday														
+day	5784	13	19	י״ט אדר ב׳ תשפ״ד	יט אדר ב תשפד	19 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ששי	ו׳	Friday														
+day	5784	13	20	כ׳ אדר ב׳ תשפ״ד	כ אדר ב תשפד	20 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שבת	ש׳	Shabbos									צו	Tzav	צו	Tzav	פרה	Parah
+day	5784	13	21	כ״א אדר ב׳ תשפ״ד	כא אדר ב תשפד	21 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ראשון	א׳	Sunday														
+day	5784	13	22	כ״ב אדר ב׳ תשפ״ד	כב אדר ב תשפד	22 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שני	ב׳	Monday														
+day	5784	13	23	כ״ג אדר ב׳ תשפ״ד	כג אדר ב תשפד	23 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שלישי	ג׳	Tuesday														
+day	5784	13	24	כ״ד אדר ב׳ תשפ״ד	כד אדר ב תשפד	24 Adar II, 5784	אדר ב׳	אדר ב	Adar II	רביעי	ד׳	Wednesday														
+day	5784	13	25	כ״ה אדר ב׳ תשפ״ד	כה אדר ב תשפד	25 Adar II, 5784	אדר ב׳	אדר ב	Adar II	חמישי	ה׳	Thursday														
+day	5784	13	26	כ״ו אדר ב׳ תשפ״ד	כו אדר ב תשפד	26 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ששי	ו׳	Friday														
+day	5784	13	27	כ״ז אדר ב׳ תשפ״ד	כז אדר ב תשפד	27 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שבת	ש׳	Shabbos									שמיני	Shmini	שמיני	Shmini	החדש	Hachodesh
+day	5784	13	28	כ״ח אדר ב׳ תשפ״ד	כח אדר ב תשפד	28 Adar II, 5784	אדר ב׳	אדר ב	Adar II	ראשון	א׳	Sunday														
+day	5784	13	29	כ״ט אדר ב׳ תשפ״ד	כט אדר ב תשפד	29 Adar II, 5784	אדר ב׳	אדר ב	Adar II	שני	ב׳	Monday														
+day	5784	1	1	א׳ ניסן תשפ״ד	א ניסן תשפד	1 Nissan, 5784	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday					ראש חודש ניסן	Rosh Chodesh Nissan								
+day	5784	1	2	ב׳ ניסן תשפ״ד	ב ניסן תשפד	2 Nissan, 5784	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday														
+day	5784	1	3	ג׳ ניסן תשפ״ד	ג ניסן תשפד	3 Nissan, 5784	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday														
+day	5784	1	4	ד׳ ניסן תשפ״ד	ד ניסן תשפד	4 Nissan, 5784	ניסן	ניסן	Nissan	ששי	ו׳	Friday														
+day	5784	1	5	ה׳ ניסן תשפ״ד	ה ניסן תשפד	5 Nissan, 5784	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos									תזריע	Tazria	תזריע	Tazria		
+day	5784	1	6	ו׳ ניסן תשפ״ד	ו ניסן תשפד	6 Nissan, 5784	ניסן	ניסן	Nissan	ראשון	א׳	Sunday														
+day	5784	1	7	ז׳ ניסן תשפ״ד	ז ניסן תשפד	7 Nissan, 5784	ניסן	ניסן	Nissan	שני	ב׳	Monday														
+day	5784	1	8	ח׳ ניסן תשפ״ד	ח ניסן תשפד	8 Nissan, 5784	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday														
+day	5784	1	9	ט׳ ניסן תשפ״ד	ט ניסן תשפד	9 Nissan, 5784	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday														
+day	5784	1	10	י׳ ניסן תשפ״ד	י ניסן תשפד	10 Nissan, 5784	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday														
+day	5784	1	11	י״א ניסן תשפ״ד	יא ניסן תשפד	11 Nissan, 5784	ניסן	ניסן	Nissan	ששי	ו׳	Friday														
+day	5784	1	12	י״ב ניסן תשפ״ד	יב ניסן תשפד	12 Nissan, 5784	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos									מצרע	Metzora	מצרע	Metzora	הגדול	Hagadol
+day	5784	1	13	י״ג ניסן תשפ״ד	יג ניסן תשפד	13 Nissan, 5784	ניסן	ניסן	Nissan	ראשון	א׳	Sunday														
+day	5784	1	14	י״ד ניסן תשפ״ד	יד ניסן תשפד	14 Nissan, 5784	ניסן	ניסן	Nissan	שני	ב׳	Monday	ערב פסח	Erev Pesach	ערב פסח	Erev Pesach										
+day	5784	1	15	ט״ו ניסן תשפ״ד	טו ניסן תשפד	15 Nissan, 5784	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday	פסח	Pesach	פסח	Pesach										
+day	5784	1	16	ט״ז ניסן תשפ״ד	טז ניסן תשפד	16 Nissan, 5784	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday	פסח	Pesach	חול המועד פסח	Chol Hamoed Pesach			א׳ בעומר	Omer 1						
+day	5784	1	17	י״ז ניסן תשפ״ד	יז ניסן תשפד	17 Nissan, 5784	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ב׳ בעומר	Omer 2						
+day	5784	1	18	י״ח ניסן תשפ״ד	יח ניסן תשפד	18 Nissan, 5784	ניסן	ניסן	Nissan	ששי	ו׳	Friday	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ג׳ בעומר	Omer 3						
+day	5784	1	19	י״ט ניסן תשפ״ד	יט ניסן תשפד	19 Nissan, 5784	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ד׳ בעומר	Omer 4						
+day	5784	1	20	כ׳ ניסן תשפ״ד	כ ניסן תשפד	20 Nissan, 5784	ניסן	ניסן	Nissan	ראשון	א׳	Sunday	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ה׳ בעומר	Omer 5						
+day	5784	1	21	כ״א ניסן תשפ״ד	כא ניסן תשפד	21 Nissan, 5784	ניסן	ניסן	Nissan	שני	ב׳	Monday	פסח	Pesach	פסח	Pesach			ו׳ בעומר	Omer 6						
+day	5784	1	22	כ״ב ניסן תשפ״ד	כב ניסן תשפד	22 Nissan, 5784	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday	פסח	Pesach	אסרו חג	Isru Chag			ז׳ בעומר	Omer 7						
+day	5784	1	23	כ״ג ניסן תשפ״ד	כג ניסן תשפד	23 Nissan, 5784	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday	אסרו חג	Isru Chag					ח׳ בעומר	Omer 8						
+day	5784	1	24	כ״ד ניסן תשפ״ד	כד ניסן תשפד	24 Nissan, 5784	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday							ט׳ בעומר	Omer 9						
+day	5784	1	25	כ״ה ניסן תשפ״ד	כה ניסן תשפד	25 Nissan, 5784	ניסן	ניסן	Nissan	ששי	ו׳	Friday							י׳ בעומר	Omer 10						
+day	5784	1	26	כ״ו ניסן תשפ״ד	כו ניסן תשפד	26 Nissan, 5784	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos							י״א בעומר	Omer 11	אחרי מות	Achrei Mos	אחרי מות	Achrei Mos		
+day	5784	1	27	כ״ז ניסן תשפ״ד	כז ניסן תשפד	27 Nissan, 5784	ניסן	ניסן	Nissan	ראשון	א׳	Sunday							י״ב בעומר	Omer 12						
+day	5784	1	28	כ״ח ניסן תשפ״ד	כח ניסן תשפד	28 Nissan, 5784	ניסן	ניסן	Nissan	שני	ב׳	Monday	יום השואה	Yom HaShoah	יום השואה	Yom HaShoah			י״ג בעומר	Omer 13						
+day	5784	1	29	כ״ט ניסן תשפ״ד	כט ניסן תשפד	29 Nissan, 5784	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday							י״ד בעומר	Omer 14						
+day	5784	1	30	ל׳ ניסן תשפ״ד	ל ניסן תשפד	30 Nissan, 5784	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday					ראש חודש אייר	Rosh Chodesh Iyar	ט״ו בעומר	Omer 15						
+day	5784	2	1	א׳ אייר תשפ״ד	א אייר תשפד	1 Iyar, 5784	אייר	אייר	Iyar	חמישי	ה׳	Thursday					ראש חודש אייר	Rosh Chodesh Iyar	ט״ז בעומר	Omer 16						
+day	5784	2	2	ב׳ אייר תשפ״ד	ב אייר תשפד	2 Iyar, 5784	אייר	אייר	Iyar	ששי	ו׳	Friday							י״ז בעומר	Omer 17						
+day	5784	2	3	ג׳ אייר תשפ״ד	ג אייר תשפד	3 Iyar, 5784	אייר	אייר	Iyar	שבת	ש׳	Shabbos							י״ח בעומר	Omer 18	קדושים	Kedoshim	קדושים	Kedoshim		
+day	5784	2	4	ד׳ אייר תשפ״ד	ד אייר תשפד	4 Iyar, 5784	אייר	אייר	Iyar	ראשון	א׳	Sunday							י״ט בעומר	Omer 19						
+day	5784	2	5	ה׳ אייר תשפ״ד	ה אייר תשפד	5 Iyar, 5784	אייר	אייר	Iyar	שני	ב׳	Monday	יום הזיכרון	Yom Hazikaron	יום הזיכרון	Yom Hazikaron			כ׳ בעומר	Omer 20						
+day	5784	2	6	ו׳ אייר תשפ״ד	ו אייר תשפד	6 Iyar, 5784	אייר	אייר	Iyar	שלישי	ג׳	Tuesday	יום העצמאות	Yom Ha'atzmaut	יום העצמאות	Yom Ha'atzmaut			כ״א בעומר	Omer 21						
+day	5784	2	7	ז׳ אייר תשפ״ד	ז אייר תשפד	7 Iyar, 5784	אייר	אייר	Iyar	רביעי	ד׳	Wednesday							כ״ב בעומר	Omer 22						
+day	5784	2	8	ח׳ אייר תשפ״ד	ח אייר תשפד	8 Iyar, 5784	אייר	אייר	Iyar	חמישי	ה׳	Thursday							כ״ג בעומר	Omer 23						
+day	5784	2	9	ט׳ אייר תשפ״ד	ט אייר תשפד	9 Iyar, 5784	אייר	אייר	Iyar	ששי	ו׳	Friday							כ״ד בעומר	Omer 24						
+day	5784	2	10	י׳ אייר תשפ״ד	י אייר תשפד	10 Iyar, 5784	אייר	אייר	Iyar	שבת	ש׳	Shabbos							כ״ה בעומר	Omer 25	אמור	Emor	אמור	Emor		
+day	5784	2	11	י״א אייר תשפ״ד	יא אייר תשפד	11 Iyar, 5784	אייר	אייר	Iyar	ראשון	א׳	Sunday							כ״ו בעומר	Omer 26						
+day	5784	2	12	י״ב אייר תשפ״ד	יב אייר תשפד	12 Iyar, 5784	אייר	אייר	Iyar	שני	ב׳	Monday							כ״ז בעומר	Omer 27						
+day	5784	2	13	י״ג אייר תשפ״ד	יג אייר תשפד	13 Iyar, 5784	אייר	אייר	Iyar	שלישי	ג׳	Tuesday							כ״ח בעומר	Omer 28						
+day	5784	2	14	י״ד אייר תשפ״ד	יד אייר תשפד	14 Iyar, 5784	אייר	אייר	Iyar	רביעי	ד׳	Wednesday	פסח שני	Pesach Sheni	פסח שני	Pesach Sheni			כ״ט בעומר	Omer 29						
+day	5784	2	15	ט״ו אייר תשפ״ד	טו אייר תשפד	15 Iyar, 5784	אייר	אייר	Iyar	חמישי	ה׳	Thursday							ל׳ בעומר	Omer 30						
+day	5784	2	16	ט״ז אייר תשפ״ד	טז אייר תשפד	16 Iyar, 5784	אייר	אייר	Iyar	ששי	ו׳	Friday							ל״א בעומר	Omer 31						
+day	5784	2	17	י״ז אייר תשפ״ד	יז אייר תשפד	17 Iyar, 5784	אייר	אייר	Iyar	שבת	ש׳	Shabbos							ל״ב בעומר	Omer 32	בהר	Behar	בהר	Behar		
+day	5784	2	18	י״ח אייר תשפ״ד	יח אייר תשפד	18 Iyar, 5784	אייר	אייר	Iyar	ראשון	א׳	Sunday	ל״ג בעומר	Lag B'Omer	ל״ג בעומר	Lag B'Omer			ל״ג בעומר	Lag B'Omer						
+day	5784	2	19	י״ט אייר תשפ״ד	יט אייר תשפד	19 Iyar, 5784	אייר	אייר	Iyar	שני	ב׳	Monday							ל״ד בעומר	Omer 34						
+day	5784	2	20	כ׳ אייר תשפ״ד	כ אייר תשפד	20 Iyar, 5784	אייר	אייר	Iyar	שלישי	ג׳	Tuesday							ל״ה בעומר	Omer 35						
+day	5784	2	21	כ״א אייר תשפ״ד	כא אייר תשפד	21 Iyar, 5784	אייר	אייר	Iyar	רביעי	ד׳	Wednesday							ל״ו בעומר	Omer 36						
+day	5784	2	22	כ״ב אייר תשפ״ד	כב אייר תשפד	22 Iyar, 5784	אייר	אייר	Iyar	חמישי	ה׳	Thursday							ל״ז בעומר	Omer 37						
+day	5784	2	23	כ״ג אייר תשפ״ד	כג אייר תשפד	23 Iyar, 5784	אייר	אייר	Iyar	ששי	ו׳	Friday							ל״ח בעומר	Omer 38						
+day	5784	2	24	כ״ד אייר תשפ״ד	כד אייר תשפד	24 Iyar, 5784	אייר	אייר	Iyar	שבת	ש׳	Shabbos							ל״ט בעומר	Omer 39	בחקתי	Bechukosai	בחקתי	Bechukosai		
+day	5784	2	25	כ״ה אייר תשפ״ד	כה אייר תשפד	25 Iyar, 5784	אייר	אייר	Iyar	ראשון	א׳	Sunday							מ׳ בעומר	Omer 40						
+day	5784	2	26	כ״ו אייר תשפ״ד	כו אייר תשפד	26 Iyar, 5784	אייר	אייר	Iyar	שני	ב׳	Monday							מ״א בעומר	Omer 41						
+day	5784	2	27	כ״ז אייר תשפ״ד	כז אייר תשפד	27 Iyar, 5784	אייר	אייר	Iyar	שלישי	ג׳	Tuesday							מ״ב בעומר	Omer 42						
+day	5784	2	28	כ״ח אייר תשפ״ד	כח אייר תשפד	28 Iyar, 5784	אייר	אייר	Iyar	רביעי	ד׳	Wednesday	יום ירושלים	Yom Yerushalayim	יום ירושלים	Yom Yerushalayim			מ״ג בעומר	Omer 43						
+day	5784	2	29	כ״ט אייר תשפ״ד	כט אייר תשפד	29 Iyar, 5784	אייר	אייר	Iyar	חמישי	ה׳	Thursday							מ״ד בעומר	Omer 44						
+day	5784	3	1	א׳ סיון תשפ״ד	א סיון תשפד	1 Sivan, 5784	סיון	סיון	Sivan	ששי	ו׳	Friday					ראש חודש סיון	Rosh Chodesh Sivan	מ״ה בעומר	Omer 45						
+day	5784	3	2	ב׳ סיון תשפ״ד	ב סיון תשפד	2 Sivan, 5784	סיון	סיון	Sivan	שבת	ש׳	Shabbos							מ״ו בעומר	Omer 46	במדבר	Bamidbar	במדבר	Bamidbar		
+day	5784	3	3	ג׳ סיון תשפ״ד	ג סיון תשפד	3 Sivan, 5784	סיון	סיון	Sivan	ראשון	א׳	Sunday							מ״ז בעומר	Omer 47						
+day	5784	3	4	ד׳ סיון תשפ״ד	ד סיון תשפד	4 Sivan, 5784	סיון	סיון	Sivan	שני	ב׳	Monday							מ״ח בעומר	Omer 48						
+day	5784	3	5	ה׳ סיון תשפ״ד	ה סיון תשפד	5 Sivan, 5784	סיון	סיון	Sivan	שלישי	ג׳	Tuesday	ערב שבועות	Erev Shavuos	ערב שבועות	Erev Shavuos			מ״ט בעומר	Omer 49						
+day	5784	3	6	ו׳ סיון תשפ״ד	ו סיון תשפד	6 Sivan, 5784	סיון	סיון	Sivan	רביעי	ד׳	Wednesday	שבועות	Shavuos	שבועות	Shavuos										
+day	5784	3	7	ז׳ סיון תשפ״ד	ז סיון תשפד	7 Sivan, 5784	סיון	סיון	Sivan	חמישי	ה׳	Thursday	שבועות	Shavuos	אסרו חג	Isru Chag										
+day	5784	3	8	ח׳ סיון תשפ״ד	ח סיון תשפד	8 Sivan, 5784	סיון	סיון	Sivan	ששי	ו׳	Friday	אסרו חג	Isru Chag												
+day	5784	3	9	ט׳ סיון תשפ״ד	ט סיון תשפד	9 Sivan, 5784	סיון	סיון	Sivan	שבת	ש׳	Shabbos									נשא	Nasso	נשא	Nasso		
+day	5784	3	10	י׳ סיון תשפ״ד	י סיון תשפד	10 Sivan, 5784	סיון	סיון	Sivan	ראשון	א׳	Sunday														
+day	5784	3	11	י״א סיון תשפ״ד	יא סיון תשפד	11 Sivan, 5784	סיון	סיון	Sivan	שני	ב׳	Monday														
+day	5784	3	12	י״ב סיון תשפ״ד	יב סיון תשפד	12 Sivan, 5784	סיון	סיון	Sivan	שלישי	ג׳	Tuesday														
+day	5784	3	13	י״ג סיון תשפ״ד	יג סיון תשפד	13 Sivan, 5784	סיון	סיון	Sivan	רביעי	ד׳	Wednesday														
+day	5784	3	14	י״ד סיון תשפ״ד	יד סיון תשפד	14 Sivan, 5784	סיון	סיון	Sivan	חמישי	ה׳	Thursday														
+day	5784	3	15	ט״ו סיון תשפ״ד	טו סיון תשפד	15 Sivan, 5784	סיון	סיון	Sivan	ששי	ו׳	Friday														
+day	5784	3	16	ט״ז סיון תשפ״ד	טז סיון תשפד	16 Sivan, 5784	סיון	סיון	Sivan	שבת	ש׳	Shabbos									בהעלתך	Beha'aloscha	בהעלתך	Beha'aloscha		
+day	5784	3	17	י״ז סיון תשפ״ד	יז סיון תשפד	17 Sivan, 5784	סיון	סיון	Sivan	ראשון	א׳	Sunday														
+day	5784	3	18	י״ח סיון תשפ״ד	יח סיון תשפד	18 Sivan, 5784	סיון	סיון	Sivan	שני	ב׳	Monday														
+day	5784	3	19	י״ט סיון תשפ״ד	יט סיון תשפד	19 Sivan, 5784	סיון	סיון	Sivan	שלישי	ג׳	Tuesday														
+day	5784	3	20	כ׳ סיון תשפ״ד	כ סיון תשפד	20 Sivan, 5784	סיון	סיון	Sivan	רביעי	ד׳	Wednesday														
+day	5784	3	21	כ״א סיון תשפ״ד	כא סיון תשפד	21 Sivan, 5784	סיון	סיון	Sivan	חמישי	ה׳	Thursday														
+day	5784	3	22	כ״ב סיון תשפ״ד	כב סיון תשפד	22 Sivan, 5784	סיון	סיון	Sivan	ששי	ו׳	Friday														
+day	5784	3	23	כ״ג סיון תשפ״ד	כג סיון תשפד	23 Sivan, 5784	סיון	סיון	Sivan	שבת	ש׳	Shabbos									שלח לך	Sh'lach	שלח לך	Sh'lach		
+day	5784	3	24	כ״ד סיון תשפ״ד	כד סיון תשפד	24 Sivan, 5784	סיון	סיון	Sivan	ראשון	א׳	Sunday														
+day	5784	3	25	כ״ה סיון תשפ״ד	כה סיון תשפד	25 Sivan, 5784	סיון	סיון	Sivan	שני	ב׳	Monday														
+day	5784	3	26	כ״ו סיון תשפ״ד	כו סיון תשפד	26 Sivan, 5784	סיון	סיון	Sivan	שלישי	ג׳	Tuesday														
+day	5784	3	27	כ״ז סיון תשפ״ד	כז סיון תשפד	27 Sivan, 5784	סיון	סיון	Sivan	רביעי	ד׳	Wednesday														
+day	5784	3	28	כ״ח סיון תשפ״ד	כח סיון תשפד	28 Sivan, 5784	סיון	סיון	Sivan	חמישי	ה׳	Thursday														
+day	5784	3	29	כ״ט סיון תשפ״ד	כט סיון תשפד	29 Sivan, 5784	סיון	סיון	Sivan	ששי	ו׳	Friday														
+day	5784	3	30	ל׳ סיון תשפ״ד	ל סיון תשפד	30 Sivan, 5784	סיון	סיון	Sivan	שבת	ש׳	Shabbos					ראש חודש תמוז	Rosh Chodesh Tammuz			קרח	Korach	קרח	Korach		
+day	5784	4	1	א׳ תמוז תשפ״ד	א תמוז תשפד	1 Tammuz, 5784	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday					ראש חודש תמוז	Rosh Chodesh Tammuz								
+day	5784	4	2	ב׳ תמוז תשפ״ד	ב תמוז תשפד	2 Tammuz, 5784	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5784	4	3	ג׳ תמוז תשפ״ד	ג תמוז תשפד	3 Tammuz, 5784	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday														
+day	5784	4	4	ד׳ תמוז תשפ״ד	ד תמוז תשפד	4 Tammuz, 5784	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5784	4	5	ה׳ תמוז תשפ״ד	ה תמוז תשפד	5 Tammuz, 5784	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5784	4	6	ו׳ תמוז תשפ״ד	ו תמוז תשפד	6 Tammuz, 5784	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5784	4	7	ז׳ תמוז תשפ״ד	ז תמוז תשפד	7 Tammuz, 5784	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									חוקת	Chukas	חוקת	Chukas		
+day	5784	4	8	ח׳ תמוז תשפ״ד	ח תמוז תשפד	8 Tammuz, 5784	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday														
+day	5784	4	9	ט׳ תמוז תשפ״ד	ט תמוז תשפד	9 Tammuz, 5784	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5784	4	10	י׳ תמוז תשפ״ד	י תמוז תשפד	10 Tammuz, 5784	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday														
+day	5784	4	11	י״א תמוז תשפ״ד	יא תמוז תשפד	11 Tammuz, 5784	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5784	4	12	י״ב תמוז תשפ״ד	יב תמוז תשפד	12 Tammuz, 5784	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5784	4	13	י״ג תמוז תשפ״ד	יג תמוז תשפד	13 Tammuz, 5784	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5784	4	14	י״ד תמוז תשפ״ד	יד תמוז תשפד	14 Tammuz, 5784	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									בלק	Balak	בלק	Balak		
+day	5784	4	15	ט״ו תמוז תשפ״ד	טו תמוז תשפד	15 Tammuz, 5784	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday														
+day	5784	4	16	ט״ז תמוז תשפ״ד	טז תמוז תשפד	16 Tammuz, 5784	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5784	4	17	י״ז תמוז תשפ״ד	יז תמוז תשפד	17 Tammuz, 5784	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday	שבעה עשר בתמוז	Seventeenth of Tammuz	שבעה עשר בתמוז	Seventeenth of Tammuz										
+day	5784	4	18	י״ח תמוז תשפ״ד	יח תמוז תשפד	18 Tammuz, 5784	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5784	4	19	י״ט תמוז תשפ״ד	יט תמוז תשפד	19 Tammuz, 5784	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5784	4	20	כ׳ תמוז תשפ״ד	כ תמוז תשפד	20 Tammuz, 5784	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5784	4	21	כ״א תמוז תשפ״ד	כא תמוז תשפד	21 Tammuz, 5784	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									פינחס	Pinchas	פינחס	Pinchas		
+day	5784	4	22	כ״ב תמוז תשפ״ד	כב תמוז תשפד	22 Tammuz, 5784	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday														
+day	5784	4	23	כ״ג תמוז תשפ״ד	כג תמוז תשפד	23 Tammuz, 5784	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5784	4	24	כ״ד תמוז תשפ״ד	כד תמוז תשפד	24 Tammuz, 5784	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday														
+day	5784	4	25	כ״ה תמוז תשפ״ד	כה תמוז תשפד	25 Tammuz, 5784	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5784	4	26	כ״ו תמוז תשפ״ד	כו תמוז תשפד	26 Tammuz, 5784	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5784	4	27	כ״ז תמוז תשפ״ד	כז תמוז תשפד	27 Tammuz, 5784	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5784	4	28	כ״ח תמוז תשפ״ד	כח תמוז תשפד	28 Tammuz, 5784	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									מטות מסעי	Matos Masei	מטות מסעי	Matos Masei		
+day	5784	4	29	כ״ט תמוז תשפ״ד	כט תמוז תשפד	29 Tammuz, 5784	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday														
+day	5784	5	1	א׳ אב תשפ״ד	א אב תשפד	1 Av, 5784	אב	אב	Av	שני	ב׳	Monday					ראש חודש אב	Rosh Chodesh Av								
+day	5784	5	2	ב׳ אב תשפ״ד	ב אב תשפד	2 Av, 5784	אב	אב	Av	שלישי	ג׳	Tuesday														
+day	5784	5	3	ג׳ אב תשפ״ד	ג אב תשפד	3 Av, 5784	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5784	5	4	ד׳ אב תשפ״ד	ד אב תשפד	4 Av, 5784	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5784	5	5	ה׳ אב תשפ״ד	ה אב תשפד	5 Av, 5784	אב	אב	Av	ששי	ו׳	Friday														
+day	5784	5	6	ו׳ אב תשפ״ד	ו אב תשפד	6 Av, 5784	אב	אב	Av	שבת	ש׳	Shabbos									דברים	Devarim	דברים	Devarim	חזון	Chazon
+day	5784	5	7	ז׳ אב תשפ״ד	ז אב תשפד	7 Av, 5784	אב	אב	Av	ראשון	א׳	Sunday														
+day	5784	5	8	ח׳ אב תשפ״ד	ח אב תשפד	8 Av, 5784	אב	אב	Av	שני	ב׳	Monday														
+day	5784	5	9	ט׳ אב תשפ״ד	ט אב תשפד	9 Av, 5784	אב	אב	Av	שלישי	ג׳	Tuesday	תשעה באב	Tishah B'Av	תשעה באב	Tishah B'Av										
+day	5784	5	10	י׳ אב תשפ״ד	י אב תשפד	10 Av, 5784	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5784	5	11	י״א אב תשפ״ד	יא אב תשפד	11 Av, 5784	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5784	5	12	י״ב אב תשפ״ד	יב אב תשפד	12 Av, 5784	אב	אב	Av	ששי	ו׳	Friday														
+day	5784	5	13	י״ג אב תשפ״ד	יג אב תשפד	13 Av, 5784	אב	אב	Av	שבת	ש׳	Shabbos									ואתחנן	Vaeschanan	ואתחנן	Vaeschanan	נחמו	Nachamu
+day	5784	5	14	י״ד אב תשפ״ד	יד אב תשפד	14 Av, 5784	אב	אב	Av	ראשון	א׳	Sunday														
+day	5784	5	15	ט״ו אב תשפ״ד	טו אב תשפד	15 Av, 5784	אב	אב	Av	שני	ב׳	Monday	ט״ו באב	Tu B'Av	ט״ו באב	Tu B'Av										
+day	5784	5	16	ט״ז אב תשפ״ד	טז אב תשפד	16 Av, 5784	אב	אב	Av	שלישי	ג׳	Tuesday														
+day	5784	5	17	י״ז אב תשפ״ד	יז אב תשפד	17 Av, 5784	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5784	5	18	י״ח אב תשפ״ד	יח אב תשפד	18 Av, 5784	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5784	5	19	י״ט אב תשפ״ד	יט אב תשפד	19 Av, 5784	אב	אב	Av	ששי	ו׳	Friday														
+day	5784	5	20	כ׳ אב תשפ״ד	כ אב תשפד	20 Av, 5784	אב	אב	Av	שבת	ש׳	Shabbos									עקב	Eikev	עקב	Eikev		
+day	5784	5	21	כ״א אב תשפ״ד	כא אב תשפד	21 Av, 5784	אב	אב	Av	ראשון	א׳	Sunday														
+day	5784	5	22	כ״ב אב תשפ״ד	כב אב תשפד	22 Av, 5784	אב	אב	Av	שני	ב׳	Monday														
+day	5784	5	23	כ״ג אב תשפ״ד	כג אב תשפד	23 Av, 5784	אב	אב	Av	שלישי	ג׳	Tuesday														
+day	5784	5	24	כ״ד אב תשפ״ד	כד אב תשפד	24 Av, 5784	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5784	5	25	כ״ה אב תשפ״ד	כה אב תשפד	25 Av, 5784	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5784	5	26	כ״ו אב תשפ״ד	כו אב תשפד	26 Av, 5784	אב	אב	Av	ששי	ו׳	Friday														
+day	5784	5	27	כ״ז אב תשפ״ד	כז אב תשפד	27 Av, 5784	אב	אב	Av	שבת	ש׳	Shabbos									ראה	Re'eh	ראה	Re'eh		
+day	5784	5	28	כ״ח אב תשפ״ד	כח אב תשפד	28 Av, 5784	אב	אב	Av	ראשון	א׳	Sunday														
+day	5784	5	29	כ״ט אב תשפ״ד	כט אב תשפד	29 Av, 5784	אב	אב	Av	שני	ב׳	Monday														
+day	5784	5	30	ל׳ אב תשפ״ד	ל אב תשפד	30 Av, 5784	אב	אב	Av	שלישי	ג׳	Tuesday					ראש חודש אלול	Rosh Chodesh Elul								
+day	5784	6	1	א׳ אלול תשפ״ד	א אלול תשפד	1 Elul, 5784	אלול	אלול	Elul	רביעי	ד׳	Wednesday					ראש חודש אלול	Rosh Chodesh Elul								
+day	5784	6	2	ב׳ אלול תשפ״ד	ב אלול תשפד	2 Elul, 5784	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5784	6	3	ג׳ אלול תשפ״ד	ג אלול תשפד	3 Elul, 5784	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5784	6	4	ד׳ אלול תשפ״ד	ד אלול תשפד	4 Elul, 5784	אלול	אלול	Elul	שבת	ש׳	Shabbos									שופטים	Shoftim	שופטים	Shoftim		
+day	5784	6	5	ה׳ אלול תשפ״ד	ה אלול תשפד	5 Elul, 5784	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5784	6	6	ו׳ אלול תשפ״ד	ו אלול תשפד	6 Elul, 5784	אלול	אלול	Elul	שני	ב׳	Monday														
+day	5784	6	7	ז׳ אלול תשפ״ד	ז אלול תשפד	7 Elul, 5784	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5784	6	8	ח׳ אלול תשפ״ד	ח אלול תשפד	8 Elul, 5784	אלול	אלול	Elul	רביעי	ד׳	Wednesday														
+day	5784	6	9	ט׳ אלול תשפ״ד	ט אלול תשפד	9 Elul, 5784	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5784	6	10	י׳ אלול תשפ״ד	י אלול תשפד	10 Elul, 5784	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5784	6	11	י״א אלול תשפ״ד	יא אלול תשפד	11 Elul, 5784	אלול	אלול	Elul	שבת	ש׳	Shabbos									כי תצא	Ki Seitzei	כי תצא	Ki Seitzei		
+day	5784	6	12	י״ב אלול תשפ״ד	יב אלול תשפד	12 Elul, 5784	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5784	6	13	י״ג אלול תשפ״ד	יג אלול תשפד	13 Elul, 5784	אלול	אלול	Elul	שני	ב׳	Monday														
+day	5784	6	14	י״ד אלול תשפ״ד	יד אלול תשפד	14 Elul, 5784	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5784	6	15	ט״ו אלול תשפ״ד	טו אלול תשפד	15 Elul, 5784	אלול	אלול	Elul	רביעי	ד׳	Wednesday														
+day	5784	6	16	ט״ז אלול תשפ״ד	טז אלול תשפד	16 Elul, 5784	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5784	6	17	י״ז אלול תשפ״ד	יז אלול תשפד	17 Elul, 5784	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5784	6	18	י״ח אלול תשפ״ד	יח אלול תשפד	18 Elul, 5784	אלול	אלול	Elul	שבת	ש׳	Shabbos									כי תבוא	Ki Savo	כי תבוא	Ki Savo		
+day	5784	6	19	י״ט אלול תשפ״ד	יט אלול תשפד	19 Elul, 5784	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5784	6	20	כ׳ אלול תשפ״ד	כ אלול תשפד	20 Elul, 5784	אלול	אלול	Elul	שני	ב׳	Monday														
+day	5784	6	21	כ״א אלול תשפ״ד	כא אלול תשפד	21 Elul, 5784	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5784	6	22	כ״ב אלול תשפ״ד	כב אלול תשפד	22 Elul, 5784	אלול	אלול	Elul	רביעי	ד׳	Wednesday														
+day	5784	6	23	כ״ג אלול תשפ״ד	כג אלול תשפד	23 Elul, 5784	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5784	6	24	כ״ד אלול תשפ״ד	כד אלול תשפד	24 Elul, 5784	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5784	6	25	כ״ה אלול תשפ״ד	כה אלול תשפד	25 Elul, 5784	אלול	אלול	Elul	שבת	ש׳	Shabbos									נצבים וילך	Nitzavim Vayeilech	נצבים וילך	Nitzavim Vayeilech		
+day	5784	6	26	כ״ו אלול תשפ״ד	כו אלול תשפד	26 Elul, 5784	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5784	6	27	כ״ז אלול תשפ״ד	כז אלול תשפד	27 Elul, 5784	אלול	אלול	Elul	שני	ב׳	Monday														
+day	5784	6	28	כ״ח אלול תשפ״ד	כח אלול תשפד	28 Elul, 5784	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5784	6	29	כ״ט אלול תשפ״ד	כט אלול תשפד	29 Elul, 5784	אלול	אלול	Elul	רביעי	ד׳	Wednesday	ערב ראש השנה	Erev Rosh Hashana	ערב ראש השנה	Erev Rosh Hashana										
+day	5785	7	1	א׳ תשרי תשפ״ה	א תשרי תשפה	1 Tishrei, 5785	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday	ראש השנה	Rosh Hashana	ראש השנה	Rosh Hashana										
+day	5785	7	2	ב׳ תשרי תשפ״ה	ב תשרי תשפה	2 Tishrei, 5785	תשרי	תשרי	Tishrei	ששי	ו׳	Friday	ראש השנה	Rosh Hashana	ראש השנה	Rosh Hashana										
+day	5785	7	3	ג׳ תשרי תשפ״ה	ג תשרי תשפה	3 Tishrei, 5785	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos									האזינו	Ha'Azinu	האזינו	Ha'Azinu	שובה	Shuva
+day	5785	7	4	ד׳ תשרי תשפ״ה	ד תשרי תשפה	4 Tishrei, 5785	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday	צום גדליה	Fast of Gedalyah	צום גדליה	Fast of Gedalyah										
+day	5785	7	5	ה׳ תשרי תשפ״ה	ה תשרי תשפה	5 Tishrei, 5785	תשרי	תשרי	Tishrei	שני	ב׳	Monday														
+day	5785	7	6	ו׳ תשרי תשפ״ה	ו תשרי תשפה	6 Tishrei, 5785	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday														
+day	5785	7	7	ז׳ תשרי תשפ״ה	ז תשרי תשפה	7 Tishrei, 5785	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday														
+day	5785	7	8	ח׳ תשרי תשפ״ה	ח תשרי תשפה	8 Tishrei, 5785	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday														
+day	5785	7	9	ט׳ תשרי תשפ״ה	ט תשרי תשפה	9 Tishrei, 5785	תשרי	תשרי	Tishrei	ששי	ו׳	Friday	ערב יום כיפור	Erev Yom Kippur	ערב יום כיפור	Erev Yom Kippur										
+day	5785	7	10	י׳ תשרי תשפ״ה	י תשרי תשפה	10 Tishrei, 5785	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos	יום כיפור	Yom Kippur	יום כיפור	Yom Kippur										
+day	5785	7	11	י״א תשרי תשפ״ה	יא תשרי תשפה	11 Tishrei, 5785	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday														
+day	5785	7	12	י״ב תשרי תשפ״ה	יב תשרי תשפה	12 Tishrei, 5785	תשרי	תשרי	Tishrei	שני	ב׳	Monday														
+day	5785	7	13	י״ג תשרי תשפ״ה	יג תשרי תשפה	13 Tishrei, 5785	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday														
+day	5785	7	14	י״ד תשרי תשפ״ה	יד תשרי תשפה	14 Tishrei, 5785	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday	ערב סוכות	Erev Succos	ערב סוכות	Erev Succos										
+day	5785	7	15	ט״ו תשרי תשפ״ה	טו תשרי תשפה	15 Tishrei, 5785	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday	סוכות	Succos	סוכות	Succos										
+day	5785	7	16	ט״ז תשרי תשפ״ה	טז תשרי תשפה	16 Tishrei, 5785	תשרי	תשרי	Tishrei	ששי	ו׳	Friday	סוכות	Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5785	7	17	י״ז תשרי תשפ״ה	יז תשרי תשפה	17 Tishrei, 5785	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5785	7	18	י״ח תשרי תשפ״ה	יח תשרי תשפה	18 Tishrei, 5785	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5785	7	19	י״ט תשרי תשפ״ה	יט תשרי תשפה	19 Tishrei, 5785	תשרי	תשרי	Tishrei	שני	ב׳	Monday	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5785	7	20	כ׳ תשרי תשפ״ה	כ תשרי תשפה	20 Tishrei, 5785	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday	חול המועד סוכות	Chol Hamoed Succos	חול המועד סוכות	Chol Hamoed Succos										
+day	5785	7	21	כ״א תשרי תשפ״ה	כא תשרי תשפה	21 Tishrei, 5785	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday	הושענא רבה	Hoshana Rabbah	הושענא רבה	Hoshana Rabbah										
+day	5785	7	22	כ״ב תשרי תשפ״ה	כב תשרי תשפה	22 Tishrei, 5785	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday	שמיני עצרת	Shemini Atzeres	שמיני עצרת	Shemini Atzeres										
+day	5785	7	23	כ״ג תשרי תשפ״ה	כג תשרי תשפה	23 Tishrei, 5785	תשרי	תשרי	Tishrei	ששי	ו׳	Friday	שמחת תורה	Simchas Torah	אסרו חג	Isru Chag										
+day	5785	7	24	כ״ד תשרי תשפ״ה	כד תשרי תשפה	24 Tishrei, 5785	תשרי	תשרי	Tishrei	שבת	ש׳	Shabbos	אסרו חג	Isru Chag							בראשית	Bereshis	בראשית	Bereshis		
+day	5785	7	25	כ״ה תשרי תשפ״ה	כה תשרי תשפה	25 Tishrei, 5785	תשרי	תשרי	Tishrei	ראשון	א׳	Sunday														
+day	5785	7	26	כ״ו תשרי תשפ״ה	כו תשרי תשפה	26 Tishrei, 5785	תשרי	תשרי	Tishrei	שני	ב׳	Monday														
+day	5785	7	27	כ״ז תשרי תשפ״ה	כז תשרי תשפה	27 Tishrei, 5785	תשרי	תשרי	Tishrei	שלישי	ג׳	Tuesday														
+day	5785	7	28	כ״ח תשרי תשפ״ה	כח תשרי תשפה	28 Tishrei, 5785	תשרי	תשרי	Tishrei	רביעי	ד׳	Wednesday														
+day	5785	7	29	כ״ט תשרי תשפ״ה	כט תשרי תשפה	29 Tishrei, 5785	תשרי	תשרי	Tishrei	חמישי	ה׳	Thursday														
+day	5785	7	30	ל׳ תשרי תשפ״ה	ל תשרי תשפה	30 Tishrei, 5785	תשרי	תשרי	Tishrei	ששי	ו׳	Friday					ראש חודש חשון	Rosh Chodesh Cheshvan								
+day	5785	8	1	א׳ חשון תשפ״ה	א חשון תשפה	1 Cheshvan, 5785	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos					ראש חודש חשון	Rosh Chodesh Cheshvan			נח	Noach	נח	Noach		
+day	5785	8	2	ב׳ חשון תשפ״ה	ב חשון תשפה	2 Cheshvan, 5785	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5785	8	3	ג׳ חשון תשפ״ה	ג חשון תשפה	3 Cheshvan, 5785	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5785	8	4	ד׳ חשון תשפ״ה	ד חשון תשפה	4 Cheshvan, 5785	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5785	8	5	ה׳ חשון תשפ״ה	ה חשון תשפה	5 Cheshvan, 5785	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5785	8	6	ו׳ חשון תשפ״ה	ו חשון תשפה	6 Cheshvan, 5785	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5785	8	7	ז׳ חשון תשפ״ה	ז חשון תשפה	7 Cheshvan, 5785	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5785	8	8	ח׳ חשון תשפ״ה	ח חשון תשפה	8 Cheshvan, 5785	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									לך לך	Lech Lecha	לך לך	Lech Lecha		
+day	5785	8	9	ט׳ חשון תשפ״ה	ט חשון תשפה	9 Cheshvan, 5785	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5785	8	10	י׳ חשון תשפ״ה	י חשון תשפה	10 Cheshvan, 5785	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5785	8	11	י״א חשון תשפ״ה	יא חשון תשפה	11 Cheshvan, 5785	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5785	8	12	י״ב חשון תשפ״ה	יב חשון תשפה	12 Cheshvan, 5785	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5785	8	13	י״ג חשון תשפ״ה	יג חשון תשפה	13 Cheshvan, 5785	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5785	8	14	י״ד חשון תשפ״ה	יד חשון תשפה	14 Cheshvan, 5785	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5785	8	15	ט״ו חשון תשפ״ה	טו חשון תשפה	15 Cheshvan, 5785	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									וירא	Vayera	וירא	Vayera		
+day	5785	8	16	ט״ז חשון תשפ״ה	טז חשון תשפה	16 Cheshvan, 5785	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5785	8	17	י״ז חשון תשפ״ה	יז חשון תשפה	17 Cheshvan, 5785	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5785	8	18	י״ח חשון תשפ״ה	יח חשון תשפה	18 Cheshvan, 5785	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5785	8	19	י״ט חשון תשפ״ה	יט חשון תשפה	19 Cheshvan, 5785	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5785	8	20	כ׳ חשון תשפ״ה	כ חשון תשפה	20 Cheshvan, 5785	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5785	8	21	כ״א חשון תשפ״ה	כא חשון תשפה	21 Cheshvan, 5785	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5785	8	22	כ״ב חשון תשפ״ה	כב חשון תשפה	22 Cheshvan, 5785	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									חיי שרה	Chayei Sara	חיי שרה	Chayei Sara		
+day	5785	8	23	כ״ג חשון תשפ״ה	כג חשון תשפה	23 Cheshvan, 5785	חשון	חשון	Cheshvan	ראשון	א׳	Sunday														
+day	5785	8	24	כ״ד חשון תשפ״ה	כד חשון תשפה	24 Cheshvan, 5785	חשון	חשון	Cheshvan	שני	ב׳	Monday														
+day	5785	8	25	כ״ה חשון תשפ״ה	כה חשון תשפה	25 Cheshvan, 5785	חשון	חשון	Cheshvan	שלישי	ג׳	Tuesday														
+day	5785	8	26	כ״ו חשון תשפ״ה	כו חשון תשפה	26 Cheshvan, 5785	חשון	חשון	Cheshvan	רביעי	ד׳	Wednesday														
+day	5785	8	27	כ״ז חשון תשפ״ה	כז חשון תשפה	27 Cheshvan, 5785	חשון	חשון	Cheshvan	חמישי	ה׳	Thursday														
+day	5785	8	28	כ״ח חשון תשפ״ה	כח חשון תשפה	28 Cheshvan, 5785	חשון	חשון	Cheshvan	ששי	ו׳	Friday														
+day	5785	8	29	כ״ט חשון תשפ״ה	כט חשון תשפה	29 Cheshvan, 5785	חשון	חשון	Cheshvan	שבת	ש׳	Shabbos									תולדות	Toldos	תולדות	Toldos		
+day	5785	8	30	ל׳ חשון תשפ״ה	ל חשון תשפה	30 Cheshvan, 5785	חשון	חשון	Cheshvan	ראשון	א׳	Sunday					ראש חודש כסלו	Rosh Chodesh Kislev								
+day	5785	9	1	א׳ כסלו תשפ״ה	א כסלו תשפה	1 Kislev, 5785	כסלו	כסלו	Kislev	שני	ב׳	Monday					ראש חודש כסלו	Rosh Chodesh Kislev								
+day	5785	9	2	ב׳ כסלו תשפ״ה	ב כסלו תשפה	2 Kislev, 5785	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday														
+day	5785	9	3	ג׳ כסלו תשפ״ה	ג כסלו תשפה	3 Kislev, 5785	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5785	9	4	ד׳ כסלו תשפ״ה	ד כסלו תשפה	4 Kislev, 5785	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday														
+day	5785	9	5	ה׳ כסלו תשפ״ה	ה כסלו תשפה	5 Kislev, 5785	כסלו	כסלו	Kislev	ששי	ו׳	Friday														
+day	5785	9	6	ו׳ כסלו תשפ״ה	ו כסלו תשפה	6 Kislev, 5785	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos									ויצא	Vayetzei	ויצא	Vayetzei		
+day	5785	9	7	ז׳ כסלו תשפ״ה	ז כסלו תשפה	7 Kislev, 5785	כסלו	כסלו	Kislev	ראשון	א׳	Sunday														
+day	5785	9	8	ח׳ כסלו תשפ״ה	ח כסלו תשפה	8 Kislev, 5785	כסלו	כסלו	Kislev	שני	ב׳	Monday														
+day	5785	9	9	ט׳ כסלו תשפ״ה	ט כסלו תשפה	9 Kislev, 5785	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday														
+day	5785	9	10	י׳ כסלו תשפ״ה	י כסלו תשפה	10 Kislev, 5785	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5785	9	11	י״א כסלו תשפ״ה	יא כסלו תשפה	11 Kislev, 5785	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday														
+day	5785	9	12	י״ב כסלו תשפ״ה	יב כסלו תשפה	12 Kislev, 5785	כסלו	כסלו	Kislev	ששי	ו׳	Friday														
+day	5785	9	13	י״ג כסלו תשפ״ה	יג כסלו תשפה	13 Kislev, 5785	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos									וישלח	Vayishlach	וישלח	Vayishlach		
+day	5785	9	14	י״ד כסלו תשפ״ה	יד כסלו תשפה	14 Kislev, 5785	כסלו	כסלו	Kislev	ראשון	א׳	Sunday														
+day	5785	9	15	ט״ו כסלו תשפ״ה	טו כסלו תשפה	15 Kislev, 5785	כסלו	כסלו	Kislev	שני	ב׳	Monday														
+day	5785	9	16	ט״ז כסלו תשפ״ה	טז כסלו תשפה	16 Kislev, 5785	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday														
+day	5785	9	17	י״ז כסלו תשפ״ה	יז כסלו תשפה	17 Kislev, 5785	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5785	9	18	י״ח כסלו תשפ״ה	יח כסלו תשפה	18 Kislev, 5785	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday														
+day	5785	9	19	י״ט כסלו תשפ״ה	יט כסלו תשפה	19 Kislev, 5785	כסלו	כסלו	Kislev	ששי	ו׳	Friday														
+day	5785	9	20	כ׳ כסלו תשפ״ה	כ כסלו תשפה	20 Kislev, 5785	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos									וישב	Vayeshev	וישב	Vayeshev		
+day	5785	9	21	כ״א כסלו תשפ״ה	כא כסלו תשפה	21 Kislev, 5785	כסלו	כסלו	Kislev	ראשון	א׳	Sunday														
+day	5785	9	22	כ״ב כסלו תשפ״ה	כב כסלו תשפה	22 Kislev, 5785	כסלו	כסלו	Kislev	שני	ב׳	Monday														
+day	5785	9	23	כ״ג כסלו תשפ״ה	כג כסלו תשפה	23 Kislev, 5785	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday														
+day	5785	9	24	כ״ד כסלו תשפ״ה	כד כסלו תשפה	24 Kislev, 5785	כסלו	כסלו	Kislev	רביעי	ד׳	Wednesday														
+day	5785	9	25	כ״ה כסלו תשפ״ה	כה כסלו תשפה	25 Kislev, 5785	כסלו	כסלו	Kislev	חמישי	ה׳	Thursday	א׳ חנוכה	Chanukah 1	א׳ חנוכה	Chanukah 1										
+day	5785	9	26	כ״ו כסלו תשפ״ה	כו כסלו תשפה	26 Kislev, 5785	כסלו	כסלו	Kislev	ששי	ו׳	Friday	ב׳ חנוכה	Chanukah 2	ב׳ חנוכה	Chanukah 2										
+day	5785	9	27	כ״ז כסלו תשפ״ה	כז כסלו תשפה	27 Kislev, 5785	כסלו	כסלו	Kislev	שבת	ש׳	Shabbos	ג׳ חנוכה	Chanukah 3	ג׳ חנוכה	Chanukah 3					מקץ	Miketz	מקץ	Miketz		
+day	5785	9	28	כ״ח כסלו תשפ״ה	כח כסלו תשפה	28 Kislev, 5785	כסלו	כסלו	Kislev	ראשון	א׳	Sunday	ד׳ חנוכה	Chanukah 4	ד׳ חנוכה	Chanukah 4										
+day	5785	9	29	כ״ט כסלו תשפ״ה	כט כסלו תשפה	29 Kislev, 5785	כסלו	כסלו	Kislev	שני	ב׳	Monday	ה׳ חנוכה	Chanukah 5	ה׳ חנוכה	Chanukah 5										
+day	5785	9	30	ל׳ כסלו תשפ״ה	ל כסלו תשפה	30 Kislev, 5785	כסלו	כסלו	Kislev	שלישי	ג׳	Tuesday	ו׳ חנוכה	Chanukah 6	ו׳ חנוכה	Chanukah 6	ראש חודש טבת	Rosh Chodesh Teves								
+day	5785	10	1	א׳ טבת תשפ״ה	א טבת תשפה	1 Teves, 5785	טבת	טבת	Teves	רביעי	ד׳	Wednesday	ז׳ חנוכה	Chanukah 7	ז׳ חנוכה	Chanukah 7	ראש חודש טבת	Rosh Chodesh Teves								
+day	5785	10	2	ב׳ טבת תשפ״ה	ב טבת תשפה	2 Teves, 5785	טבת	טבת	Teves	חמישי	ה׳	Thursday	ח׳ חנוכה	Chanukah 8	ח׳ חנוכה	Chanukah 8										
+day	5785	10	3	ג׳ טבת תשפ״ה	ג טבת תשפה	3 Teves, 5785	טבת	טבת	Teves	ששי	ו׳	Friday														
+day	5785	10	4	ד׳ טבת תשפ״ה	ד טבת תשפה	4 Teves, 5785	טבת	טבת	Teves	שבת	ש׳	Shabbos									ויגש	Vayigash	ויגש	Vayigash		
+day	5785	10	5	ה׳ טבת תשפ״ה	ה טבת תשפה	5 Teves, 5785	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5785	10	6	ו׳ טבת תשפ״ה	ו טבת תשפה	6 Teves, 5785	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5785	10	7	ז׳ טבת תשפ״ה	ז טבת תשפה	7 Teves, 5785	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5785	10	8	ח׳ טבת תשפ״ה	ח טבת תשפה	8 Teves, 5785	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5785	10	9	ט׳ טבת תשפ״ה	ט טבת תשפה	9 Teves, 5785	טבת	טבת	Teves	חמישי	ה׳	Thursday														
+day	5785	10	10	י׳ טבת תשפ״ה	י טבת תשפה	10 Teves, 5785	טבת	טבת	Teves	ששי	ו׳	Friday	עשרה בטבת	Tenth of Teves	עשרה בטבת	Tenth of Teves										
+day	5785	10	11	י״א טבת תשפ״ה	יא טבת תשפה	11 Teves, 5785	טבת	טבת	Teves	שבת	ש׳	Shabbos									ויחי	Vayechi	ויחי	Vayechi		
+day	5785	10	12	י״ב טבת תשפ״ה	יב טבת תשפה	12 Teves, 5785	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5785	10	13	י״ג טבת תשפ״ה	יג טבת תשפה	13 Teves, 5785	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5785	10	14	י״ד טבת תשפ״ה	יד טבת תשפה	14 Teves, 5785	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5785	10	15	ט״ו טבת תשפ״ה	טו טבת תשפה	15 Teves, 5785	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5785	10	16	ט״ז טבת תשפ״ה	טז טבת תשפה	16 Teves, 5785	טבת	טבת	Teves	חמישי	ה׳	Thursday														
+day	5785	10	17	י״ז טבת תשפ״ה	יז טבת תשפה	17 Teves, 5785	טבת	טבת	Teves	ששי	ו׳	Friday														
+day	5785	10	18	י״ח טבת תשפ״ה	יח טבת תשפה	18 Teves, 5785	טבת	טבת	Teves	שבת	ש׳	Shabbos									שמות	Shemos	שמות	Shemos		
+day	5785	10	19	י״ט טבת תשפ״ה	יט טבת תשפה	19 Teves, 5785	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5785	10	20	כ׳ טבת תשפ״ה	כ טבת תשפה	20 Teves, 5785	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5785	10	21	כ״א טבת תשפ״ה	כא טבת תשפה	21 Teves, 5785	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5785	10	22	כ״ב טבת תשפ״ה	כב טבת תשפה	22 Teves, 5785	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5785	10	23	כ״ג טבת תשפ״ה	כג טבת תשפה	23 Teves, 5785	טבת	טבת	Teves	חמישי	ה׳	Thursday														
+day	5785	10	24	כ״ד טבת תשפ״ה	כד טבת תשפה	24 Teves, 5785	טבת	טבת	Teves	ששי	ו׳	Friday														
+day	5785	10	25	כ״ה טבת תשפ״ה	כה טבת תשפה	25 Teves, 5785	טבת	טבת	Teves	שבת	ש׳	Shabbos									וארא	Vaera	וארא	Vaera		
+day	5785	10	26	כ״ו טבת תשפ״ה	כו טבת תשפה	26 Teves, 5785	טבת	טבת	Teves	ראשון	א׳	Sunday														
+day	5785	10	27	כ״ז טבת תשפ״ה	כז טבת תשפה	27 Teves, 5785	טבת	טבת	Teves	שני	ב׳	Monday														
+day	5785	10	28	כ״ח טבת תשפ״ה	כח טבת תשפה	28 Teves, 5785	טבת	טבת	Teves	שלישי	ג׳	Tuesday														
+day	5785	10	29	כ״ט טבת תשפ״ה	כט טבת תשפה	29 Teves, 5785	טבת	טבת	Teves	רביעי	ד׳	Wednesday														
+day	5785	11	1	א׳ שבט תשפ״ה	א שבט תשפה	1 Shevat, 5785	שבט	שבט	Shevat	חמישי	ה׳	Thursday					ראש חודש שבט	Rosh Chodesh Shevat								
+day	5785	11	2	ב׳ שבט תשפ״ה	ב שבט תשפה	2 Shevat, 5785	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5785	11	3	ג׳ שבט תשפ״ה	ג שבט תשפה	3 Shevat, 5785	שבט	שבט	Shevat	שבת	ש׳	Shabbos									בא	Bo	בא	Bo		
+day	5785	11	4	ד׳ שבט תשפ״ה	ד שבט תשפה	4 Shevat, 5785	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5785	11	5	ה׳ שבט תשפ״ה	ה שבט תשפה	5 Shevat, 5785	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5785	11	6	ו׳ שבט תשפ״ה	ו שבט תשפה	6 Shevat, 5785	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5785	11	7	ז׳ שבט תשפ״ה	ז שבט תשפה	7 Shevat, 5785	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5785	11	8	ח׳ שבט תשפ״ה	ח שבט תשפה	8 Shevat, 5785	שבט	שבט	Shevat	חמישי	ה׳	Thursday														
+day	5785	11	9	ט׳ שבט תשפ״ה	ט שבט תשפה	9 Shevat, 5785	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5785	11	10	י׳ שבט תשפ״ה	י שבט תשפה	10 Shevat, 5785	שבט	שבט	Shevat	שבת	ש׳	Shabbos									בשלח	Beshalach	בשלח	Beshalach	שירה	Shira
+day	5785	11	11	י״א שבט תשפ״ה	יא שבט תשפה	11 Shevat, 5785	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5785	11	12	י״ב שבט תשפ״ה	יב שבט תשפה	12 Shevat, 5785	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5785	11	13	י״ג שבט תשפ״ה	יג שבט תשפה	13 Shevat, 5785	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5785	11	14	י״ד שבט תשפ״ה	יד שבט תשפה	14 Shevat, 5785	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5785	11	15	ט״ו שבט תשפ״ה	טו שבט תשפה	15 Shevat, 5785	שבט	שבט	Shevat	חמישי	ה׳	Thursday	ט״ו בשבט	Tu B'Shvat	ט״ו בשבט	Tu B'Shvat										
+day	5785	11	16	ט״ז שבט תשפ״ה	טז שבט תשפה	16 Shevat, 5785	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5785	11	17	י״ז שבט תשפ״ה	יז שבט תשפה	17 Shevat, 5785	שבט	שבט	Shevat	שבת	ש׳	Shabbos									יתרו	Yisro	יתרו	Yisro		
+day	5785	11	18	י״ח שבט תשפ״ה	יח שבט תשפה	18 Shevat, 5785	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5785	11	19	י״ט שבט תשפ״ה	יט שבט תשפה	19 Shevat, 5785	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5785	11	20	כ׳ שבט תשפ״ה	כ שבט תשפה	20 Shevat, 5785	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5785	11	21	כ״א שבט תשפ״ה	כא שבט תשפה	21 Shevat, 5785	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5785	11	22	כ״ב שבט תשפ״ה	כב שבט תשפה	22 Shevat, 5785	שבט	שבט	Shevat	חמישי	ה׳	Thursday														
+day	5785	11	23	כ״ג שבט תשפ״ה	כג שבט תשפה	23 Shevat, 5785	שבט	שבט	Shevat	ששי	ו׳	Friday														
+day	5785	11	24	כ״ד שבט תשפ״ה	כד שבט תשפה	24 Shevat, 5785	שבט	שבט	Shevat	שבת	ש׳	Shabbos									משפטים	Mishpatim	משפטים	Mishpatim		
+day	5785	11	25	כ״ה שבט תשפ״ה	כה שבט תשפה	25 Shevat, 5785	שבט	שבט	Shevat	ראשון	א׳	Sunday														
+day	5785	11	26	כ״ו שבט תשפ״ה	כו שבט תשפה	26 Shevat, 5785	שבט	שבט	Shevat	שני	ב׳	Monday														
+day	5785	11	27	כ״ז שבט תשפ״ה	כז שבט תשפה	27 Shevat, 5785	שבט	שבט	Shevat	שלישי	ג׳	Tuesday														
+day	5785	11	28	כ״ח שבט תשפ״ה	כח שבט תשפה	28 Shevat, 5785	שבט	שבט	Shevat	רביעי	ד׳	Wednesday														
+day	5785	11	29	כ״ט שבט תשפ״ה	כט שבט תשפה	29 Shevat, 5785	שבט	שבט	Shevat	חמישי	ה׳	Thursday														
+day	5785	11	30	ל׳ שבט תשפ״ה	ל שבט תשפה	30 Shevat, 5785	שבט	שבט	Shevat	ששי	ו׳	Friday					ראש חודש אדר	Rosh Chodesh Adar								
+day	5785	12	1	א׳ אדר תשפ״ה	א אדר תשפה	1 Adar, 5785	אדר	אדר	Adar	שבת	ש׳	Shabbos					ראש חודש אדר	Rosh Chodesh Adar			תרומה	Terumah	תרומה	Terumah	שקלים	Shekalim
+day	5785	12	2	ב׳ אדר תשפ״ה	ב אדר תשפה	2 Adar, 5785	אדר	אדר	Adar	ראשון	א׳	Sunday														
+day	5785	12	3	ג׳ אדר תשפ״ה	ג אדר תשפה	3 Adar, 5785	אדר	אדר	Adar	שני	ב׳	Monday														
+day	5785	12	4	ד׳ אדר תשפ״ה	ד אדר תשפה	4 Adar, 5785	אדר	אדר	Adar	שלישי	ג׳	Tuesday														
+day	5785	12	5	ה׳ אדר תשפ״ה	ה אדר תשפה	5 Adar, 5785	אדר	אדר	Adar	רביעי	ד׳	Wednesday														
+day	5785	12	6	ו׳ אדר תשפ״ה	ו אדר תשפה	6 Adar, 5785	אדר	אדר	Adar	חמישי	ה׳	Thursday														
+day	5785	12	7	ז׳ אדר תשפ״ה	ז אדר תשפה	7 Adar, 5785	אדר	אדר	Adar	ששי	ו׳	Friday														
+day	5785	12	8	ח׳ אדר תשפ״ה	ח אדר תשפה	8 Adar, 5785	אדר	אדר	Adar	שבת	ש׳	Shabbos									תצוה	Tetzaveh	תצוה	Tetzaveh	זכור	Zachor
+day	5785	12	9	ט׳ אדר תשפ״ה	ט אדר תשפה	9 Adar, 5785	אדר	אדר	Adar	ראשון	א׳	Sunday														
+day	5785	12	10	י׳ אדר תשפ״ה	י אדר תשפה	10 Adar, 5785	אדר	אדר	Adar	שני	ב׳	Monday														
+day	5785	12	11	י״א אדר תשפ״ה	יא אדר תשפה	11 Adar, 5785	אדר	אדר	Adar	שלישי	ג׳	Tuesday														
+day	5785	12	12	י״ב אדר תשפ״ה	יב אדר תשפה	12 Adar, 5785	אדר	אדר	Adar	רביעי	ד׳	Wednesday														
+day	5785	12	13	י״ג אדר תשפ״ה	יג אדר תשפה	13 Adar, 5785	אדר	אדר	Adar	חמישי	ה׳	Thursday	תענית אסתר	Fast of Esther	תענית אסתר	Fast of Esther										
+day	5785	12	14	י״ד אדר תשפ״ה	יד אדר תשפה	14 Adar, 5785	אדר	אדר	Adar	ששי	ו׳	Friday	פורים	Purim	פורים	Purim										
+day	5785	12	15	ט״ו אדר תשפ״ה	טו אדר תשפה	15 Adar, 5785	אדר	אדר	Adar	שבת	ש׳	Shabbos	פורים שושן	Shushan Purim	פורים שושן	Shushan Purim					כי תשא	Ki Sisa	כי תשא	Ki Sisa		
+day	5785	12	16	ט״ז אדר תשפ״ה	טז אדר תשפה	16 Adar, 5785	אדר	אדר	Adar	ראשון	א׳	Sunday														
+day	5785	12	17	י״ז אדר תשפ״ה	יז אדר תשפה	17 Adar, 5785	אדר	אדר	Adar	שני	ב׳	Monday														
+day	5785	12	18	י״ח אדר תשפ״ה	יח אדר תשפה	18 Adar, 5785	אדר	אדר	Adar	שלישי	ג׳	Tuesday														
+day	5785	12	19	י״ט אדר תשפ״ה	יט אדר תשפה	19 Adar, 5785	אדר	אדר	Adar	רביעי	ד׳	Wednesday														
+day	5785	12	20	כ׳ אדר תשפ״ה	כ אדר תשפה	20 Adar, 5785	אדר	אדר	Adar	חמישי	ה׳	Thursday														
+day	5785	12	21	כ״א אדר תשפ״ה	כא אדר תשפה	21 Adar, 5785	אדר	אדר	Adar	ששי	ו׳	Friday														
+day	5785	12	22	כ״ב אדר תשפ״ה	כב אדר תשפה	22 Adar, 5785	אדר	אדר	Adar	שבת	ש׳	Shabbos									ויקהל	Vayakhel	ויקהל	Vayakhel	פרה	Parah
+day	5785	12	23	כ״ג אדר תשפ״ה	כג אדר תשפה	23 Adar, 5785	אדר	אדר	Adar	ראשון	א׳	Sunday														
+day	5785	12	24	כ״ד אדר תשפ״ה	כד אדר תשפה	24 Adar, 5785	אדר	אדר	Adar	שני	ב׳	Monday														
+day	5785	12	25	כ״ה אדר תשפ״ה	כה אדר תשפה	25 Adar, 5785	אדר	אדר	Adar	שלישי	ג׳	Tuesday														
+day	5785	12	26	כ״ו אדר תשפ״ה	כו אדר תשפה	26 Adar, 5785	אדר	אדר	Adar	רביעי	ד׳	Wednesday														
+day	5785	12	27	כ״ז אדר תשפ״ה	כז אדר תשפה	27 Adar, 5785	אדר	אדר	Adar	חמישי	ה׳	Thursday														
+day	5785	12	28	כ״ח אדר תשפ״ה	כח אדר תשפה	28 Adar, 5785	אדר	אדר	Adar	ששי	ו׳	Friday														
+day	5785	12	29	כ״ט אדר תשפ״ה	כט אדר תשפה	29 Adar, 5785	אדר	אדר	Adar	שבת	ש׳	Shabbos									פקודי	Pekudei	פקודי	Pekudei	החדש	Hachodesh
+day	5785	1	1	א׳ ניסן תשפ״ה	א ניסן תשפה	1 Nissan, 5785	ניסן	ניסן	Nissan	ראשון	א׳	Sunday					ראש חודש ניסן	Rosh Chodesh Nissan								
+day	5785	1	2	ב׳ ניסן תשפ״ה	ב ניסן תשפה	2 Nissan, 5785	ניסן	ניסן	Nissan	שני	ב׳	Monday														
+day	5785	1	3	ג׳ ניסן תשפ״ה	ג ניסן תשפה	3 Nissan, 5785	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday														
+day	5785	1	4	ד׳ ניסן תשפ״ה	ד ניסן תשפה	4 Nissan, 5785	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday														
+day	5785	1	5	ה׳ ניסן תשפ״ה	ה ניסן תשפה	5 Nissan, 5785	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday														
+day	5785	1	6	ו׳ ניסן תשפ״ה	ו ניסן תשפה	6 Nissan, 5785	ניסן	ניסן	Nissan	ששי	ו׳	Friday														
+day	5785	1	7	ז׳ ניסן תשפ״ה	ז ניסן תשפה	7 Nissan, 5785	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos									ויקרא	Vayikra	ויקרא	Vayikra		
+day	5785	1	8	ח׳ ניסן תשפ״ה	ח ניסן תשפה	8 Nissan, 5785	ניסן	ניסן	Nissan	ראשון	א׳	Sunday														
+day	5785	1	9	ט׳ ניסן תשפ״ה	ט ניסן תשפה	9 Nissan, 5785	ניסן	ניסן	Nissan	שני	ב׳	Monday														
+day	5785	1	10	י׳ ניסן תשפ״ה	י ניסן תשפה	10 Nissan, 5785	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday														
+day	5785	1	11	י״א ניסן תשפ״ה	יא ניסן תשפה	11 Nissan, 5785	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday														
+day	5785	1	12	י״ב ניסן תשפ״ה	יב ניסן תשפה	12 Nissan, 5785	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday														
+day	5785	1	13	י״ג ניסן תשפ״ה	יג ניסן תשפה	13 Nissan, 5785	ניסן	ניסן	Nissan	ששי	ו׳	Friday														
+day	5785	1	14	י״ד ניסן תשפ״ה	יד ניסן תשפה	14 Nissan, 5785	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos	ערב פסח	Erev Pesach	ערב פסח	Erev Pesach					צו	Tzav	צו	Tzav	הגדול	Hagadol
+day	5785	1	15	ט״ו ניסן תשפ״ה	טו ניסן תשפה	15 Nissan, 5785	ניסן	ניסן	Nissan	ראשון	א׳	Sunday	פסח	Pesach	פסח	Pesach										
+day	5785	1	16	ט״ז ניסן תשפ״ה	טז ניסן תשפה	16 Nissan, 5785	ניסן	ניסן	Nissan	שני	ב׳	Monday	פסח	Pesach	חול המועד פסח	Chol Hamoed Pesach			א׳ בעומר	Omer 1						
+day	5785	1	17	י״ז ניסן תשפ״ה	יז ניסן תשפה	17 Nissan, 5785	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ב׳ בעומר	Omer 2						
+day	5785	1	18	י״ח ניסן תשפ״ה	יח ניסן תשפה	18 Nissan, 5785	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ג׳ בעומר	Omer 3						
+day	5785	1	19	י״ט ניסן תשפ״ה	יט ניסן תשפה	19 Nissan, 5785	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ד׳ בעומר	Omer 4						
+day	5785	1	20	כ׳ ניסן תשפ״ה	כ ניסן תשפה	20 Nissan, 5785	ניסן	ניסן	Nissan	ששי	ו׳	Friday	חול המועד פסח	Chol Hamoed Pesach	חול המועד פסח	Chol Hamoed Pesach			ה׳ בעומר	Omer 5						
+day	5785	1	21	כ״א ניסן תשפ״ה	כא ניסן תשפה	21 Nissan, 5785	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos	פסח	Pesach	פסח	Pesach			ו׳ בעומר	Omer 6						
+day	5785	1	22	כ״ב ניסן תשפ״ה	כב ניסן תשפה	22 Nissan, 5785	ניסן	ניסן	Nissan	ראשון	א׳	Sunday	פסח	Pesach	אסרו חג	Isru Chag			ז׳ בעומר	Omer 7						
+day	5785	1	23	כ״ג ניסן תשפ״ה	כג ניסן תשפה	23 Nissan, 5785	ניסן	ניסן	Nissan	שני	ב׳	Monday	אסרו חג	Isru Chag					ח׳ בעומר	Omer 8						
+day	5785	1	24	כ״ד ניסן תשפ״ה	כד ניסן תשפה	24 Nissan, 5785	ניסן	ניסן	Nissan	שלישי	ג׳	Tuesday							ט׳ בעומר	Omer 9						
+day	5785	1	25	כ״ה ניסן תשפ״ה	כה ניסן תשפה	25 Nissan, 5785	ניסן	ניסן	Nissan	רביעי	ד׳	Wednesday							י׳ בעומר	Omer 10						
+day	5785	1	26	כ״ו ניסן תשפ״ה	כו ניסן תשפה	26 Nissan, 5785	ניסן	ניסן	Nissan	חמישי	ה׳	Thursday	יום השואה	Yom HaShoah	יום השואה	Yom HaShoah			י״א בעומר	Omer 11						
+day	5785	1	27	כ״ז ניסן תשפ״ה	כז ניסן תשפה	27 Nissan, 5785	ניסן	ניסן	Nissan	ששי	ו׳	Friday							י״ב בעומר	Omer 12						
+day	5785	1	28	כ״ח ניסן תשפ״ה	כח ניסן תשפה	28 Nissan, 5785	ניסן	ניסן	Nissan	שבת	ש׳	Shabbos							י״ג בעומר	Omer 13	שמיני	Shmini	שמיני	Shmini		
+day	5785	1	29	כ״ט ניסן תשפ״ה	כט ניסן תשפה	29 Nissan, 5785	ניסן	ניסן	Nissan	ראשון	א׳	Sunday							י״ד בעומר	Omer 14						
+day	5785	1	30	ל׳ ניסן תשפ״ה	ל ניסן תשפה	30 Nissan, 5785	ניסן	ניסן	Nissan	שני	ב׳	Monday					ראש חודש אייר	Rosh Chodesh Iyar	ט״ו בעומר	Omer 15						
+day	5785	2	1	א׳ אייר תשפ״ה	א אייר תשפה	1 Iyar, 5785	אייר	אייר	Iyar	שלישי	ג׳	Tuesday					ראש חודש אייר	Rosh Chodesh Iyar	ט״ז בעומר	Omer 16						
+day	5785	2	2	ב׳ אייר תשפ״ה	ב אייר תשפה	2 Iyar, 5785	אייר	אייר	Iyar	רביעי	ד׳	Wednesday	יום הזיכרון	Yom Hazikaron	יום הזיכרון	Yom Hazikaron			י״ז בעומר	Omer 17						
+day	5785	2	3	ג׳ אייר תשפ״ה	ג אייר תשפה	3 Iyar, 5785	אייר	אייר	Iyar	חמישי	ה׳	Thursday	יום העצמאות	Yom Ha'atzmaut	יום העצמאות	Yom Ha'atzmaut			י״ח בעומר	Omer 18						
+day	5785	2	4	ד׳ אייר תשפ״ה	ד אייר תשפה	4 Iyar, 5785	אייר	אייר	Iyar	ששי	ו׳	Friday							י״ט בעומר	Omer 19						
+day	5785	2	5	ה׳ אייר תשפ״ה	ה אייר תשפה	5 Iyar, 5785	אייר	אייר	Iyar	שבת	ש׳	Shabbos							כ׳ בעומר	Omer 20	תזריע מצרע	Tazria Metzora	תזריע מצרע	Tazria Metzora		
+day	5785	2	6	ו׳ אייר תשפ״ה	ו אייר תשפה	6 Iyar, 5785	אייר	אייר	Iyar	ראשון	א׳	Sunday							כ״א בעומר	Omer 21						
+day	5785	2	7	ז׳ אייר תשפ״ה	ז אייר תשפה	7 Iyar, 5785	אייר	אייר	Iyar	שני	ב׳	Monday							כ״ב בעומר	Omer 22						
+day	5785	2	8	ח׳ אייר תשפ״ה	ח אייר תשפה	8 Iyar, 5785	אייר	אייר	Iyar	שלישי	ג׳	Tuesday							כ״ג בעומר	Omer 23						
+day	5785	2	9	ט׳ אייר תשפ״ה	ט אייר תשפה	9 Iyar, 5785	אייר	אייר	Iyar	רביעי	ד׳	Wednesday							כ״ד בעומר	Omer 24						
+day	5785	2	10	י׳ אייר תשפ״ה	י אייר תשפה	10 Iyar, 5785	אייר	אייר	Iyar	חמישי	ה׳	Thursday							כ״ה בעומר	Omer 25						
+day	5785	2	11	י״א אייר תשפ״ה	יא אייר תשפה	11 Iyar, 5785	אייר	אייר	Iyar	ששי	ו׳	Friday							כ״ו בעומר	Omer 26						
+day	5785	2	12	י״ב אייר תשפ״ה	יב אייר תשפה	12 Iyar, 5785	אייר	אייר	Iyar	שבת	ש׳	Shabbos							כ״ז בעומר	Omer 27	אחרי מות קדושים	Achrei Mos Kedoshim	אחרי מות קדושים	Achrei Mos Kedoshim		
+day	5785	2	13	י״ג אייר תשפ״ה	יג אייר תשפה	13 Iyar, 5785	אייר	אייר	Iyar	ראשון	א׳	Sunday							כ״ח בעומר	Omer 28						
+day	5785	2	14	י״ד אייר תשפ״ה	יד אייר תשפה	14 Iyar, 5785	אייר	אייר	Iyar	שני	ב׳	Monday	פסח שני	Pesach Sheni	פסח שני	Pesach Sheni			כ״ט בעומר	Omer 29						
+day	5785	2	15	ט״ו אייר תשפ״ה	טו אייר תשפה	15 Iyar, 5785	אייר	אייר	Iyar	שלישי	ג׳	Tuesday							ל׳ בעומר	Omer 30						
+day	5785	2	16	ט״ז אייר תשפ״ה	טז אייר תשפה	16 Iyar, 5785	אייר	אייר	Iyar	רביעי	ד׳	Wednesday							ל״א בעומר	Omer 31						
+day	5785	2	17	י״ז אייר תשפ״ה	יז אייר תשפה	17 Iyar, 5785	אייר	אייר	Iyar	חמישי	ה׳	Thursday							ל״ב בעומר	Omer 32						
+day	5785	2	18	י״ח אייר תשפ״ה	יח אייר תשפה	18 Iyar, 5785	אייר	אייר	Iyar	ששי	ו׳	Friday	ל״ג בעומר	Lag B'Omer	ל״ג בעומר	Lag B'Omer			ל״ג בעומר	Lag B'Omer						
+day	5785	2	19	י״ט אייר תשפ״ה	יט אייר תשפה	19 Iyar, 5785	אייר	אייר	Iyar	שבת	ש׳	Shabbos							ל״ד בעומר	Omer 34	אמור	Emor	אמור	Emor		
+day	5785	2	20	כ׳ אייר תשפ״ה	כ אייר תשפה	20 Iyar, 5785	אייר	אייר	Iyar	ראשון	א׳	Sunday							ל״ה בעומר	Omer 35						
+day	5785	2	21	כ״א אייר תשפ״ה	כא אייר תשפה	21 Iyar, 5785	אייר	אייר	Iyar	שני	ב׳	Monday							ל״ו בעומר	Omer 36						
+day	5785	2	22	כ״ב אייר תשפ״ה	כב אייר תשפה	22 Iyar, 5785	אייר	אייר	Iyar	שלישי	ג׳	Tuesday							ל״ז בעומר	Omer 37						
+day	5785	2	23	כ״ג אייר תשפ״ה	כג אייר תשפה	23 Iyar, 5785	אייר	אייר	Iyar	רביעי	ד׳	Wednesday							ל״ח בעומר	Omer 38						
+day	5785	2	24	כ״ד אייר תשפ״ה	כד אייר תשפה	24 Iyar, 5785	אייר	אייר	Iyar	חמישי	ה׳	Thursday							ל״ט בעומר	Omer 39						
+day	5785	2	25	כ״ה אייר תשפ״ה	כה אייר תשפה	25 Iyar, 5785	אייר	אייר	Iyar	ששי	ו׳	Friday							מ׳ בעומר	Omer 40						
+day	5785	2	26	כ״ו אייר תשפ״ה	כו אייר תשפה	26 Iyar, 5785	אייר	אייר	Iyar	שבת	ש׳	Shabbos							מ״א בעומר	Omer 41	בהר בחקתי	Behar Bechukosai	בהר בחקתי	Behar Bechukosai		
+day	5785	2	27	כ״ז אייר תשפ״ה	כז אייר תשפה	27 Iyar, 5785	אייר	אייר	Iyar	ראשון	א׳	Sunday							מ״ב בעומר	Omer 42						
+day	5785	2	28	כ״ח אייר תשפ״ה	כח אייר תשפה	28 Iyar, 5785	אייר	אייר	Iyar	שני	ב׳	Monday	יום ירושלים	Yom Yerushalayim	יום ירושלים	Yom Yerushalayim			מ״ג בעומר	Omer 43						
+day	5785	2	29	כ״ט אייר תשפ״ה	כט אייר תשפה	29 Iyar, 5785	אייר	אייר	Iyar	שלישי	ג׳	Tuesday							מ״ד בעומר	Omer 44						
+day	5785	3	1	א׳ סיון תשפ״ה	א סיון תשפה	1 Sivan, 5785	סיון	סיון	Sivan	רביעי	ד׳	Wednesday					ראש חודש סיון	Rosh Chodesh Sivan	מ״ה בעומר	Omer 45						
+day	5785	3	2	ב׳ סיון תשפ״ה	ב סיון תשפה	2 Sivan, 5785	סיון	סיון	Sivan	חמישי	ה׳	Thursday							מ״ו בעומר	Omer 46						
+day	5785	3	3	ג׳ סיון תשפ״ה	ג סיון תשפה	3 Sivan, 5785	סיון	סיון	Sivan	ששי	ו׳	Friday							מ״ז בעומר	Omer 47						
+day	5785	3	4	ד׳ סיון תשפ״ה	ד סיון תשפה	4 Sivan, 5785	סיון	סיון	Sivan	שבת	ש׳	Shabbos							מ״ח בעומר	Omer 48	במדבר	Bamidbar	במדבר	Bamidbar		
+day	5785	3	5	ה׳ סיון תשפ״ה	ה סיון תשפה	5 Sivan, 5785	סיון	סיון	Sivan	ראשון	א׳	Sunday	ערב שבועות	Erev Shavuos	ערב שבועות	Erev Shavuos			מ״ט בעומר	Omer 49						
+day	5785	3	6	ו׳ סיון תשפ״ה	ו סיון תשפה	6 Sivan, 5785	סיון	סיון	Sivan	שני	ב׳	Monday	שבועות	Shavuos	שבועות	Shavuos										
+day	5785	3	7	ז׳ סיון תשפ״ה	ז סיון תשפה	7 Sivan, 5785	סיון	סיון	Sivan	שלישי	ג׳	Tuesday	שבועות	Shavuos	אסרו חג	Isru Chag										
+day	5785	3	8	ח׳ סיון תשפ״ה	ח סיון תשפה	8 Sivan, 5785	סיון	סיון	Sivan	רביעי	ד׳	Wednesday	אסרו חג	Isru Chag												
+day	5785	3	9	ט׳ סיון תשפ״ה	ט סיון תשפה	9 Sivan, 5785	סיון	סיון	Sivan	חמישי	ה׳	Thursday														
+day	5785	3	10	י׳ סיון תשפ״ה	י סיון תשפה	10 Sivan, 5785	סיון	סיון	Sivan	ששי	ו׳	Friday														
+day	5785	3	11	י״א סיון תשפ״ה	יא סיון תשפה	11 Sivan, 5785	סיון	סיון	Sivan	שבת	ש׳	Shabbos									נשא	Nasso	נשא	Nasso		
+day	5785	3	12	י״ב סיון תשפ״ה	יב סיון תשפה	12 Sivan, 5785	סיון	סיון	Sivan	ראשון	א׳	Sunday														
+day	5785	3	13	י״ג סיון תשפ״ה	יג סיון תשפה	13 Sivan, 5785	סיון	סיון	Sivan	שני	ב׳	Monday														
+day	5785	3	14	י״ד סיון תשפ״ה	יד סיון תשפה	14 Sivan, 5785	סיון	סיון	Sivan	שלישי	ג׳	Tuesday														
+day	5785	3	15	ט״ו סיון תשפ״ה	טו סיון תשפה	15 Sivan, 5785	סיון	סיון	Sivan	רביעי	ד׳	Wednesday														
+day	5785	3	16	ט״ז סיון תשפ״ה	טז סיון תשפה	16 Sivan, 5785	סיון	סיון	Sivan	חמישי	ה׳	Thursday														
+day	5785	3	17	י״ז סיון תשפ״ה	יז סיון תשפה	17 Sivan, 5785	סיון	סיון	Sivan	ששי	ו׳	Friday														
+day	5785	3	18	י״ח סיון תשפ״ה	יח סיון תשפה	18 Sivan, 5785	סיון	סיון	Sivan	שבת	ש׳	Shabbos									בהעלתך	Beha'aloscha	בהעלתך	Beha'aloscha		
+day	5785	3	19	י״ט סיון תשפ״ה	יט סיון תשפה	19 Sivan, 5785	סיון	סיון	Sivan	ראשון	א׳	Sunday														
+day	5785	3	20	כ׳ סיון תשפ״ה	כ סיון תשפה	20 Sivan, 5785	סיון	סיון	Sivan	שני	ב׳	Monday														
+day	5785	3	21	כ״א סיון תשפ״ה	כא סיון תשפה	21 Sivan, 5785	סיון	סיון	Sivan	שלישי	ג׳	Tuesday														
+day	5785	3	22	כ״ב סיון תשפ״ה	כב סיון תשפה	22 Sivan, 5785	סיון	סיון	Sivan	רביעי	ד׳	Wednesday														
+day	5785	3	23	כ״ג סיון תשפ״ה	כג סיון תשפה	23 Sivan, 5785	סיון	סיון	Sivan	חמישי	ה׳	Thursday														
+day	5785	3	24	כ״ד סיון תשפ״ה	כד סיון תשפה	24 Sivan, 5785	סיון	סיון	Sivan	ששי	ו׳	Friday														
+day	5785	3	25	כ״ה סיון תשפ״ה	כה סיון תשפה	25 Sivan, 5785	סיון	סיון	Sivan	שבת	ש׳	Shabbos									שלח לך	Sh'lach	שלח לך	Sh'lach		
+day	5785	3	26	כ״ו סיון תשפ״ה	כו סיון תשפה	26 Sivan, 5785	סיון	סיון	Sivan	ראשון	א׳	Sunday														
+day	5785	3	27	כ״ז סיון תשפ״ה	כז סיון תשפה	27 Sivan, 5785	סיון	סיון	Sivan	שני	ב׳	Monday														
+day	5785	3	28	כ״ח סיון תשפ״ה	כח סיון תשפה	28 Sivan, 5785	סיון	סיון	Sivan	שלישי	ג׳	Tuesday														
+day	5785	3	29	כ״ט סיון תשפ״ה	כט סיון תשפה	29 Sivan, 5785	סיון	סיון	Sivan	רביעי	ד׳	Wednesday														
+day	5785	3	30	ל׳ סיון תשפ״ה	ל סיון תשפה	30 Sivan, 5785	סיון	סיון	Sivan	חמישי	ה׳	Thursday					ראש חודש תמוז	Rosh Chodesh Tammuz								
+day	5785	4	1	א׳ תמוז תשפ״ה	א תמוז תשפה	1 Tammuz, 5785	תמוז	תמוז	Tammuz	ששי	ו׳	Friday					ראש חודש תמוז	Rosh Chodesh Tammuz								
+day	5785	4	2	ב׳ תמוז תשפ״ה	ב תמוז תשפה	2 Tammuz, 5785	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									קרח	Korach	קרח	Korach		
+day	5785	4	3	ג׳ תמוז תשפ״ה	ג תמוז תשפה	3 Tammuz, 5785	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday														
+day	5785	4	4	ד׳ תמוז תשפ״ה	ד תמוז תשפה	4 Tammuz, 5785	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5785	4	5	ה׳ תמוז תשפ״ה	ה תמוז תשפה	5 Tammuz, 5785	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday														
+day	5785	4	6	ו׳ תמוז תשפ״ה	ו תמוז תשפה	6 Tammuz, 5785	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5785	4	7	ז׳ תמוז תשפ״ה	ז תמוז תשפה	7 Tammuz, 5785	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5785	4	8	ח׳ תמוז תשפ״ה	ח תמוז תשפה	8 Tammuz, 5785	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5785	4	9	ט׳ תמוז תשפ״ה	ט תמוז תשפה	9 Tammuz, 5785	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									חוקת	Chukas	חוקת	Chukas		
+day	5785	4	10	י׳ תמוז תשפ״ה	י תמוז תשפה	10 Tammuz, 5785	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday														
+day	5785	4	11	י״א תמוז תשפ״ה	יא תמוז תשפה	11 Tammuz, 5785	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5785	4	12	י״ב תמוז תשפ״ה	יב תמוז תשפה	12 Tammuz, 5785	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday														
+day	5785	4	13	י״ג תמוז תשפ״ה	יג תמוז תשפה	13 Tammuz, 5785	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5785	4	14	י״ד תמוז תשפ״ה	יד תמוז תשפה	14 Tammuz, 5785	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5785	4	15	ט״ו תמוז תשפ״ה	טו תמוז תשפה	15 Tammuz, 5785	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5785	4	16	ט״ז תמוז תשפ״ה	טז תמוז תשפה	16 Tammuz, 5785	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									בלק	Balak	בלק	Balak		
+day	5785	4	17	י״ז תמוז תשפ״ה	יז תמוז תשפה	17 Tammuz, 5785	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday	שבעה עשר בתמוז	Seventeenth of Tammuz	שבעה עשר בתמוז	Seventeenth of Tammuz										
+day	5785	4	18	י״ח תמוז תשפ״ה	יח תמוז תשפה	18 Tammuz, 5785	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5785	4	19	י״ט תמוז תשפ״ה	יט תמוז תשפה	19 Tammuz, 5785	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday														
+day	5785	4	20	כ׳ תמוז תשפ״ה	כ תמוז תשפה	20 Tammuz, 5785	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5785	4	21	כ״א תמוז תשפ״ה	כא תמוז תשפה	21 Tammuz, 5785	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5785	4	22	כ״ב תמוז תשפ״ה	כב תמוז תשפה	22 Tammuz, 5785	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5785	4	23	כ״ג תמוז תשפ״ה	כג תמוז תשפה	23 Tammuz, 5785	תמוז	תמוז	Tammuz	שבת	ש׳	Shabbos									פינחס	Pinchas	פינחס	Pinchas		
+day	5785	4	24	כ״ד תמוז תשפ״ה	כד תמוז תשפה	24 Tammuz, 5785	תמוז	תמוז	Tammuz	ראשון	א׳	Sunday														
+day	5785	4	25	כ״ה תמוז תשפ״ה	כה תמוז תשפה	25 Tammuz, 5785	תמוז	תמוז	Tammuz	שני	ב׳	Monday														
+day	5785	4	26	כ״ו תמוז תשפ״ה	כו תמוז תשפה	26 Tammuz, 5785	תמוז	תמוז	Tammuz	שלישי	ג׳	Tuesday														
+day	5785	4	27	כ״ז תמוז תשפ״ה	כז תמוז תשפה	27 Tammuz, 5785	תמוז	תמוז	Tammuz	רביעי	ד׳	Wednesday														
+day	5785	4	28	כ״ח תמוז תשפ״ה	כח תמוז תשפה	28 Tammuz, 5785	תמוז	תמוז	Tammuz	חמישי	ה׳	Thursday														
+day	5785	4	29	כ״ט תמוז תשפ״ה	כט תמוז תשפה	29 Tammuz, 5785	תמוז	תמוז	Tammuz	ששי	ו׳	Friday														
+day	5785	5	1	א׳ אב תשפ״ה	א אב תשפה	1 Av, 5785	אב	אב	Av	שבת	ש׳	Shabbos					ראש חודש אב	Rosh Chodesh Av			מטות מסעי	Matos Masei	מטות מסעי	Matos Masei		
+day	5785	5	2	ב׳ אב תשפ״ה	ב אב תשפה	2 Av, 5785	אב	אב	Av	ראשון	א׳	Sunday														
+day	5785	5	3	ג׳ אב תשפ״ה	ג אב תשפה	3 Av, 5785	אב	אב	Av	שני	ב׳	Monday														
+day	5785	5	4	ד׳ אב תשפ״ה	ד אב תשפה	4 Av, 5785	אב	אב	Av	שלישי	ג׳	Tuesday														
+day	5785	5	5	ה׳ אב תשפ״ה	ה אב תשפה	5 Av, 5785	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5785	5	6	ו׳ אב תשפ״ה	ו אב תשפה	6 Av, 5785	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5785	5	7	ז׳ אב תשפ״ה	ז אב תשפה	7 Av, 5785	אב	אב	Av	ששי	ו׳	Friday														
+day	5785	5	8	ח׳ אב תשפ״ה	ח אב תשפה	8 Av, 5785	אב	אב	Av	שבת	ש׳	Shabbos									דברים	Devarim	דברים	Devarim	חזון	Chazon
+day	5785	5	9	ט׳ אב תשפ״ה	ט אב תשפה	9 Av, 5785	אב	אב	Av	ראשון	א׳	Sunday	תשעה באב	Tishah B'Av	תשעה באב	Tishah B'Av										
+day	5785	5	10	י׳ אב תשפ״ה	י אב תשפה	10 Av, 5785	אב	אב	Av	שני	ב׳	Monday														
+day	5785	5	11	י״א אב תשפ״ה	יא אב תשפה	11 Av, 5785	אב	אב	Av	שלישי	ג׳	Tuesday														
+day	5785	5	12	י״ב אב תשפ״ה	יב אב תשפה	12 Av, 5785	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5785	5	13	י״ג אב תשפ״ה	יג אב תשפה	13 Av, 5785	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5785	5	14	י״ד אב תשפ״ה	יד אב תשפה	14 Av, 5785	אב	אב	Av	ששי	ו׳	Friday														
+day	5785	5	15	ט״ו אב תשפ״ה	טו אב תשפה	15 Av, 5785	אב	אב	Av	שבת	ש׳	Shabbos	ט״ו באב	Tu B'Av	ט״ו באב	Tu B'Av					ואתחנן	Vaeschanan	ואתחנן	Vaeschanan	נחמו	Nachamu
+day	5785	5	16	ט״ז אב תשפ״ה	טז אב תשפה	16 Av, 5785	אב	אב	Av	ראשון	א׳	Sunday														
+day	5785	5	17	י״ז אב תשפ״ה	יז אב תשפה	17 Av, 5785	אב	אב	Av	שני	ב׳	Monday														
+day	5785	5	18	י״ח אב תשפ״ה	יח אב תשפה	18 Av, 5785	אב	אב	Av	שלישי	ג׳	Tuesday														
+day	5785	5	19	י״ט אב תשפ״ה	יט אב תשפה	19 Av, 5785	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5785	5	20	כ׳ אב תשפ״ה	כ אב תשפה	20 Av, 5785	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5785	5	21	כ״א אב תשפ״ה	כא אב תשפה	21 Av, 5785	אב	אב	Av	ששי	ו׳	Friday														
+day	5785	5	22	כ״ב אב תשפ״ה	כב אב תשפה	22 Av, 5785	אב	אב	Av	שבת	ש׳	Shabbos									עקב	Eikev	עקב	Eikev		
+day	5785	5	23	כ״ג אב תשפ״ה	כג אב תשפה	23 Av, 5785	אב	אב	Av	ראשון	א׳	Sunday														
+day	5785	5	24	כ״ד אב תשפ״ה	כד אב תשפה	24 Av, 5785	אב	אב	Av	שני	ב׳	Monday														
+day	5785	5	25	כ״ה אב תשפ״ה	כה אב תשפה	25 Av, 5785	אב	אב	Av	שלישי	ג׳	Tuesday														
+day	5785	5	26	כ״ו אב תשפ״ה	כו אב תשפה	26 Av, 5785	אב	אב	Av	רביעי	ד׳	Wednesday														
+day	5785	5	27	כ״ז אב תשפ״ה	כז אב תשפה	27 Av, 5785	אב	אב	Av	חמישי	ה׳	Thursday														
+day	5785	5	28	כ״ח אב תשפ״ה	כח אב תשפה	28 Av, 5785	אב	אב	Av	ששי	ו׳	Friday														
+day	5785	5	29	כ״ט אב תשפ״ה	כט אב תשפה	29 Av, 5785	אב	אב	Av	שבת	ש׳	Shabbos									ראה	Re'eh	ראה	Re'eh		
+day	5785	5	30	ל׳ אב תשפ״ה	ל אב תשפה	30 Av, 5785	אב	אב	Av	ראשון	א׳	Sunday					ראש חודש אלול	Rosh Chodesh Elul								
+day	5785	6	1	א׳ אלול תשפ״ה	א אלול תשפה	1 Elul, 5785	אלול	אלול	Elul	שני	ב׳	Monday					ראש חודש אלול	Rosh Chodesh Elul								
+day	5785	6	2	ב׳ אלול תשפ״ה	ב אלול תשפה	2 Elul, 5785	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5785	6	3	ג׳ אלול תשפ״ה	ג אלול תשפה	3 Elul, 5785	אלול	אלול	Elul	רביעי	ד׳	Wednesday														
+day	5785	6	4	ד׳ אלול תשפ״ה	ד אלול תשפה	4 Elul, 5785	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5785	6	5	ה׳ אלול תשפ״ה	ה אלול תשפה	5 Elul, 5785	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5785	6	6	ו׳ אלול תשפ״ה	ו אלול תשפה	6 Elul, 5785	אלול	אלול	Elul	שבת	ש׳	Shabbos									שופטים	Shoftim	שופטים	Shoftim		
+day	5785	6	7	ז׳ אלול תשפ״ה	ז אלול תשפה	7 Elul, 5785	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5785	6	8	ח׳ אלול תשפ״ה	ח אלול תשפה	8 Elul, 5785	אלול	אלול	Elul	שני	ב׳	Monday														
+day	5785	6	9	ט׳ אלול תשפ״ה	ט אלול תשפה	9 Elul, 5785	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5785	6	10	י׳ אלול תשפ״ה	י אלול תשפה	10 Elul, 5785	אלול	אלול	Elul	רביעי	ד׳	Wednesday														
+day	5785	6	11	י״א אלול תשפ״ה	יא אלול תשפה	11 Elul, 5785	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5785	6	12	י״ב אלול תשפ״ה	יב אלול תשפה	12 Elul, 5785	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5785	6	13	י״ג אלול תשפ״ה	יג אלול תשפה	13 Elul, 5785	אלול	אלול	Elul	שבת	ש׳	Shabbos									כי תצא	Ki Seitzei	כי תצא	Ki Seitzei		
+day	5785	6	14	י״ד אלול תשפ״ה	יד אלול תשפה	14 Elul, 5785	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5785	6	15	ט״ו אלול תשפ״ה	טו אלול תשפה	15 Elul, 5785	אלול	אלול	Elul	שני	ב׳	Monday														
+day	5785	6	16	ט״ז אלול תשפ״ה	טז אלול תשפה	16 Elul, 5785	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5785	6	17	י״ז אלול תשפ״ה	יז אלול תשפה	17 Elul, 5785	אלול	אלול	Elul	רביעי	ד׳	Wednesday														
+day	5785	6	18	י״ח אלול תשפ״ה	יח אלול תשפה	18 Elul, 5785	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5785	6	19	י״ט אלול תשפ״ה	יט אלול תשפה	19 Elul, 5785	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5785	6	20	כ׳ אלול תשפ״ה	כ אלול תשפה	20 Elul, 5785	אלול	אלול	Elul	שבת	ש׳	Shabbos									כי תבוא	Ki Savo	כי תבוא	Ki Savo		
+day	5785	6	21	כ״א אלול תשפ״ה	כא אלול תשפה	21 Elul, 5785	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5785	6	22	כ״ב אלול תשפ״ה	כב אלול תשפה	22 Elul, 5785	אלול	אלול	Elul	שני	ב׳	Monday														
+day	5785	6	23	כ״ג אלול תשפ״ה	כג אלול תשפה	23 Elul, 5785	אלול	אלול	Elul	שלישי	ג׳	Tuesday														
+day	5785	6	24	כ״ד אלול תשפ״ה	כד אלול תשפה	24 Elul, 5785	אלול	אלול	Elul	רביעי	ד׳	Wednesday														
+day	5785	6	25	כ״ה אלול תשפ״ה	כה אלול תשפה	25 Elul, 5785	אלול	אלול	Elul	חמישי	ה׳	Thursday														
+day	5785	6	26	כ״ו אלול תשפ״ה	כו אלול תשפה	26 Elul, 5785	אלול	אלול	Elul	ששי	ו׳	Friday														
+day	5785	6	27	כ״ז אלול תשפ״ה	כז אלול תשפה	27 Elul, 5785	אלול	אלול	Elul	שבת	ש׳	Shabbos									נצבים	Nitzavim	נצבים	Nitzavim		
+day	5785	6	28	כ״ח אלול תשפ״ה	כח אלול תשפה	28 Elul, 5785	אלול	אלול	Elul	ראשון	א׳	Sunday														
+day	5785	6	29	כ״ט אלול תשפ״ה	כט אלול תשפה	29 Elul, 5785	אלול	אלול	Elul	שני	ב׳	Monday	ערב ראש השנה	Erev Rosh Hashana	ערב ראש השנה	Erev Rosh Hashana										

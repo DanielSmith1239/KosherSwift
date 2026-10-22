@@ -22,6 +22,7 @@ let package = Package(
             name: "KosherSwift"),
         .testTarget(
             name: "KosherSwiftTests",
-            dependencies: ["KosherSwift"]),
+            dependencies: ["KosherSwift"],
+            exclude: ["KosherJava/HebrewDateFormatterGolden.txt"]),
     ]
 )

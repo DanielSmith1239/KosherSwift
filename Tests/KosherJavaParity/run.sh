@@ -19,3 +19,10 @@ run() { # tag, test class
 export TZ=America/New_York
 run 2.5.0 KosherJavaParity
 run master KosherJavaYerushalmiParity
+
+# HebrewDateFormatterTests.swift reads KosherJava 2.5.0's formatter output from HebrewDateFormatterGolden.txt
+echo "== HebrewDateFormatterGolden (KosherJava 2.5.0)"
+javac -nowarn -encoding UTF-8 -cp "$WORK/2.5.0-classes" -d "$WORK/2.5.0-classes" "$HERE/HebrewDateFormatterGolden.java"
+java -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Duser.language=en -Duser.country=US -cp "$WORK/2.5.0-classes" HebrewDateFormatterGolden > "$WORK/golden.txt"
+diff "$HERE/../KosherSwiftTests/KosherJava/HebrewDateFormatterGolden.txt" "$WORK/golden.txt"
+echo "$(wc -l < "$WORK/golden.txt") rows match HebrewDateFormatterGolden.txt"

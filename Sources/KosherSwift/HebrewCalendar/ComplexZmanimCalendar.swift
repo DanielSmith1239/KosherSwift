@@ -15,8 +15,6 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
     }
     
     // TODO
-    private static let shiftTimeByLocationName = [ "Jerusalem": -37, "Petah Tiqva": -37, "Safed": -25, "Tiberias": -25, "Haifa": -25, "Beer-Sheba": -17, "Ashdod": -17, "Ra'anana": -15 ]
-    
     public func shaahZmanis19Point8Degrees() -> Double? { getTemporalHour(dayStart: alos19Point8Degrees(), dayEnd: tzeis19Point8Degrees()) }
     public func shaahZmanis18Degrees() -> Double? { getTemporalHour(dayStart: alos18Degrees(), dayEnd: tzeis18Degrees()) }
     public func shaahZmanis26Degrees() -> Double? { getTemporalHour(dayStart: alos26Degrees(), dayEnd: tzeis26Degrees()) }
@@ -268,28 +266,11 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
         return AstronomicalCalendar.getTimeOffset(time: chatzos, offset: -diff)
     }
     
-    public func shiftTime() -> Int {
-        var shiftTime = -25
-        for loc in ComplexZmanimCalendar.shiftTimeByLocationName {
-            if location.name.lowercased().contains(loc.key.lowercased()) {
-                shiftTime = loc.value
-            }
-        }
-        
-        if (location.lng > 34.461262940608364 || location.lat < 35.2408) &&
-            (location.lng > 31.83538 || location.lng < 32.263563983577995) {
-            shiftTime = -21
-        }
-        
-        return shiftTime
-    }
-
     public func getShabbosStartTime() -> Date? {
         // days until Friday (weekday 6); 0 on Friday itself
         let delta = (DayOfWeek.friday.rawValue - dayOfWeek.rawValue + 7) % 7
-        let tempCal = copy(withDate: date(addingDays: delta))
-        let ret = tempCal.sunset
-        return ret?.withAdded(minutes: shiftTime())
+        // Candle lighting: sea-level sunset minus candleLightingOffset, as KosherJava getCandleLighting()
+        return copy(withDate: date(addingDays: delta)).getCandleLighting()
     }
     
     public func getShabbosExitTime() -> Date? {
@@ -306,9 +287,8 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
             jewishCalendar = JewishCalendar(date: jewishCalendar.gregDate.withAdded(days: 1)!)
         }
         
-        let tempCal = copy(withDate: locationDate(fromDeviceDate: jewishCalendar.gregDate))
-        let ret = tempCal.sunset
-        return ret?.withAdded(minutes: shiftTime())
+        // Candle lighting: sea-level sunset minus candleLightingOffset, as KosherJava getCandleLighting()
+        return copy(withDate: locationDate(fromDeviceDate: jewishCalendar.gregDate)).getCandleLighting()
     }
     
     public func getYomTovExitTime() -> Date? {

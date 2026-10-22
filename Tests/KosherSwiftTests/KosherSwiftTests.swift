@@ -398,6 +398,21 @@ final class KosherSwiftTests: XCTestCase {
         checkTimeEquals(cal.candleLighting(), 17, 40)
     }
     
+    func testShabbosAndYomTovStartUseCandleLightingOffset() {
+        // The start times use the offset the caller passes, like KosherJava setCandleLightingOffset
+        let jerusalemZone = TimeZone(identifier: "Asia/Jerusalem")!
+        let jerusalem = GeoLocation(lat: 31.778, lng: 35.2354, timezone: jerusalemZone, elevation: 754, name: "Jerusalem")
+        // Wednesday 10 Jan 2024; Shabbos starts Friday 12 Jan
+        let cal = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 1, day: 10, timezone: jerusalemZone), candleLightingOffset: 40)
+        let friday = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 1, day: 12, timezone: jerusalemZone))
+        XCTAssertEqual(cal.getShabbosStartTime(), friday.seaLevelSunset!.addingTimeInterval(-40 * 60))
+        
+        // Erev Pesach 5784 is Monday 22 Apr 2024
+        let pesach = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 4, day: 15, timezone: jerusalemZone), candleLightingOffset: 30)
+        let erevPesach = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 4, day: 22, timezone: jerusalemZone))
+        XCTAssertEqual(pesach.getYomTovStartTime(), erevPesach.seaLevelSunset!.addingTimeInterval(-30 * 60))
+    }
+    
     func testRoshChodeshAdar() {
         let cal = JewishCalendar(date: Date(year: 2024, month: 3, day: 10))
         let roshChodeshFormatter = HebrewDateFormatter()

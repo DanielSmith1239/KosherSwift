@@ -16,28 +16,29 @@ final class KosherSwiftTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func checkDateEquals(_ a: Date?, _ b: Date?) {
+    /// Expected times are wall-clock times in the location's zone, so compare components there rather than in the device's.
+    func checkDateEquals(_ a: Date?, _ b: Date?, in timeZone: TimeZone = TimeZone(identifier: "America/New_York")!) {
         guard let a = a, let b = b else {
             XCTAssertEqual(false, true)
             return
         }
         
-        XCTAssertEqual(a.year, b.year)
-        XCTAssertEqual(a.month, b.month)
-        XCTAssertEqual(a.day, b.day)
-        XCTAssertEqual(a.hour, b.hour)
-        XCTAssertEqual(a.minute, b.minute)
-        XCTAssertEqual(a.second, b.second)
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone
+        let components: Set<Calendar.Component> = [.year, .month, .day, .hour, .minute, .second]
+        XCTAssertEqual(calendar.dateComponents(components, from: a), calendar.dateComponents(components, from: b))
     }
     
-    func checkTimeEquals(_ a: Date?, _ hour: Int, _ minute: Int) {
+    func checkTimeEquals(_ a: Date?, _ hour: Int, _ minute: Int, in timeZone: TimeZone = TimeZone(identifier: "America/New_York")!) {
         guard let a = a else {
             XCTAssertEqual(false, true, "a is nil")
             return
         }
         
-        XCTAssertEqual(a.hour, hour, "hour")
-        XCTAssertEqual(a.minute, minute, "minute")
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone
+        XCTAssertEqual(calendar.component(.hour, from: a), hour, "hour")
+        XCTAssertEqual(calendar.component(.minute, from: a), minute, "minute")
     }
     
     func testGregorianDateReflectsHebrew() {
@@ -61,6 +62,9 @@ final class KosherSwiftTests: XCTestCase {
         comp.setValue(2023, for: .year)
         comp.setValue(12, for: .month)
         comp.setValue(24, for: .day)
+        // JewishCalendar(date:) reads the device's calendar day. 6am in New York is 24 December from UTC-11 to UTC+12,
+        // where midnight would be 23 December on any device west of New York.
+        comp.setValue(6, for: .hour)
         let jewishCalendar = JewishCalendar(date: calendar.date(from: comp)!)
         XCTAssertEqual(jewishCalendar.gregDate.year, 2023)
         XCTAssertEqual(jewishCalendar.gregDate.month, 12)
@@ -93,9 +97,9 @@ final class KosherSwiftTests: XCTestCase {
         XCTAssertEqual(jewishCalendar.moladDate?.molad.minutes, 1)
         XCTAssertEqual(jewishCalendar.moladDate?.molad.chalakim, 3)
         
-        let moladFromKosherJava = Date(timeIntervalSince1970: 1702402813.0) //had to go up or down a few intervals to make it work
-        let g = jewishCalendar.moladDate?.gregDate
-        XCTAssertEqual(g!.withAdded(hours: !Calendar.current.timeZone.isDaylightSavingTime(for: g!) ? -1 : 0)!, moladFromKosherJava)
+        // KosherJava getMoladAsDate() == 1702402813504; gregDate keeps whole seconds
+        let moladFromKosherJava = Date(timeIntervalSince1970: 1702402813.0)
+        XCTAssertEqual(jewishCalendar.moladDate?.gregDate, moladFromKosherJava)
     }
     
     
@@ -143,9 +147,10 @@ final class KosherSwiftTests: XCTestCase {
     }
     
     func testCalculatorSunrise() throws {
-        let gregorianCalendar = Calendar(identifier: .gregorian)
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = TimeZone(identifier: "America/New_York")!
         
-        let geoLocation = GeoLocation(lat: 40.08213, lng: -74.20970, timezone: TimeZone.current)
+        let geoLocation = GeoLocation(lat: 40.08213, lng: -74.20970, timezone: TimeZone(identifier: "America/New_York")!)
         let lakewoodCalculator = NOAACalculator()
         
         var januaryFirst = DateComponents()
@@ -352,9 +357,10 @@ final class KosherSwiftTests: XCTestCase {
     }
     
     func testFixedLocalChatzos() {
-        let loc = GeoLocation(lat: 37.32495943, lng: -122.01973712)
-        let cal = ComplexZmanimCalendar(location: loc, date: Date(year: 2023, month: 12, day: 28))
-        checkTimeEquals(cal.minchaKetanaGRAFixedLocalChatzosToSunset(), 17, 57)
+        let losAngeles = TimeZone(identifier: "America/Los_Angeles")!
+        let loc = GeoLocation(lat: 37.32495943, lng: -122.01973712, timezone: losAngeles)
+        let cal = ComplexZmanimCalendar(location: loc, date: Date(year: 2023, month: 12, day: 28, timezone: losAngeles))
+        checkTimeEquals(cal.minchaKetanaGRAFixedLocalChatzosToSunset(), 14, 57, in: losAngeles)
     }
     
     func testTaanisEsther() {
@@ -383,12 +389,28 @@ final class KosherSwiftTests: XCTestCase {
     }
     
     func testCandleLighting() {
-        let loc = GeoLocation(lat: 28.035950, lng: -82.389381)
-        var cal = ComplexZmanimCalendar(location: loc, date: Date(year: 2024, month: 1, day: 9).next(.friday))
+        let newYork = TimeZone(identifier: "America/New_York")!
+        let loc = GeoLocation(lat: 28.035950, lng: -82.389381, timezone: newYork)
+        var cal = ComplexZmanimCalendar(location: loc, date: Date(year: 2024, month: 1, day: 12, timezone: newYork))
         checkTimeEquals(cal.candleLighting(), 17, 35)
         
-        cal = ComplexZmanimCalendar(location: loc, date: Date(year: 2024, month: 1, day: 16).next(.friday))
+        cal = ComplexZmanimCalendar(location: loc, date: Date(year: 2024, month: 1, day: 19, timezone: newYork))
         checkTimeEquals(cal.candleLighting(), 17, 40)
+    }
+    
+    func testShabbosAndYomTovStartUseCandleLightingOffset() {
+        // The start times use the offset the caller passes, like KosherJava setCandleLightingOffset
+        let jerusalemZone = TimeZone(identifier: "Asia/Jerusalem")!
+        let jerusalem = GeoLocation(lat: 31.778, lng: 35.2354, timezone: jerusalemZone, elevation: 754, name: "Jerusalem")
+        // Wednesday 10 Jan 2024; Shabbos starts Friday 12 Jan
+        let cal = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 1, day: 10, timezone: jerusalemZone), candleLightingOffset: 40)
+        let friday = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 1, day: 12, timezone: jerusalemZone))
+        XCTAssertEqual(cal.getShabbosStartTime(), friday.seaLevelSunset!.addingTimeInterval(-40 * 60))
+        
+        // Erev Pesach 5784 is Monday 22 Apr 2024
+        let pesach = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 4, day: 15, timezone: jerusalemZone), candleLightingOffset: 30)
+        let erevPesach = ComplexZmanimCalendar(location: jerusalem, date: Date(year: 2024, month: 4, day: 22, timezone: jerusalemZone))
+        XCTAssertEqual(pesach.getYomTovStartTime(), erevPesach.seaLevelSunset!.addingTimeInterval(-30 * 60))
     }
     
     func testRoshChodeshAdar() {

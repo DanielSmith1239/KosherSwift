@@ -8,6 +8,13 @@
 import Foundation
 
 public class MoladDate: JewishDate {
+    /// Returns the molad for a given year and month. Returns a JewishDate `Object` set to the date of the molad with
+    /// the hours, minutes and chalakim set. In the current implementation, it sets the molad time based on a midnight
+    /// date rollover. This means that Rosh Chodesh Adar II, 5771 with a molad of 7 chalakim past midnight on Shabbos 29
+    /// Adar I / March 5, 2011 12:00 AM and 7 chalakim, will have the following values: hours: 0, minutes: 0, Chalakim:
+    /// 7.
+    ///
+    /// - Returns: a JewishDate `Object` set to the date of the molad with the hours, minutes and chalakim set.
     public let molad: Molad
     
     init(fromMolad molad: Double) {
@@ -40,17 +47,14 @@ public class MoladDate: JewishDate {
         let m = getChalakimSinceMoladTohu(year: jewishDate.year, month: jewishDate.month)
         
         let absM = moladToAbsDate(chalakim: m)
-        let gdate = absDateToDate(absDate: absM)
         
         let temp = moladFromChalakim(chalakim: m)
+        // Molad hours are counted from 6 PM of the previous evening; convert to clock hours and move to the next civil day if needed
         let hours = (temp.hours + 18) % 24
         let retMolad = Molad(hours: hours, minutes: temp.minutes, chalakim: temp.chalakim)
+        let civilDate = absDateToGregorian(absDate: temp.hours >= 6 ? absM + 1 : absM)
         
-        guard var dt = getMoladAsDate(retMolad, gdate) else { return nil }
-        
-        if temp.hours >= 6 {
-            dt = dt.withAdded(days: 1)!
-        }
+        guard let dt = getMoladAsDate(retMolad, year: civilDate.year, month: civilDate.month, day: civilDate.day) else { return nil }
         
         return MoladDate(date: dt, molad: retMolad)
     }
@@ -68,21 +72,44 @@ public class MoladDate: JewishDate {
     }
     
     
-    static func getMoladAsDate(_ molad: Molad, _ mdate: Date) -> Date? {
-        let moladHours = (molad.hours + 18) % 24
-        let moladMinutes = molad.minutes - 20
-        let moladSeconds = (Double(molad.chalakim) * 10 / 3 ) - 56.496
+    /// Converts a molad (already in clock hours) on a civil date to a point in time.
+    ///
+    /// The molad is in Jerusalem local mean time. As in KosherJava, the date is built in Jerusalem *standard* time
+    /// (GMT+2, never DST) and then shifted by the local mean time offset of Har Habayis (35.2354°E), 20 minutes and 56.496 seconds.
+    static func getMoladAsDate(_ molad: Molad, year: Int, month: Int, day: Int) -> Date? {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 2 * 3600)!
+        let moladSeconds = Double(molad.chalakim) * 10 / 3
+        let moladDay = DateComponents(year: year, month: month, day: day, hour: molad.hours, minute: molad.minutes, second: Int(moladSeconds), nanosecond: Int((moladSeconds - Double(Int(moladSeconds))) * 1_000_000_000))
+        guard let localMeanTime = calendar.date(from: moladDay) else { return nil }
         
-        var calendar = Calendar.init(identifier: .gregorian)
-        calendar.timeZone = Calendar.current.timeZone
-        let moladDay = DateComponents(calendar: calendar, year: mdate.year, month: mdate.month, day: mdate.day, hour: moladHours, minute: moladMinutes, second: Int(moladSeconds) - 1)
-        
-        return calendar.date(from: moladDay)
+        let localMeanTimeOffset = 35.2354 * 4 * 60 - 2 * 3600 // seconds
+        return localMeanTime.addingTimeInterval(-localMeanTimeOffset)
     }
 }
 
 public struct Molad {
+    /// Returns the molad hours. Only a JewishDate object populated with `moladDate`, KosherJava's `setJewishDate()` or
+    /// KosherJava's `setMoladHours()` will have this field populated. A regular JewishDate object will have this field
+    /// set to 0.
+    ///
+    /// - Returns: the molad hours
+    /// - SeeAlso: `moladDate`
     public let hours: Int
+
+    /// Returns the molad minutes. Only an object populated with `moladDate`, KosherJava's `setJewishDate()` or or
+    /// KosherJava's `setMoladMinutes()` will have these fields populated. A regular JewishDate object will have this
+    /// field set to 0.
+    ///
+    /// - Returns: the molad minutes
+    /// - SeeAlso: `moladDate`
     public let minutes: Int
+
+    /// Returns the molad chalakim/parts. Only an object populated with `moladDate`, KosherJava's `setJewishDate()` or
+    /// or KosherJava's `setMoladChalakim()` will have these fields populated. A regular JewishDate object will have
+    /// this field set to 0.
+    ///
+    /// - Returns: the molad chalakim/parts
+    /// - SeeAlso: `moladDate`
     public let chalakim: Int
 }

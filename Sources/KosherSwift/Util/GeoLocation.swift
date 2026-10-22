@@ -7,12 +7,26 @@
 
 import Foundation
 
+/// A class that contains location information such as latitude and longitude required for astronomical calculations.
+/// The elevation field may not be used by some calculation engines and would be ignored if set. Check the documentation
+/// for specific implementations of the `AstronomicalCalculator` to see if elevation is calculated as part of the
+/// algorithm.
 public struct GeoLocation {
+    /// - Returns: Returns the latitude.
     public let lat: Double
+
+    /// - Returns: Returns the longitude.
     public let lng: Double
+
+    /// - Returns: Returns the timeZone.
     public let timezone: TimeZone
+
+    /// - Returns: Returns the location name.
     public let name: String
     
+    /// Method to get the elevation in Meters.
+    ///
+    /// - Returns: Returns the elevation in Meters.
     public let elevation: Double?
     
     public init(lat: Double, lng: Double, timezone: TimeZone = Calendar.current.timeZone, elevation: Double? = nil, name: String = "") {
@@ -23,8 +37,14 @@ public struct GeoLocation {
         self.name = name
     }
     
+    /// The time zone's standard (non-DST) offset in milliseconds, equivalent to Java's `TimeZone.getRawOffset()`.
+    var rawOffsetMillis: Double {
+        Double(timezone.secondsFromGMT() - Int(timezone.daylightSavingTimeOffset())) * 1000
+    }
+    
+    /// The offset in milliseconds of local mean time at this longitude from standard time in the time zone.
     var localMeanTimeOffset: Double {
-        lng * 4 * GeoLocation.minuteMillis - Double(timezone.secondsFromGMT())
+        lng * 4 * GeoLocation.minuteMillis - rawOffsetMillis
     }
     
     var localMeanTimeOffsetWithMillis: Double {
@@ -188,5 +208,6 @@ extension GeoLocation {
 
 
 enum CalculationType {
+    /// Constant for a distance type calculation.
     case distance, initialBearing, finalBearing
 }

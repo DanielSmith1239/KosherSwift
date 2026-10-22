@@ -7,12 +7,22 @@
 
 import Foundation
 
+/// Implementation of sunrise and sunset methods to calculate astronomical times based on the [NOAA](https://noaa.gov)
+/// algorithm. This calculator uses the Java algorithm based on the implementation by [NOAA - National Oceanic and
+/// Atmospheric Administration](https://noaa.gov)'s [Surface Radiation Research
+/// Branch](https://www.srrb.noaa.gov/highlights/sunrise/sunrise.html). NOAA's
+/// [implementation](https://www.srrb.noaa.gov/highlights/sunrise/solareqns.PDF) is based on equations from
+/// [Astronomical Algorithms](https://www.amazon.com/Astronomical-Table-Sun-Moon-Planets/dp/1942675038/) by [Jean
+/// Meeus](https://en.wikipedia.org/wiki/Jean_Meeus). Added to the algorithm is an adjustment of the zenith to account
+/// for elevation. The algorithm can be found in the [Wikipedia Sunrise
+/// Equation](https://en.wikipedia.org/wiki/Sunrise_equation) article.
 public class NOAACalculator: AstronomicalCalculator {
     private static let julianDayJan12000 = 2451545.0
     private static let julianDaaysPerCentury = 36525.0
 	
     required public init() { }
         
+    /// - SeeAlso: `getUtcSunrise()`
     public func getUtcSunrise(date: Date, location: GeoLocation, zenith: Double, adjustForElevation: Bool) -> Double {
         let elevation = adjustForElevation ? (location.elevation ?? 0) : 0
         let adjustedZenith = NOAACalculator.adjustZenith(zenith: zenith, elevation: elevation)
@@ -25,6 +35,7 @@ public class NOAACalculator: AstronomicalCalculator {
         return normalized < 0 ? normalized + 24 : normalized 
     }
     
+    /// - SeeAlso: `getUtcSunset()`
     public func getUtcSunset(date: Date, location: GeoLocation, zenith: Double, adjustForElevation: Bool) -> Double {
         let elevation = adjustForElevation ? location.elevation ?? 0 : 0
         let adjustedZenith = NOAACalculator.adjustZenith(zenith: zenith, elevation: elevation)
@@ -198,6 +209,19 @@ public class NOAACalculator: AstronomicalCalculator {
         return timeUTC
     }
 	
+	/// Return the [Universal Coordinated Time](https://en.wikipedia.org/wiki/Universal_Coordinated_Time) (UTC) of
+	/// [solar noon](https://en.wikipedia.org/wiki/Noon#Solar_noon) for the given day at the given location on earth.
+	/// This implementation returns true solar noon as opposed to the time halfway between sunrise and sunset. Other
+	/// calculators may return a more simplified calculation of halfway between sunrise and sunset. See [The Definition
+	/// of *Chatzos*](https://kosherjava.com/2020/07/02/definition-of-chatzos/) for details on solar noon calculations.
+	///
+	/// - Parameters:
+	///   - date: The Calendar representing the date to calculate solar noon for
+	///   - geoLocation: The location information used for astronomical calculating sun times. This class uses only
+	///     requires the longitude for calculating noon since it is the same time anywhere along the
+	///     longitude line.
+	/// - Returns: the time in minutes from zero UTC
+	/// - SeeAlso: `getUTCNoon()`
 	public func getUTCNoon(date: Date, geoLocation: GeoLocation) -> Double {
 		let noon = getSolarNoonMidnightUTC(julianDay: Self.getJulianDay(dateTime: date, timeZone: geoLocation.timezone), longitude: -geoLocation.lng, solarEvent: .noon) / 60
 		return noon > 0 

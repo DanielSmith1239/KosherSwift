@@ -105,16 +105,17 @@ public class ZmanimCalendar: AstronomicalCalendar {
         }
         
         if hours >= 0 { // forward from start a day
-            return ZmanimCalendar.getTimeOffset(time: startOfHalfDay, offset: (Double(shaahZmanis) * hours) * 1000)
+            return ZmanimCalendar.getTimeOffset(time: startOfHalfDay, offset: Double(shaahZmanis) * hours)
         } else { // subtract from end of day
-            return ZmanimCalendar.getTimeOffset(time: endOfHalfDay, offset: (Double(shaahZmanis) * hours) * 1000)
+            return ZmanimCalendar.getTimeOffset(time: endOfHalfDay, offset: Double(shaahZmanis) * hours)
         }
     }
     
+    /// Length of a half-day based shaah zmanis in milliseconds, like KosherJava.
     public func getHalfDayBasedShaahZmanis(startOfHalfDay:Date?, endOfHalfDay:Date?) -> Int64 {
         if (startOfHalfDay == nil || endOfHalfDay == nil) {
             return Int64.min;
         }
-        return Int64((endOfHalfDay!.timeIntervalSince1970 - startOfHalfDay!.timeIntervalSince1970) / 6)
+        return Int64((endOfHalfDay!.timeIntervalSince1970 - startOfHalfDay!.timeIntervalSince1970) * 1000) / 6
     }
 }

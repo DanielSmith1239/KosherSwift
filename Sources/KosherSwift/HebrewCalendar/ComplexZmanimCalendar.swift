@@ -155,7 +155,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
 	public func latestBiurChametzGRA()  -> Date? { isErevPesach ? AstronomicalCalendar.getTimeOffset(time: elevationAdjustedSunrise, offset: shaahZmanisGra() != nil ? shaahZmanisGra()! * 5 : nil) : nil }
     public func latestBiurChametzMGA72Minutes()  -> Date? {
 		isErevPesach ? AstronomicalCalendar.getTimeOffset(time: alos72(), offset: shaahZmanisMga() != nil ? shaahZmanisMga()! * 5 : nil) : nil }
-    public func latestBiurChametzMGA16Point1Degrees()  -> Date? { AstronomicalCalendar.getTimeOffset(time: alos16Point1Degrees(), offset: shaahZmanis16Point1Degrees() != nil ? shaahZmanis16Point1Degrees()! * 5 : nil) }
+    public func latestBiurChametzMGA16Point1Degrees()  -> Date? { isErevPesach ? AstronomicalCalendar.getTimeOffset(time: alos16Point1Degrees(), offset: shaahZmanis16Point1Degrees() != nil ? shaahZmanis16Point1Degrees()! * 5 : nil) : nil }
     public func sunriseBaalHatanya() -> Date? { getSunriseOffsetByDegrees(offsetZenith: .z1_583) }
     public func sunsetBaalHatanya() -> Date? { getSunsetOffsetByDegrees(offsetZenith: .z1_583) }
     public func shaahZmanisBaalHatanya() -> Double? { getTemporalHour(dayStart: sunriseBaalHatanya(), dayEnd: sunsetBaalHatanya()) }
@@ -312,13 +312,11 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
         }
     }
     
+    /// Halfway between today's and tomorrow's chatzos, as in KosherJava getSolarMidnight().
     public func getSolarMidnight() -> Date? {
         let tempCal = copy(withDate: date(addingDays: 1))
-      let sunset = seaLevelSunset
-      let sunrise = tempCal.seaLevelSunrise
-        guard let temporal = getTemporalHour(dayStart: sunset, dayEnd: sunrise) else { return nil }
-      return AstronomicalCalendar.getTimeOffset(
-        time: sunset, offset: temporal * 6)
+        guard let chatzos = chatzos(), let nextChatzos = tempCal.chatzos() else { return nil }
+        return chatzos.addingTimeInterval(nextChatzos.timeIntervalSince(chatzos) / 2)
     }
     
     public func getMidnightLastNight() -> Date? {

@@ -4,8 +4,7 @@
 //
 //  KosherJava has no HebrewDateFormatter unit test. These tests compare KosherSwift's formatter with KosherJava 2.5.0's
 //  output, which Tests/KosherJavaParity/HebrewDateFormatterGolden.java writes to HebrewDateFormatterGolden.txt
-//  (run.sh checks that the file still matches KosherJava). KosherSwift returns nil where KosherJava returns "", and
-//  spells a few Hebrew names in full (plene) spelling; `kosherSwiftSpelling` maps KosherJava's spelling to it.
+//  (run.sh checks that the file still matches KosherJava). KosherSwift returns nil where KosherJava returns "".
 //
 
 import XCTest
@@ -19,12 +18,6 @@ final class HebrewDateFormatterTests: XCTestCase {
     }()
 
     /// KosherJava spelling -> KosherSwift spelling. These are intentional, not bugs.
-    private static let kosherSwiftSpelling = ["חשון": "חשוון", "סיון": "סיוון", "ששי": "שישי", "נצבים": "ניצבים"]
-
-    private static func swiftSpelling(_ s: String) -> String {
-        kosherSwiftSpelling.reduce(s) { $0.replacingOccurrences(of: $1.key, with: $1.value) }
-    }
-
     private func rows(_ kind: String) -> [[String]] {
         let rows = Self.golden.filter { $0[0] == kind }
         XCTAssertFalse(rows.isEmpty, "no \(kind) rows in HebrewDateFormatterGolden.txt")
@@ -76,7 +69,7 @@ final class HebrewDateFormatterTests: XCTestCase {
             let israel = JewishCalendar(withJewishYear: year, andMonth: month, andDay: day, isInIsrael: true)
             let label = "\(year)-\(r[2])-\(day)"
             func check(_ actual: String?, _ column: Int, _ what: String, file: StaticString = #filePath, line: UInt = #line) {
-                XCTAssertEqual(actual ?? "", Self.swiftSpelling(r[column]), "\(what) \(label)", file: file, line: line)
+                XCTAssertEqual(actual ?? "", r[column], "\(what) \(label)", file: file, line: line)
             }
             check(try hebrew.format(cal), 4, "format hebrew")
             check(try hebrewNoGersh.format(cal), 5, "format hebrew no geresh")

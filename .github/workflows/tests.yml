@@ -28,15 +28,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: swift test
 
-  macos:
-    name: swift test (macOS)
-    runs-on: macos-latest
-    env:
-      TZ: America/New_York
-    steps:
-      - uses: actions/checkout@v4
-      - run: swift test
-
   kosherjava-parity:
     name: KosherJava parity
     runs-on: ubuntu-latest

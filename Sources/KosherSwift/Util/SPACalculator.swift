@@ -9,6 +9,9 @@ import Foundation
 /// with the abridged VSOP87 series. Sunrise and sunset are solved against the topocentric (observer-based) position
 /// of the sun, and refraction uses the configured ``pressure`` and ``temperature``.
 public final class SPACalculator: HorizonAdjustingCalculator, AstronomicalCalculator {
+    /// Returns the name of the algorithm.
+    ///
+    /// - Returns: the descriptive name of the algorithm.
     public var calculatorName: String { "NREL Solar Position Algorithm" }
 
     /// Whether to convert UT to Terrestrial Time with Delta T. KosherJava default: true.
@@ -27,10 +30,40 @@ public final class SPACalculator: HorizonAdjustingCalculator, AstronomicalCalcul
 
     public required init() { super.init() }
 
+    /// A method that calculates UTC sunrise as well as any time based on an angle above or below sunrise. This abstract
+    /// method is implemented by the classes that extend this class.
+    ///
+    /// - Parameters:
+    ///   - date: Used to calculate day of year.
+    ///   - location: The location information used for astronomical calculating sun times.
+    ///   - zenith: the azimuth below the vertical zenith of 90 degrees. for sunrise typically the zenith used for the
+    ///     calculation uses geometric zenith of 90° and adjusts this slightly to account for solar refraction
+    ///     and the sun's radius. Another example would be `nauticalTwilightStart` that passes `Zenith.nautical`
+    ///     to this method.
+    ///   - adjustForElevation: Should the time be adjusted for elevation
+    /// - Returns: The UTC time of sunrise in 24 hour format. 5:45:00 AM will return 5.75.0. If an error was encountered
+    ///   in the calculation (expected behavior for some locations such as near the poles, `Double.nan` will be
+    ///   returned.
+    /// - SeeAlso: `getElevationAdjustment()`
     public func getUtcSunrise(date: Date, location: GeoLocation, zenith: Double, adjustForElevation: Bool) -> Double {
         getUTCSunRiseSet(date, location, zenith, adjustForElevation, .sunrise)
     }
 
+    /// A method that calculates UTC sunset as well as any time based on an angle above or below sunset. This abstract
+    /// method is implemented by the classes that extend this class.
+    ///
+    /// - Parameters:
+    ///   - date: Used to calculate day of year.
+    ///   - location: The location information used for astronomical calculating sun times.
+    ///   - zenith: the azimuth below the vertical zenith of 90°. For sunset typically the zenith used for the
+    ///     calculation uses geometric zenith of 90° and adjusts this slightly to account for solar refraction
+    ///     and the sun's radius. Another example would be `nauticalTwilightEnd` that passes `Zenith.nautical`
+    ///     to this method.
+    ///   - adjustForElevation: Should the time be adjusted for elevation
+    /// - Returns: The UTC time of sunset in 24 hour format. 5:45:00 AM will return 5.75.0. If an error was encountered
+    ///   in the calculation (expected behavior for some locations such as near the poles, `Double.nan` will be
+    ///   returned.
+    /// - SeeAlso: `getElevationAdjustment()`
     public func getUtcSunset(date: Date, location: GeoLocation, zenith: Double, adjustForElevation: Bool) -> Double {
         getUTCSunRiseSet(date, location, zenith, adjustForElevation, .sunset)
     }
@@ -82,12 +115,37 @@ public final class SPACalculator: HorizonAdjustingCalculator, AstronomicalCalcul
         return t1
     }
 
+    /// Return [solar noon](https://en.wikipedia.org/wiki/Noon#Solar_noon) (UTC) for the given day at the given location
+    /// on earth. The the `NOAACalculator` implementation calculates true solar noon, while the `SunTimesCalculator`
+    /// approximates it, calculating the time as halfway between sunrise and sunset.
+    ///
+    /// - Parameters:
+    ///   - date: Used to calculate day of year.
+    ///   - geoLocation: The location information used for astronomical calculating sun times.
+    /// - Returns: the time in minutes from zero UTC
     public func getUTCNoon(date: Date, geoLocation: GeoLocation) -> Double {
         let localDate = Self.localDate(date, geoLocation)
         let noon = solveNoonMidnight(Self.julianDay(year: localDate.year, month: localDate.month, day: localDate.day), -geoLocation.lng, .noon) / 60
         return Self.normalizeHours(noon)
     }
 
+    /// Return the [Universal Coordinated Time](https://en.wikipedia.org/wiki/Universal_Coordinated_Time) (UTC) of
+    /// [solar midnight](https://en.wikipedia.org/wiki/Midnight) (UTC) for the given day at the given location. The
+    /// `NOAACalculator`, the default calculator implementation calculates true solar midnight, something that can be
+    /// calculated even in the Arctic / Antarctic where there may be no sunrise or sunset, while the
+    /// `SunTimesCalculator` approximates it, calculating the time as 12 hours after halfway between sunrise and sunset,
+    /// something that can't be calculated in Polar regions where there is no sunrise or sunset for part of the year.
+    /// See [The Definition of *Chatzos*](https://kosherjava.com/2020/07/02/definition-of-chatzos/) for details on solar
+    /// noon / midnight calculations.
+    ///
+    /// - Parameters:
+    ///   - date: The `LocalDate` representing the date to calculate midnight for. The calculation will be for midnight
+    ///     at the end of the day passed in.
+    ///   - geoLocation: The location information used for astronomical calculation of solar times.
+    /// - Returns: The UTC time of solar midnight in a 24-hour `double` format. 1:45:00 AM will return 1.75. If an error
+    ///   was encountered in the calculation (expected behavior for the `SunTimesCalculator` at times of the
+    ///   year in Polar regions), `Double.nan` will be returned.
+    /// - SeeAlso: `getUTCNoon()`
     public func getUTCMidnight(date: Date, geoLocation: GeoLocation) -> Double {
         let localDate = Self.localDate(date, geoLocation)
         let midnight = solveNoonMidnight(Self.julianDay(year: localDate.year, month: localDate.month, day: localDate.day), -geoLocation.lng, .midnight) / 60

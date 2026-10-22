@@ -8,6 +8,13 @@
 import Foundation
 
 public class MoladDate: JewishDate {
+    /// Returns the molad for a given year and month. Returns a JewishDate `Object` set to the date of the molad with
+    /// the hours, minutes and chalakim set. In the current implementation, it sets the molad time based on a midnight
+    /// date rollover. This means that Rosh Chodesh Adar II, 5771 with a molad of 7 chalakim past midnight on Shabbos 29
+    /// Adar I / March 5, 2011 12:00 AM and 7 chalakim, will have the following values: hours: 0, minutes: 0, Chalakim:
+    /// 7.
+    ///
+    /// - Returns: a JewishDate `Object` set to the date of the molad with the hours, minutes and chalakim set.
     public let molad: Molad
     
     init(fromMolad molad: Double) {
@@ -82,7 +89,27 @@ public class MoladDate: JewishDate {
 }
 
 public struct Molad {
+    /// Returns the molad hours. Only a JewishDate object populated with `moladDate`, KosherJava's `setJewishDate()` or
+    /// KosherJava's `setMoladHours()` will have this field populated. A regular JewishDate object will have this field
+    /// set to 0.
+    ///
+    /// - Returns: the molad hours
+    /// - SeeAlso: `moladDate`
     public let hours: Int
+
+    /// Returns the molad minutes. Only an object populated with `moladDate`, KosherJava's `setJewishDate()` or or
+    /// KosherJava's `setMoladMinutes()` will have these fields populated. A regular JewishDate object will have this
+    /// field set to 0.
+    ///
+    /// - Returns: the molad minutes
+    /// - SeeAlso: `moladDate`
     public let minutes: Int
+
+    /// Returns the molad chalakim/parts. Only an object populated with `moladDate`, KosherJava's `setJewishDate()` or
+    /// or KosherJava's `setMoladChalakim()` will have these fields populated. A regular JewishDate object will have
+    /// this field set to 0.
+    ///
+    /// - Returns: the molad chalakim/parts
+    /// - SeeAlso: `moladDate`
     public let chalakim: Int
 }

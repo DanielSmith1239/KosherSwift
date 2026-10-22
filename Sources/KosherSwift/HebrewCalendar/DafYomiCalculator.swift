@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// This class calculates the Daf Yomi Bavli page (daf) for a given date. To calculate Daf Yomi Yerushalmi use the
+/// `YerushalmiYomiCalculator`. The library may cover Mishna Yomi etc. at some point in the future.
 public class DafYomiCalculator {
     private static let dafYomiStart = Calendar.current.date(from: DateComponents(year: 1923, month: 9, day: 11))!
 	private static let dafYomiJulianStart = NOAACalculator.getJulianDay(dateTime: dafYomiStart, timeZone: .current)
@@ -21,6 +23,23 @@ public class DafYomiCalculator {
     
     private static let blattPerMasechtaYerushalmi = [ 68, 37, 34, 44, 31, 59, 26, 33, 28, 20, 13, 92, 65, 71, 22, 22, 42, 26, 26, 33, 34, 22, 19, 85, 72, 47, 40, 47, 54, 48, 44, 37, 34, 44, 9, 57, 37, 19, 13 ]
     
+    /// Returns the [Daf Yomi](http://en.wikipedia.org/wiki/Daf_yomi) [Bavli](http://en.wikipedia.org/wiki/Talmud) `Daf`
+    /// for a given date. The first Daf Yomi cycle started on Rosh Hashana 5684 (September 11, 1923) and calculations
+    /// prior to this date will result in an IllegalArgumentException thrown. For historical calculations (supported by
+    /// this method), it is important to note that a change in length of the cycle was instituted starting in the eighth
+    /// Daf Yomi cycle beginning on June 24, 1975. The Daf Yomi Bavli cycle has a single masechta of the Talmud
+    /// Yerushalmi - Shekalim as part of the cycle. Unlike the Bavli where the number of daf per masechta was
+    /// standardized since the original [Bomberg Edition](http://en.wikipedia.org/wiki/Daniel_Bomberg) published from
+    /// 1520 - 1523, there is no uniform page length in the Yerushalmi. The early cycles had the Yerushalmi Shekalim
+    /// length of 13 days following the
+    /// [Slavuta/Zhytomyr](https://he.wikipedia.org/wiki/%D7%93%D7%A4%D7%95%D7%A1_%D7%A1%D7%9C%D7%90%D7%95%D7%95%D7%99%D7%98%D7%90)
+    /// Shas used by [Rabbi Meir Shapiro](http://en.wikipedia.org/wiki/Meir_Shapiro). With the start of the eighth Daf
+    /// Yomi cycle beginning on June 24, 1975 the length of the Yerushalmi Shekalim was changed from 13 to 22 daf to
+    /// follow the [Vilna Shas](https://en.wikipedia.org/wiki/Vilna_Edition_Shas) that is in common use today.
+    ///
+    /// - Parameter cal: The JewishCalendar date for calculation. TODO: this can be changed to use a regular
+    ///   GregorianCalendar since there is nothing specific to the JewishCalendar in this class.
+    /// - Returns: the `Daf`.
     public static func getDafYomiBavli(cal: JewishCalendar) -> Daf? {
         /*
          * The number of daf per masechta. Since the number of blatt in Shekalim changed on the 8th Daf Yomi cycle
@@ -77,6 +96,13 @@ public class DafYomiCalculator {
         return nil
     }
     
+    /// Returns the [Daf Yomi](https://en.wikipedia.org/wiki/Daf_Yomi)
+    /// [Yerusalmi](https://en.wikipedia.org/wiki/Jerusalem_Talmud) page (`Daf`) for a given date. The first Daf Yomi
+    /// cycle started on 15 Shevat (Tu Bishvat), 5740 (February, 2, 1980) and calculations prior to this date will
+    /// result in an IllegalArgumentException thrown. nil will be returned on Tisha B'Av or Yom Kippur.
+    ///
+    /// - Parameter cal: the calendar date for calculation
+    /// - Returns: the `Daf` or nil if the date is on Tisha B'Av or Yom Kippur.
     public static func getDafYomiYerushalmi(cal: JewishCalendar) -> Daf? {
         var masechta = 0
         

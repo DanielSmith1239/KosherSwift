@@ -8,10 +8,12 @@ import Foundation
 /// Port of KosherJava master's `SunTimesCalculator`: the US Naval Almanac "Almanac for Computers" sunrise/sunset
 /// algorithm. Less accurate than ``NOAACalculator``; KosherJava keeps it (deprecated) for compatibility.
 public final class SunTimesCalculator: HorizonAdjustingCalculator, AstronomicalCalculator {
+    /// - SeeAlso: `calculatorName`
     public var calculatorName: String { "US Naval Almanac Algorithm" }
 
     public required init() { super.init() }
 
+    /// - SeeAlso: `getUtcSunrise()`
     public func getUtcSunrise(date: Date, location: GeoLocation, zenith: Double, adjustForElevation: Bool) -> Double {
         let localDate = Self.localDate(date, location)
         let elevation = adjustForElevation ? (location.elevation ?? 0) : 0
@@ -19,6 +21,7 @@ public final class SunTimesCalculator: HorizonAdjustingCalculator, AstronomicalC
         return Self.getTimeUTC(localDate, location, adjustedZenith, isSunrise: true)
     }
 
+    /// - SeeAlso: `getUtcSunset()`
     public func getUtcSunset(date: Date, location: GeoLocation, zenith: Double, adjustForElevation: Bool) -> Double {
         let localDate = Self.localDate(date, location)
         let elevation = adjustForElevation ? (location.elevation ?? 0) : 0
@@ -37,6 +40,23 @@ public final class SunTimesCalculator: HorizonAdjustingCalculator, AstronomicalC
         return Self.normalizeHours(noon)
     }
 
+    /// Return the [Universal Coordinated Time](https://en.wikipedia.org/wiki/Universal_Coordinated_Time) (UTC) of
+    /// [solar midnight](https://en.wikipedia.org/wiki/Midnight) (UTC) for the given day at the given location. The
+    /// `NOAACalculator`, the default calculator implementation calculates true solar midnight, something that can be
+    /// calculated even in the Arctic / Antarctic where there may be no sunrise or sunset, while the
+    /// `SunTimesCalculator` approximates it, calculating the time as 12 hours after halfway between sunrise and sunset,
+    /// something that can't be calculated in Polar regions where there is no sunrise or sunset for part of the year.
+    /// See [The Definition of *Chatzos*](https://kosherjava.com/2020/07/02/definition-of-chatzos/) for details on solar
+    /// noon / midnight calculations.
+    ///
+    /// - Parameters:
+    ///   - date: The `LocalDate` representing the date to calculate midnight for. The calculation will be for midnight
+    ///     at the end of the day passed in.
+    ///   - geoLocation: The location information used for astronomical calculation of solar times.
+    /// - Returns: The UTC time of solar midnight in a 24-hour `double` format. 1:45:00 AM will return 1.75. If an error
+    ///   was encountered in the calculation (expected behavior for the `SunTimesCalculator` at times of the
+    ///   year in Polar regions), `Double.nan` will be returned.
+    /// - SeeAlso: `getUTCNoon()`
     public func getUTCMidnight(date: Date, geoLocation: GeoLocation) -> Double {
         (getUTCNoon(date: date, geoLocation: geoLocation) + 12).truncatingRemainder(dividingBy: 24)
     }

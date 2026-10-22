@@ -7,14 +7,58 @@
 
 import Foundation
 
+/// The JewishDate is the base calendar class, that supports maintenance of a `GregorianCalendar` instance along with
+/// the corresponding Jewish date. This class can use the standard Java Date and Calendar classes for setting and
+/// maintaining the dates, but it does not subclass these classes or use them internally in any calculations. This class
+/// also does not have a concept of a time (which the Date class does). Please note that the calendar does not currently
+/// support dates prior to 1/1/1 Gregorian. Also keep in mind that the Gregorian calendar started on October 15, 1582,
+/// so any calculations prior to that are suspect (at least from a Gregorian perspective). While 1/1/1 Gregorian and
+/// forward are technically supported, any calculations prior to [Hillel II's
+/// (Hakatan's](http://en.wikipedia.org/wiki/Hillel_II)) calendar (4119 in the Jewish Calendar / 359 CE Julian as
+/// recorded by [Rav Hai Gaon](http://en.wikipedia.org/wiki/Hai_Gaon)) would be just an approximation. This open source
+/// Java code was written by [Avrom Finkelstien](http://www.facebook.com/avromf) from his C++ code. It was refactored to
+/// fit the KosherJava Zmanim API with simplification of the code, enhancements and some bug fixing. Some of Avrom's
+/// original C++ code was translated from [C/C++
+/// code](https://web.archive.org/web/20120124134148/http://emr.cs.uiuc.edu/~reingold/calendar.C) in [Calendrical
+/// Calculations](http://www.calendarists.com) by Nachum Dershowitz and Edward M. Reingold, Software-- Practice &
+/// Experience, vol. 20, no. 9 (September, 1990), pp. 899- 928. Any method with the mark "ND+ER" indicates that the
+/// method was taken from this source with minor modifications. If you are looking for a class that implements a Jewish
+/// calendar version of the Calendar class, one is available from the [ICU (International Components for
+/// Unicode)](http://site.icu-project.org/) project, formerly part of IBM's DeveloperWorks.
+///
+/// - SeeAlso: `JewishCalendar`, `HebrewDateFormatter`, `Date`, `Calendar`
 public class JewishDate: Comparable {
+    /// Returns this object's date as a `Calendar` object.
+    ///
+    /// - Returns: The `Calendar`
     public let gregDate: Date
 
+    /// Returns the Jewish month 1-12 (or 13 years in a leap year). The month count starts with 1 for Nisan and goes to
+    /// 13 for Adar II
+    ///
+    /// - Returns: the Jewish month from 1 to 12 (or 13 years in a leap year). The month count starts with 1 for Nisan
+    ///   and goes to 13 for Adar II
     public let month: JewishMonth
+
+    /// Returns the Jewish day of month.
+    ///
+    /// - Returns: the Jewish day of the month
     public let day: Int
+
+    /// Returns the Jewish year.
+    ///
+    /// - Returns: the Jewish year
     public let year: Int
+
+    /// Returns the day of the week as a number between 1-7.
+    ///
+    /// - Returns: the day of the week as a number between 1-7.
     public let dow: DayOfWeek
 
+    /// Returns if the year is a Jewish leap year. Years 3, 6, 8, 11, 14, 17 and 19 in the 19 year cycle are leap years.
+    ///
+    /// - Returns: true if it is a leap year
+    /// - SeeAlso: `isJewishLeapYear`
     public let isJewishLeapYear: Bool
     
     init(date: Date, includeTime: Bool = false) {
@@ -265,5 +309,8 @@ extension JewishDate {
         return is29 ? 29 : 30
       }
     
+    /// Returns the number of days of a Jewish month for a given month and year.
+    ///
+    /// - Returns: the number of days for a given Jewish month
     public func getDaysInJewishMonth(month: JewishMonth) -> Int { JewishDate.getDaysInJewishMonth(month: month, year: year) }
 }

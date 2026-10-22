@@ -31,17 +31,17 @@ final class JewishCalendarHolidayTests: XCTestCase {
         XCTAssertEqual("Terumah", formatter.formatParsha(JewishCalendar(date: TestLocations.localDate(2024, 2, 17)).getParsha()))
     }
 
-    /// KosherJava's isPurim() also follows setIsMukafChoma(true), which moves Purim to the 15th. KosherSwift has no
-    /// mukaf choma setting and reports the 15th as isShushanPurim instead, so those two assertions check that.
     func testPurimAndShushanPurim() {
-        // 14 Adar in a non-leap year: Purim in unwalled cities.
-        let purim = JewishCalendar(withJewishYear: 5783, andMonth: .adar, andDay: 14)
-        XCTAssertTrue(purim.isPurim)
-        XCTAssertFalse(purim.isShushanPurim)
+        // 14 Adar in a non-leap year: Purim in unwalled cities, but Shushan Purim (15th) in walled cities.
+        let date = JewishCalendar(withJewishYear: 5783, andMonth: .adar, andDay: 14)
+        XCTAssertTrue(date.isPurim)
+        date.isMukafChoma = true
+        XCTAssertFalse(date.isPurim)
 
         // 15 Adar: Shushan Purim, observed as Purim in walled cities.
-        let shushanPurim = purim.tomorrow
-        XCTAssertTrue(shushanPurim.isShushanPurim)
+        let shushanPurim = date.tomorrow
+        XCTAssertTrue(shushanPurim.isPurim)
+        shushanPurim.isMukafChoma = false
         XCTAssertFalse(shushanPurim.isPurim)
 
         // In a leap year Purim falls in Adar II, so Adar (I) 14 is not Purim.

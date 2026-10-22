@@ -6,12 +6,9 @@
 //  checked against KosherJava's golden output. KosherSwift's ComplexZmanimCalendar is KosherJava's
 //  ComprehensiveZmanimCalendar (renamed in master), and the first column keeps KosherJava's method name.
 //
-//  KosherJava zmanim that KosherSwift doesn't have, so aren't ported: getCandleLighting (KosherSwift's candleLighting()
-//  only returns a time on days candles are lit), getChatzosHayomAsHalfDay, getMisheyakir12Point85Degrees,
-//  getTzaisGeonim4Point42Degrees, getTzaisGeonim4Point66Degrees, the Ahavat Shalom and samuch le'mincha ketana zmanim,
-//  the getShaahZmanisAlos16Point1DegreesToTzaisGeonim* hours, the MGA 72 minutes zmanis chametz times, and the polar
-//  zmanim. KosherJava's ComprehensiveZmanimCalendar returns kiddush levana times only on the day they fall, while
-//  KosherSwift has them on JewishCalendar; SpecialDayZmanimTests covers those.
+//  Not ported: the polar zmanim, which KosherSwift doesn't have, and the molad and kiddush levana zmanim. KosherJava's
+//  ComprehensiveZmanimCalendar returns those only on the day they fall, while KosherSwift has them on JewishCalendar for
+//  the whole month; SpecialDayZmanimTests covers them.
 //
 
 import XCTest
@@ -52,8 +49,10 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getBeginAstronomicalTwilight", .date { $0.astronomicalTwilightStart }, "2017-10-17T09:39:33.523030241Z"),
         ("getBeginCivilTwilight", .date { $0.civilTwilightStart }, "2017-10-17T10:42:27.439221886Z"),
         ("getBeginNauticalTwilight", .date { $0.nauticalTwilightStart }, "2017-10-17T10:10:57.242471901Z"),
+        ("getCandleLighting", .date { $0.getCandleLighting() }, "2017-10-17T21:55:59.201432122Z"),
         ("getChatzosHalayla", .date { $0.getSolarMidnight() }, "2017-10-18T04:42:06.833038724Z"),
         ("getChatzosHayom", .date { $0.chatzos() }, "2017-10-17T16:42:12.781249470Z"),
+        ("getChatzosHayomAsHalfDay", .date { $0.chatzosAsHalfDay() }, "2017-10-17T16:41:55.302308378Z"),
         ("getEndAstronomicalTwilight", .date { $0.astronomicalTwilightEnd }, "2017-10-17T23:44:09.707296295Z"),
         ("getEndCivilTwilight", .date { $0.civilTwilightEnd }, "2017-10-17T22:41:21.435143220Z"),
         ("getEndNauticalTwilight", .date { $0.nauticalTwilightEnd }, "2017-10-17T23:12:49.151356447Z"),
@@ -61,6 +60,7 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getMinchaGedola16Point1Degrees", .date { $0.minchaGedola16Point1Degrees() }, "2017-10-17T17:16:13.988705527Z"),
         ("getMinchaGedola30Minutes", .date { $0.minchaGedola30Minutes() }, "2017-10-17T17:12:12.781249470Z"),
         ("getMinchaGedola72Minutes", .date { $0.minchaGedola72Minutes() }, "2017-10-17T17:15:35.627235356Z"),
+        ("getMinchaGedolaAhavatShalom", .date { $0.minchaGedolaAhavatShalom() }, "2017-10-17T17:13:52.057872856Z"),
         ("getMinchaGedolaAteretTorah", .date { $0.minchaGedolaAteretTorah() }, "2017-10-17T17:00:49.269815683Z"),
         ("getMinchaGedolaBaalHatanya", .date { $0.minchaGedolaBaalHatanya() }, "2017-10-17T17:09:55.476611672Z"),
         ("getMinchaGedolaGRA", .date { $0.calculateMinchaGedolah() }, "2017-10-17T17:09:35.627235356Z"),
@@ -68,6 +68,7 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getMinchaGedolaGRAGreaterThan30", .date { $0.minchaGedolaGreaterThan30() }, "2017-10-17T17:12:12.781249470Z"),
         ("getMinchaKetana16Point1Degrees", .date { $0.minchaKetana16Point1Degrees() }, "2017-10-17T20:42:24.958920631Z"),
         ("getMinchaKetana72Minutes", .date { $0.minchaKetana72Minutes() }, "2017-10-17T20:37:37.576797224Z"),
+        ("getMinchaKetanaAhavatShalom", .date { $0.minchaKetanaAhavatShalom() }, "2017-10-17T19:51:21.615491489Z"),
         ("getMinchaKetanaAteretTorah", .date { $0.minchaKetanaAteretTorah() }, "2017-10-17T20:13:27.414333739Z"),
         ("getMinchaKetanaBaalHatanya", .date { $0.minchaKetanaBaalHatanya() }, "2017-10-17T19:57:57.216239627Z"),
         ("getMinchaKetanaGRA", .date { $0.calculateMinchaKetana() }, "2017-10-17T19:55:37.576797224Z"),
@@ -75,8 +76,10 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getMisheyakir10Point2Degrees", .date { $0.misheyakir10Point2Degrees() }, "2017-10-17T10:20:22.960720797Z"),
         ("getMisheyakir11Degrees", .date { $0.misheyakir11Degrees() }, "2017-10-17T10:16:11.433376090Z"),
         ("getMisheyakir11Point5Degrees", .date { $0.misheyakir11Point5Degrees() }, "2017-10-17T10:13:34.311221155Z"),
+        ("getMisheyakir12Point85Degrees", .date { $0.misheyakir12Point85Degrees() }, "2017-10-17T10:06:30.324568897Z"),
         ("getMisheyakir7Point65Degrees", .date { $0.misheyakir7Point65Degrees() }, "2017-10-17T10:33:46.155182911Z"),
         ("getMisheyakir9Point5Degrees", .date { $0.misheyakir9Point5Degrees() }, "2017-10-17T10:24:03.203710034Z"),
+        ("getPlagAhavatShalom", .date { $0.plagAhavatShalom() }, "2017-10-17T21:10:33.114910614Z"),
         ("getPlagAlos16Point1DegreesToTzaisGeonim7Point083Degrees", .date { $0.plagAlos16Point1ToTzeisGeonim7Point083Degrees() }, "2017-10-17T21:26:03.735717649Z"),
         ("getPlagAlosToSunset", .date { $0.plagAlosToSunset() }, "2017-10-17T20:56:26.182523158Z"),
         ("getPlagHamincha120Minutes", .date { $0.plagHamincha120Minutes() }, "2017-10-17T22:39:48.389114669Z"),
@@ -96,6 +99,9 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getPlagHaminchaBaalHatanya", .date { $0.plagHaminchaBaalHatanya() }, "2017-10-17T21:07:57.941084608Z"),
         ("getPlagHaminchaGRA", .date { $0.calculatePlagHamincha() }, "2017-10-17T21:04:48.389114669Z"),
         ("getPlagHaminchaGRAFixedLocalChatzosToSunset", .date { $0.plagHaminchaGRAFixedLocalChatzosToSunset() }, "2017-10-17T21:08:27.710Z"), // KosherJava 2.5.0. Master switched this zman from elevation-adjusted to sea-level sunrise/sunset
+        ("getSamuchLeMinchaKetana16Point1Degrees", .date { $0.samuchLeMinchaKetana16Point1Degrees() }, "2017-10-17T20:08:03.130551447Z"),
+        ("getSamuchLeMinchaKetana72Minutes", .date { $0.samuchLeMinchaKetana72Minutes() }, "2017-10-17T20:03:57.251870246Z"),
+        ("getSamuchLeMinchaKetanaGRA", .date { $0.samuchLeMinchaKetanaGRA() }, "2017-10-17T19:27:57.251870246Z"),
         ("getSeaLevelSunrise", .date { $0.seaLevelSunrise }, "2017-10-17T11:09:51.403184642Z"),
         ("getSeaLevelSunset", .date { $0.seaLevelSunset }, "2017-10-17T22:13:59.201432122Z"),
         ("getShaahZmanis120Minutes", .duration { $0.shaahZmanis120Minutes() }, "PT1H15M20.649853956S"),
@@ -111,6 +117,9 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getShaahZmanis90MinutesZmanis", .duration { $0.shaahZmanis90MinutesZmanis() }, "PT1H9M10.812317445S"),
         ("getShaahZmanis96Minutes", .duration { $0.shaahZmanis96Minutes() }, "PT1H11M20.649853956S"),
         ("getShaahZmanis96MinutesZmanis", .duration { $0.shaahZmanis96MinutesZmanis() }, "PT1H10M6.156481678S"),
+        ("getShaahZmanisAlos16Point1DegreesToTzaisGeonim3Point7Degrees", .duration { $0.shaahZmanisAlos16Point1ToTzeisGeonim3Point7Degrees() }, "PT1H3M18.553246773S"),
+        ("getShaahZmanisAlos16Point1DegreesToTzaisGeonim3Point8Degrees", .duration { $0.shaahZmanisAlos16Point1ToTzeisGeonim3Point8Degrees() }, "PT1H3M21.1995353S"),
+        ("getShaahZmanisAlos16Point1DegreesToTzaisGeonim7Point083Degrees", .duration { $0.shaahZmanisAlos16Point1ToTzeisGeonim7Point083Degrees() }, "PT1H4M47.768912699S"),
         ("getShaahZmanisAteretTorah", .duration { $0.shaahZmanisAteretTorah() }, "PT1H4M12.714839352S"),
         ("getShaahZmanisBaalHatanya", .duration { $0.shaahZmanisBaalHatanya() }, "PT56M0.579875985S"),
         ("getShaahZmanisGRA", .duration { $0.shaahZmanisGra() }, "PT55M20.649853956S"),
@@ -118,10 +127,12 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getSofZmanAchilasChametzGRA", .date { $0.latestAchilasChametzGRA() }, nil),
         ("getSofZmanAchilasChametzMGA16Point1Degrees", .date { $0.latestAchilasChametzMGA16Point1Degrees() }, nil),
         ("getSofZmanAchilasChametzMGA72Minutes", .date { $0.latestAchilasChametzMGA72Minutes() }, nil),
+        ("getSofZmanAchilasChametzMGA72MinutesZmanis", .date { $0.latestAchilasChametzMGA72MinutesZmanis() }, nil),
         ("getSofZmanBiurChametzBaalHatanya", .date { $0.latestBiurChametzBaalHatanya() }, nil),
         ("getSofZmanBiurChametzGRA", .date { $0.latestBiurChametzGRA() }, nil),
         ("getSofZmanBiurChametzMGA16Point1Degrees", .date { $0.latestBiurChametzMGA16Point1Degrees() }, nil),
         ("getSofZmanBiurChametzMGA72Minutes", .date { $0.latestBiurChametzMGA72Minutes() }, nil),
+        ("getSofZmanBiurChametzMGA72MinutesZmanis", .date { $0.latestBiurChametzMGA72MinutesZmanis() }, nil),
         ("getSofZmanShma3HoursBeforeChatzos", .date { $0.latestShema3HoursBeforeChatzos() }, "2017-10-17T13:42:12.781249470Z"),
         ("getSofZmanShmaAlos16Point1DegreesToTzaisGeonim7Point083Degrees", .date { $0.latestShemaAlos16Point1ToTzeisGeonim7Point083Degrees() }, "2017-10-17T13:03:53.526644232Z"),
         ("getSofZmanShmaAlos16Point1ToSunset", .date { $0.latestShemaAlos16Point1ToSunset() }, "2017-10-17T12:55:37.465287630Z"),
@@ -181,6 +192,8 @@ final class ComprehensiveZmanimCalendarTests: XCTestCase {
         ("getTzaisBaalHatanya", .date { $0.tzeisBaalHatanya() }, "2017-10-17T22:41:21.435143220Z"),
         ("getTzaisGeonim3Point7Degrees", .date { $0.tzeisGeonim3Point7Degrees() }, "2017-10-17T22:29:12.858867416Z"),
         ("getTzaisGeonim3Point8Degrees", .date { $0.tzeisGeonim3Point8Degrees() }, "2017-10-17T22:29:44.614329739Z"),
+        ("getTzaisGeonim4Point42Degrees", .date { $0.tzeisGeonim4Point42Degrees() }, "2017-10-17T22:33:01.330786672Z"),
+        ("getTzaisGeonim4Point66Degrees", .date { $0.tzeisGeonim4Point66Degrees() }, "2017-10-17T22:34:17.404148028Z"),
         ("getTzaisGeonim4Point8Degrees", .date { $0.tzeisGeonim4Point8Degrees() }, "2017-10-17T22:35:01.761613150Z"),
         ("getTzaisGeonim5Point95Degrees", .date { $0.tzeisGeonim5Point95Degrees() }, "2017-10-17T22:41:05.633594744Z"),
         ("getTzaisGeonim6Point45Degrees", .date { $0.tzeisGeonim6Point45Degrees() }, "2017-10-17T22:43:43.582328133Z"),

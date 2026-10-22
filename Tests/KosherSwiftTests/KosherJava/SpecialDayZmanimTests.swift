@@ -2,9 +2,8 @@
 //  SpecialDayZmanimTests.swift
 //  KosherSwiftTests
 //
-//  Port of KosherJava master's SpecialDayZmanimTest.java. KosherSwift has no MGA 72 minutes zmanis chametz times and
-//  no polar zmanim, so those assertions and polarZmanimDuringPolarDay / polarZmanimAreNullWhereSunRisesAndSets aren't
-//  ported. KosherJava's ComprehensiveZmanimCalendar returns molad and kiddush levana times only on the day they fall;
+//  Port of KosherJava master's SpecialDayZmanimTest.java. KosherSwift has no polar zmanim, so
+//  polarZmanimDuringPolarDay and polarZmanimAreNullWhereSunRisesAndSets aren't ported. KosherJava's ComprehensiveZmanimCalendar returns molad and kiddush levana times only on the day they fall;
 //  KosherSwift has them on JewishCalendar for the whole month, so kidushLevanaIsNullOutsideItsWindow isn't ported and
 //  the instants are checked from JewishCalendar instead.
 //
@@ -21,10 +20,12 @@ final class SpecialDayZmanimTests: XCTestCase {
         let calendar = calendarFor(2017, 4, 10)
         XCTAssertNotNil(calendar.latestAchilasChametzGRA())
         XCTAssertNotNil(calendar.latestAchilasChametzMGA72Minutes())
+        XCTAssertNotNil(calendar.latestAchilasChametzMGA72MinutesZmanis())
         XCTAssertNotNil(calendar.latestAchilasChametzMGA16Point1Degrees())
         XCTAssertNotNil(calendar.latestAchilasChametzBaalHatanya())
         XCTAssertNotNil(calendar.latestBiurChametzGRA())
         XCTAssertNotNil(calendar.latestBiurChametzMGA72Minutes())
+        XCTAssertNotNil(calendar.latestBiurChametzMGA72MinutesZmanis())
         XCTAssertNotNil(calendar.latestBiurChametzMGA16Point1Degrees())
         XCTAssertNotNil(calendar.latestBiurChametzBaalHatanya())
         // Biur (end of the 5th hour) is one shaah zmanis after achilas (end of the 4th).

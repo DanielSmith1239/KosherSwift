@@ -18,7 +18,7 @@ public enum Zenith: Double {
     case z3_7 = 93.7
     case z3_8 = 93.8
     case z5_95 = 95.95
-    case z7_083 = 97.083
+    case z7_083 = 97.08333333333333 // 7° 5′, KosherJava's ZENITH_7_POINT_083
     case z10_2 = 100.2
     case z11Deg = 101
     case z11_5 = 101.5
@@ -44,4 +44,7 @@ public enum Zenith: Double {
     case zMinus2_1 = 87.9
     case zMinus2_8 = 87.2
     case zMinus3_05 = 86.95
+    case z12_85 = 102.85
+    case z4_42 = 94.42
+    case z4_66 = 94.66
 }

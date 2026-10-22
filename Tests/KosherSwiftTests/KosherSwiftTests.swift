@@ -62,6 +62,9 @@ final class KosherSwiftTests: XCTestCase {
         comp.setValue(2023, for: .year)
         comp.setValue(12, for: .month)
         comp.setValue(24, for: .day)
+        // JewishCalendar(date:) reads the device's calendar day. 6am in New York is 24 December from UTC-11 to UTC+12,
+        // where midnight would be 23 December on any device west of New York.
+        comp.setValue(6, for: .hour)
         let jewishCalendar = JewishCalendar(date: calendar.date(from: comp)!)
         XCTAssertEqual(jewishCalendar.gregDate.year, 2023)
         XCTAssertEqual(jewishCalendar.gregDate.month, 12)

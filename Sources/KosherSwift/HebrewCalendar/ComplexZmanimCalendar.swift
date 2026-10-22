@@ -190,6 +190,53 @@ public class ComplexZmanimCalendar: ZmanimCalendar {
         guard let a = minchaGedola30Minutes(), let b = calculateMinchaGedolah() else { return nil }
         return a > b ? a : b
     }
+
+    // Zmanim KosherJava has that KosherSwift was missing. Ahavat Shalom and samuch le'mincha ketana
+    // are from KosherJava 2.5.0; the rest were added in KosherJava master. getCandleLighting() and chatzosAsHalfDay()
+    // are on ZmanimCalendar.
+
+    public func misheyakir12Point85Degrees() -> Date? { getSunriseOffsetByDegrees(offsetZenith: .z12_85) }
+    public func tzeisGeonim4Point42Degrees() -> Date? { getSunsetOffsetByDegrees(offsetZenith: .z4_42) }
+    public func tzeisGeonim4Point66Degrees() -> Date? { getSunsetOffsetByDegrees(offsetZenith: .z4_66) }
+
+    public func shaahZmanisAlos16Point1ToTzeisGeonim3Point7Degrees() -> Double? { getTemporalHour(dayStart: alos16Point1Degrees(), dayEnd: tzeisGeonim3Point7Degrees()) }
+    public func shaahZmanisAlos16Point1ToTzeisGeonim3Point8Degrees() -> Double? { getTemporalHour(dayStart: alos16Point1Degrees(), dayEnd: tzeisGeonim3Point8Degrees()) }
+    public func shaahZmanisAlos16Point1ToTzeisGeonim7Point083Degrees() -> Double? { getTemporalHour(dayStart: alos16Point1Degrees(), dayEnd: tzeisGeonim7Point083Degrees()) }
+
+    /// The later of 30 minutes after chatzos and half a shaah zmanis (alos 16.1° to tzais 3.7°) after chatzos.
+    public func minchaGedolaAhavatShalom() -> Date? {
+        guard let minchaGedola30 = minchaGedola30Minutes(), calculateMinchaGedolah() != nil,
+              let shaahZmanis = shaahZmanisAlos16Point1ToTzeisGeonim3Point7Degrees(),
+              let halfShaah = AstronomicalCalendar.getTimeOffset(time: chatzos(), offset: shaahZmanis / 2) else { return nil }
+        return minchaGedola30 > halfShaah ? minchaGedola30 : halfShaah
+    }
+
+    /// 2.5 shaos zmaniyos (alos 16.1° to tzais 3.8°) before tzais 3.8°.
+    public func minchaKetanaAhavatShalom() -> Date? {
+        guard let shaahZmanis = shaahZmanisAlos16Point1ToTzeisGeonim3Point8Degrees() else { return nil }
+        return AstronomicalCalendar.getTimeOffset(time: tzeisGeonim3Point8Degrees(), offset: -shaahZmanis * 2.5)
+    }
+
+    /// 1.25 shaos zmaniyos (alos 16.1° to tzais 3.8°) before tzais 3.8°.
+    public func plagAhavatShalom() -> Date? {
+        guard let shaahZmanis = shaahZmanisAlos16Point1ToTzeisGeonim3Point8Degrees() else { return nil }
+        return AstronomicalCalendar.getTimeOffset(time: tzeisGeonim3Point8Degrees(), offset: -shaahZmanis * 1.25)
+    }
+
+    /// Nine shaos zmaniyos into the day, half an hour before mincha ketana.
+    public func samuchLeMinchaKetana(_ startOfDay: Date?, _ endOfDay: Date?) -> Date? {
+        guard let startOfDay, let endOfDay else { return nil }
+        return shaahZmanisBasedZman(startOfDay, endOfDay, 9)
+    }
+    public func samuchLeMinchaKetanaGRA() -> Date? { samuchLeMinchaKetana(elevationAdjustedSunrise, elevationAdjustedSunset) }
+    public func samuchLeMinchaKetana16Point1Degrees() -> Date? { samuchLeMinchaKetana(alos16Point1Degrees(), tzeis16Point1Degrees()) }
+    public func samuchLeMinchaKetana72Minutes() -> Date? { samuchLeMinchaKetana(alos72(), tzeis72()) }
+
+    public func latestAchilasChametzMGA72MinutesZmanis() -> Date? { isErevPesach ? latestTefilaMGA72MinutesZmanis() : nil }
+    public func latestBiurChametzMGA72MinutesZmanis() -> Date? {
+        guard isErevPesach, let alos = alos72Zmanis(), let tzeis = tzeis72Zmanis() else { return nil }
+        return shaahZmanisBasedZman(alos, tzeis, 5)
+    }
     
     // Helpers
     public func zmanisBasedOffset(_ hours: Double) -> Date? {

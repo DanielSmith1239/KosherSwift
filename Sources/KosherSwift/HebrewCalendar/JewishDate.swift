@@ -49,6 +49,34 @@ public class JewishDate: Comparable {
     public static func < (lhs: JewishDate, rhs: JewishDate) -> Bool {
         return lhs.gregDate < rhs.gregDate
     }
+
+    /// KosherJava plusYears(years, useAdarAlephForLeapYear). From Adar in a non-leap year into a leap year, lands in
+    /// Adar I when useAdarAlephForLeapYear is true and Adar II otherwise; the day is clamped to the month's length.
+    public func plusYears(_ years: Int, useAdarAlephForLeapYear: Bool) -> JewishDate {
+        precondition(years >= 1, "The number of years to add has to be greater than zero. Use minusYears to subtract years.")
+        return addingYears(years, useAdarAlephForLeapYear: useAdarAlephForLeapYear)
+    }
+
+    /// KosherJava minusYears(years, useAdarAlephForLeapYear).
+    public func minusYears(_ years: Int, useAdarAlephForLeapYear: Bool) -> JewishDate {
+        precondition(years >= 1, "The number of years to subtract has to be greater than zero.")
+        return addingYears(-years, useAdarAlephForLeapYear: useAdarAlephForLeapYear)
+    }
+
+    private func addingYears(_ years: Int, useAdarAlephForLeapYear: Bool) -> JewishDate {
+        let targetYear = year + years
+        let targetIsLeap = JewishDate.isJewishLeapYear(targetYear)
+        let targetMonth: JewishMonth
+        if month == .adar && !isJewishLeapYear && targetIsLeap {
+            targetMonth = useAdarAlephForLeapYear ? .adar : .adar2
+        } else {
+            // Adar II clamps to Adar in a non-leap year
+            let lastMonth: JewishMonth = targetIsLeap ? .adar2 : .adar
+            targetMonth = month.rawValue > lastMonth.rawValue ? lastMonth : month
+        }
+        let targetDay = min(day, JewishDate.getDaysInJewishMonth(month: targetMonth, year: targetYear))
+        return JewishDate(withJewishYear: targetYear, andMonth: targetMonth, andDay: targetDay)
+    }
 }
 
 extension JewishDate {

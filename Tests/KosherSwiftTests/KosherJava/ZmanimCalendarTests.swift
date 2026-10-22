@@ -27,10 +27,11 @@ final class ZmanimCalendarTests: XCTestCase {
         assertInstant(calendar.latestTefilaMga(), "2017-10-17T14:27:14.002600466Z", "sofZmanTfilaMGA72")
     }
 
-    /// KosherJava's getChatzosHalayla() is KosherSwift's ComplexZmanimCalendar.getSolarMidnight(). KosherJava master's
-    /// getChatzosHayomAsHalfDay() has no KosherSwift equivalent.
+    /// KosherJava's getChatzosHalayla() is KosherSwift's ComplexZmanimCalendar.getSolarMidnight().
     func testChatzos() {
-        assertInstant(fixtureCalendar().chatzos(), "2017-10-17T16:42:12.781249470Z", "chatzosHayom")
+        let calendar = fixtureCalendar()
+        assertInstant(calendar.chatzos(), "2017-10-17T16:42:12.781249470Z", "chatzosHayom")
+        assertInstant(calendar.chatzosAsHalfDay(), "2017-10-17T16:41:55.302308378Z", "chatzosHayomAsHalfDay")
         let complex = ComplexZmanimCalendar(location: TestLocations.lakewood(), date: TestLocations.date(2017, 10, 17))
         assertInstant(complex.getSolarMidnight(), "2017-10-18T04:42:06.833038724Z", "chatzosHalayla")
     }
@@ -42,14 +43,15 @@ final class ZmanimCalendarTests: XCTestCase {
         assertInstant(calendar.calculatePlagHamincha(), "2017-10-17T21:04:48.389114669Z", "plagHaminchaGRA")
     }
 
-    /// KosherJava's getCandleLighting() returns sunset minus 18 minutes on any day. KosherSwift's candleLighting() only
-    /// returns a time when candles are lit, so it's checked on Friday 20 October 2017 against KosherJava master's
-    /// getCandleLighting() for that day, and is nil on the Tuesday fixture.
+    /// KosherJava's getCandleLighting() is sunset minus 18 minutes on any day, which is KosherSwift's getCandleLighting().
+    /// KosherSwift's candleLighting() only returns a time when candles are lit, so it's nil on the Tuesday fixture and
+    /// is checked on Friday 20 October 2017 against KosherJava master's getCandleLighting() for that day.
     func testCandleLightingAndTzais() {
         let calendar = fixtureCalendar()
-        XCTAssertNil(calendar.candleLighting(), "candleLighting on a weekday")
+        assertInstant(calendar.getCandleLighting(), "2017-10-17T21:55:59.201432122Z", "candleLighting")
+        XCTAssertNil(calendar.candleLighting(), "candleLighting() on a weekday")
         let friday = ZmanimCalendar(location: TestLocations.lakewood(), date: TestLocations.date(2017, 10, 20))
-        assertInstant(friday.candleLighting(), "2017-10-20T21:51:40.574718940Z", "candleLighting")
+        assertInstant(friday.candleLighting(), "2017-10-20T21:51:40.574718940Z", "candleLighting() on Friday")
         assertInstant(calendar.tzeis72(), "2017-10-17T23:25:59.201432122Z", "tzais72")
         assertInstant(calendar.tzeis(), "2017-10-17T22:54:29.772724455Z", "tzaisGeonim8.5")
     }

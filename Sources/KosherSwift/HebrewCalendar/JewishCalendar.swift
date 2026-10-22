@@ -10,6 +10,8 @@ import Foundation
 public class JewishCalendar: JewishDate {
     public let isInIsrael: Bool
     public let moladDate: MoladDate?
+    /// Whether the city was walled in the time of Yehoshua, so Purim is on the 15th (KosherJava setIsMukafChoma).
+    public var isMukafChoma = false
     
     public convenience init(withJewishYear year: Int, andMonth month: JewishMonth, andDay day: Int, isInIsrael: Bool = false) {
         var hebCal = Calendar(identifier: .hebrew)
@@ -29,7 +31,9 @@ public class JewishCalendar: JewishDate {
     }
     
     public func copy(year: Int? = nil, month: JewishMonth? = nil, day: Int? = nil, isInIsrael: Bool? = nil) -> JewishCalendar {
-        JewishCalendar(withJewishYear: year ?? self.year, andMonth: (month ?? self.month), andDay: day ?? self.day, isInIsrael: isInIsrael ?? self.isInIsrael)
+        let copy = JewishCalendar(withJewishYear: year ?? self.year, andMonth: (month ?? self.month), andDay: day ?? self.day, isInIsrael: isInIsrael ?? self.isInIsrael)
+        copy.isMukafChoma = isMukafChoma
+        return copy
     }
     
     public var isBirkasHachama: Bool {
@@ -219,7 +223,11 @@ public class JewishCalendar: JewishDate {
     public var isTenthOfTeves: Bool { month == .teves && day == 10 }
     public var isTuBeshvat: Bool { month == .shevat && day == 15 }
     public var isFastOfEsther: Bool { (!isJewishLeapYear && month == .adar && (((day == 11 || day == 12) && dow == .thursday) || (day == 13 && !(dow == .friday || dow == .saturday)))) || (isJewishLeapYear && month == .adar2 && (((day == 11 || day == 12) && dow == .thursday) || (day == 13 && !(dow == .friday || dow == .saturday)))) }
-    public var isPurim: Bool { (!isJewishLeapYear && month == .adar && day == 14) || (isJewishLeapYear && month == .adar2 && day == 14) }
+    /// KosherJava isPurim(): the 14th of Adar (Adar II in a leap year), or the 15th when isMukafChoma is set.
+    public var isPurim: Bool {
+        let purimDay = isMukafChoma ? 15 : 14
+        return (!isJewishLeapYear && month == .adar && day == purimDay) || (isJewishLeapYear && month == .adar2 && day == purimDay)
+    }
     public var isShushanPurim: Bool { (!isJewishLeapYear && month == .adar && day == 15) || (isJewishLeapYear && month == .adar2 && day == 15) }
     public var isPurimKatan: Bool { isJewishLeapYear && month == .adar && day == 14 }
     public var isShushanPurimKatan: Bool { isJewishLeapYear && month == .adar && day == 15 }
@@ -392,11 +400,15 @@ public class JewishCalendar: JewishDate {
     public var isMoridHatalRecited: Bool { !isMashivHaruachRecited || isMashivHaruachStartDate || isMashivHaruachEndDate }
     
     public var tomorrow: JewishCalendar {
-        JewishCalendar(date: gregDate.withAdded(days: 1)!, isInIsrael: isInIsrael)
+        let tomorrow = JewishCalendar(date: gregDate.withAdded(days: 1)!, isInIsrael: isInIsrael)
+        tomorrow.isMukafChoma = isMukafChoma
+        return tomorrow
     }
     
     public var yesterday: JewishCalendar {
-        JewishCalendar(date: gregDate.withAdded(days: -1)!, isInIsrael: isInIsrael)
+        let yesterday = JewishCalendar(date: gregDate.withAdded(days: -1)!, isInIsrael: isInIsrael)
+        yesterday.isMukafChoma = isMukafChoma
+        return yesterday
     }
     
     public var chagStart: JewishCalendar {

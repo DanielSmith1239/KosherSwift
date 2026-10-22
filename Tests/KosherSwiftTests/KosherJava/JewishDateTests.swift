@@ -112,8 +112,17 @@ final class JewishDateTests: XCTestCase {
         XCTAssertEqual(2010, date.year)
     }
 
-    // KosherJava master's addYearsUsesConfiguredAdarMonthWhenMovingToLeapYear tests plusYears(_, useAdarAlephForLeapYear),
-    // which KosherSwift doesn't have.
+    func testAddYearsUsesConfiguredAdarMonthWhenMovingToLeapYear() {
+        let adarAlephDate = JewishDate(withJewishYear: 5783, andMonth: .adar, andDay: 10).plusYears(1, useAdarAlephForLeapYear: true)
+        XCTAssertEqual(5784, adarAlephDate.year)
+        XCTAssertEqual(.adar, adarAlephDate.month)
+        XCTAssertEqual(10, adarAlephDate.day)
+
+        let adarBeisDate = JewishDate(withJewishYear: 5783, andMonth: .adar, andDay: 10).plusYears(1, useAdarAlephForLeapYear: false)
+        XCTAssertEqual(5784, adarBeisDate.year)
+        XCTAssertEqual(.adar2, adarBeisDate.month)
+        XCTAssertEqual(10, adarBeisDate.day)
+    }
 
     // MARK: UT_GregorianDateNavigation
 

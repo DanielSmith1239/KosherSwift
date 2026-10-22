@@ -46,6 +46,18 @@ public class ZmanimCalendar: AstronomicalCalendar {
         return nil
     }
     
+    /// KosherJava getCandleLighting(): sea-level sunset minus the candle lighting offset, on any day. candleLighting()
+    /// only returns a time on days candles are lit.
+    public func getCandleLighting() -> Date? {
+        AstronomicalCalendar.getTimeOffset(time: seaLevelSunset, offset: -candleLightingOffset * AstronomicalCalendar.minuteMillis)
+    }
+
+    /// KosherJava master getChatzosHayomAsHalfDay(): halfway between sea-level sunrise and sunset.
+    public func chatzosAsHalfDay() -> Date? {
+        guard let sunrise = seaLevelSunrise, let sunset = seaLevelSunset else { return nil }
+        return sunrise.addingTimeInterval(sunset.timeIntervalSince(sunrise) / 2)
+    }
+
     public func latestTefilaGra() -> Date? { calculateLatestTefila(elevationAdjustedSunrise, elevationAdjustedSunset) }
     public func latestTefilaMga() -> Date? { calculateLatestTefila(alos72(), tzeis72()) }
     public func shaahZmanisGra() -> Double? { getTemporalHour(dayStart: elevationAdjustedSunrise, dayEnd: elevationAdjustedSunset) }
